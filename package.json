@@ -1,0 +1,28 @@
+{
+    "name": "ods14_equipo4_api",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yujiang31/ODS14_Equipo4_API.git"
+    },
+    "keywords": [],
+    "bugs": {
+        "url": "https://github.com/yujiang31/ODS14_Equipo4_API/issues"
+    },
+    "homepage": "https://github.com/yujiang31/ODS14_Equipo4_API#readme",
+    "description": "",
+    "dependencies": {
+        "bcrypt": "^6.0.0",
+        "cookie-parser": "^1.4.7",
+        "db-local": "^3.1.0",
+        "ejs": "^3.1.10",
+        "express": "^5.1.0",
+        "jsonwebtoken": "^9.0.2"
+    }
+}
