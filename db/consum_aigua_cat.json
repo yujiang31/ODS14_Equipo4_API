@@ -1,0 +1,5022 @@
+[
+    {
+        "Any":2023,
+        "Codi comarca":1,
+        "Comarca":"ALT CAMP, L'",
+        "Població":46117,
+        "Domèstic xarxa":1711217,
+        "Activitats econòmiques i fonts pròpies":2692171,
+        "Total":4403388,
+        "Consum domèstic per càpita":101.66
+    },
+    {
+        "Any":2023,
+        "Codi comarca":2,
+        "Comarca":"ALT EMPORDÀ, L'",
+        "Població":146552,
+        "Domèstic xarxa":8021123,
+        "Activitats econòmiques i fonts pròpies":4343524,
+        "Total":12364647,
+        "Consum domèstic per càpita":149.95
+    },
+    {
+        "Any":2023,
+        "Codi comarca":3,
+        "Comarca":"ALT PENEDÈS, L'",
+        "Població":112638,
+        "Domèstic xarxa":4362371,
+        "Activitats econòmiques i fonts pròpies":2950711,
+        "Total":7313082,
+        "Consum domèstic per càpita":106.11
+    },
+    {
+        "Any":2023,
+        "Codi comarca":4,
+        "Comarca":"ALT URGELL, L'",
+        "Població":20855,
+        "Domèstic xarxa":994675,
+        "Activitats econòmiques i fonts pròpies":1368872,
+        "Total":2363547,
+        "Consum domèstic per càpita":130.67
+    },
+    {
+        "Any":2023,
+        "Codi comarca":5,
+        "Comarca":"ALTA RIBAGORÇA, L'",
+        "Població":3966,
+        "Domèstic xarxa":466511,
+        "Activitats econòmiques i fonts pròpies":249055,
+        "Total":715566,
+        "Consum domèstic per càpita":322.27
+    },
+    {
+        "Any":2023,
+        "Codi comarca":6,
+        "Comarca":"ANOIA, L'",
+        "Població":126695,
+        "Domèstic xarxa":4757347,
+        "Activitats econòmiques i fonts pròpies":5827828,
+        "Total":10585175,
+        "Consum domèstic per càpita":102.88
+    },
+    {
+        "Any":2023,
+        "Codi comarca":7,
+        "Comarca":"BAGES, EL",
+        "Població":183711,
+        "Domèstic xarxa":6962855,
+        "Activitats econòmiques i fonts pròpies":6414833,
+        "Total":13377688,
+        "Consum domèstic per càpita":103.84
+    },
+    {
+        "Any":2023,
+        "Codi comarca":8,
+        "Comarca":"BAIX CAMP, EL",
+        "Població":201361,
+        "Domèstic xarxa":9396005,
+        "Activitats econòmiques i fonts pròpies":5732920,
+        "Total":15128925,
+        "Consum domèstic per càpita":127.84
+    },
+    {
+        "Any":2023,
+        "Codi comarca":9,
+        "Comarca":"BAIX EBRE, EL",
+        "Població":80974,
+        "Domèstic xarxa":3372120,
+        "Activitats econòmiques i fonts pròpies":4650031,
+        "Total":8022151,
+        "Consum domèstic per càpita":114.09
+    },
+    {
+        "Any":2023,
+        "Codi comarca":10,
+        "Comarca":"BAIX EMPORDÀ, EL",
+        "Població":141521,
+        "Domèstic xarxa":9808033,
+        "Activitats econòmiques i fonts pròpies":6257373,
+        "Total":16065406,
+        "Consum domèstic per càpita":189.88
+    },
+    {
+        "Any":2023,
+        "Codi comarca":11,
+        "Comarca":"BAIX LLOBREGAT, EL",
+        "Població":841731,
+        "Domèstic xarxa":31753625,
+        "Activitats econòmiques i fonts pròpies":22439518,
+        "Total":54193143,
+        "Consum domèstic per càpita":103.35
+    },
+    {
+        "Any":2023,
+        "Codi comarca":12,
+        "Comarca":"BAIX PENEDÈS, EL",
+        "Població":115802,
+        "Domèstic xarxa":6554775,
+        "Activitats econòmiques i fonts pròpies":2242496,
+        "Total":8797271,
+        "Consum domèstic per càpita":155.08
+    },
+    {
+        "Any":2023,
+        "Codi comarca":13,
+        "Comarca":"BARCELONÈS, EL",
+        "Població":2318321,
+        "Domèstic xarxa":86258742,
+        "Activitats econòmiques i fonts pròpies":39957190,
+        "Total":126215932,
+        "Consum domèstic per càpita":101.94
+    },
+    {
+        "Any":2023,
+        "Codi comarca":14,
+        "Comarca":"BERGUEDÀ, EL",
+        "Població":40577,
+        "Domèstic xarxa":1378139,
+        "Activitats econòmiques i fonts pròpies":1216163,
+        "Total":2594302,
+        "Consum domèstic per càpita":93.05
+    },
+    {
+        "Any":2023,
+        "Codi comarca":15,
+        "Comarca":"CERDANYA, LA",
+        "Població":19848,
+        "Domèstic xarxa":1384865,
+        "Activitats econòmiques i fonts pròpies":2271943,
+        "Total":3656808,
+        "Consum domèstic per càpita":191.16
+    },
+    {
+        "Any":2023,
+        "Codi comarca":16,
+        "Comarca":"CONCA DE BARBERÀ, LA",
+        "Població":20436,
+        "Domèstic xarxa":674190,
+        "Activitats econòmiques i fonts pròpies":723098,
+        "Total":1397288,
+        "Consum domèstic per càpita":90.38
+    },
+    {
+        "Any":2023,
+        "Codi comarca":17,
+        "Comarca":"GARRAF, EL",
+        "Població":159140,
+        "Domèstic xarxa":7482336,
+        "Activitats econòmiques i fonts pròpies":2439058,
+        "Total":9921394,
+        "Consum domèstic per càpita":128.81
+    },
+    {
+        "Any":2023,
+        "Codi comarca":18,
+        "Comarca":"GARRIGUES, LES",
+        "Població":18887,
+        "Domèstic xarxa":671100,
+        "Activitats econòmiques i fonts pròpies":876384,
+        "Total":1547484,
+        "Consum domèstic per càpita":97.35
+    },
+    {
+        "Any":2023,
+        "Codi comarca":19,
+        "Comarca":"GARROTXA, LA",
+        "Població":61365,
+        "Domèstic xarxa":2424393,
+        "Activitats econòmiques i fonts pròpies":3897146,
+        "Total":6321539,
+        "Consum domèstic per càpita":108.24
+    },
+    {
+        "Any":2023,
+        "Codi comarca":20,
+        "Comarca":"GIRONÈS, EL",
+        "Població":201884,
+        "Domèstic xarxa":7158440,
+        "Activitats econòmiques i fonts pròpies":6576946,
+        "Total":13735386,
+        "Consum domèstic per càpita":97.15
+    },
+    {
+        "Any":2023,
+        "Codi comarca":43,
+        "Comarca":"LLUÇANÈS, EL",
+        "Població":5681,
+        "Domèstic xarxa":183797,
+        "Activitats econòmiques i fonts pròpies":399519,
+        "Total":583316,
+        "Consum domèstic per càpita":88.64
+    },
+    {
+        "Any":2023,
+        "Codi comarca":21,
+        "Comarca":"MARESME, EL",
+        "Població":467914,
+        "Domèstic xarxa":20288184,
+        "Activitats econòmiques i fonts pròpies":8692637,
+        "Total":28980821,
+        "Consum domèstic per càpita":118.79
+    },
+    {
+        "Any":2023,
+        "Codi comarca":42,
+        "Comarca":"Moianès",
+        "Població":14699,
+        "Domèstic xarxa":577699,
+        "Activitats econòmiques i fonts pròpies":620457,
+        "Total":1198156,
+        "Consum domèstic per càpita":107.68
+    },
+    {
+        "Any":2023,
+        "Codi comarca":22,
+        "Comarca":"MONTSIÀ, EL",
+        "Població":70023,
+        "Domèstic xarxa":2734153,
+        "Activitats econòmiques i fonts pròpies":2094619,
+        "Total":4828772,
+        "Consum domèstic per càpita":106.98
+    },
+    {
+        "Any":2023,
+        "Codi comarca":23,
+        "Comarca":"NOGUERA, LA",
+        "Població":39650,
+        "Domèstic xarxa":1727125,
+        "Activitats econòmiques i fonts pròpies":1580697,
+        "Total":3307822,
+        "Consum domèstic per càpita":119.34
+    },
+    {
+        "Any":2023,
+        "Codi comarca":24,
+        "Comarca":"OSONA",
+        "Població":161988,
+        "Domèstic xarxa":6036350,
+        "Activitats econòmiques i fonts pròpies":7799017,
+        "Total":13835367,
+        "Consum domèstic per càpita":102.09
+    },
+    {
+        "Any":2023,
+        "Codi comarca":25,
+        "Comarca":"PALLARS JUSSÀ, EL",
+        "Població":13370,
+        "Domèstic xarxa":816307,
+        "Activitats econòmiques i fonts pròpies":251175,
+        "Total":1067482,
+        "Consum domèstic per càpita":167.27
+    },
+    {
+        "Any":2023,
+        "Codi comarca":26,
+        "Comarca":"PALLARS SOBIRÀ, EL",
+        "Població":7248,
+        "Domèstic xarxa":579310,
+        "Activitats econòmiques i fonts pròpies":597753,
+        "Total":1177063,
+        "Consum domèstic per càpita":218.98
+    },
+    {
+        "Any":2023,
+        "Codi comarca":27,
+        "Comarca":"PLA D'URGELL, EL",
+        "Població":37456,
+        "Domèstic xarxa":1560682,
+        "Activitats econòmiques i fonts pròpies":3583175,
+        "Total":5143857,
+        "Consum domèstic per càpita":114.16
+    },
+    {
+        "Any":2023,
+        "Codi comarca":28,
+        "Comarca":"PLA DE L'ESTANY, EL",
+        "Població":33213,
+        "Domèstic xarxa":1377652,
+        "Activitats econòmiques i fonts pròpies":1485171,
+        "Total":2862823,
+        "Consum domèstic per càpita":113.64
+    },
+    {
+        "Any":2023,
+        "Codi comarca":29,
+        "Comarca":"PRIORAT, EL",
+        "Població":9315,
+        "Domèstic xarxa":318490,
+        "Activitats econòmiques i fonts pròpies":132137,
+        "Total":450627,
+        "Consum domèstic per càpita":93.67
+    },
+    {
+        "Any":2023,
+        "Codi comarca":30,
+        "Comarca":"RIBERA D'EBRE, LA",
+        "Població":22028,
+        "Domèstic xarxa":946700,
+        "Activitats econòmiques i fonts pròpies":1690081,
+        "Total":2636781,
+        "Consum domèstic per càpita":117.75
+    },
+    {
+        "Any":2023,
+        "Codi comarca":31,
+        "Comarca":"RIPOLLÈS, EL",
+        "Població":25692,
+        "Domèstic xarxa":1088068,
+        "Activitats econòmiques i fonts pròpies":1210353,
+        "Total":2298421,
+        "Consum domèstic per càpita":116.03
+    },
+    {
+        "Any":2023,
+        "Codi comarca":32,
+        "Comarca":"SEGARRA, LA",
+        "Població":23931,
+        "Domèstic xarxa":833397,
+        "Activitats econòmiques i fonts pròpies":2726847,
+        "Total":3560244,
+        "Consum domèstic per càpita":95.41
+    },
+    {
+        "Any":2023,
+        "Codi comarca":33,
+        "Comarca":"SEGRIÀ, EL",
+        "Població":215219,
+        "Domèstic xarxa":9476888,
+        "Activitats econòmiques i fonts pròpies":8109913,
+        "Total":17586801,
+        "Consum domèstic per càpita":120.64
+    },
+    {
+        "Any":2023,
+        "Codi comarca":34,
+        "Comarca":"SELVA, LA",
+        "Població":183055,
+        "Domèstic xarxa":8781301,
+        "Activitats econòmiques i fonts pròpies":9491492,
+        "Total":18272793,
+        "Consum domèstic per càpita":131.43
+    },
+    {
+        "Any":2023,
+        "Codi comarca":35,
+        "Comarca":"SOLSONÈS, EL",
+        "Població":13677,
+        "Domèstic xarxa":537502,
+        "Activitats econòmiques i fonts pròpies":708782,
+        "Total":1246284,
+        "Consum domèstic per càpita":107.67
+    },
+    {
+        "Any":2023,
+        "Codi comarca":36,
+        "Comarca":"TARRAGONÈS, EL",
+        "Població":270038,
+        "Domèstic xarxa":13123266,
+        "Activitats econòmiques i fonts pròpies":42299425,
+        "Total":55422691,
+        "Consum domèstic per càpita":133.14
+    },
+    {
+        "Any":2023,
+        "Codi comarca":37,
+        "Comarca":"TERRA ALTA",
+        "Població":11472,
+        "Domèstic xarxa":386851,
+        "Activitats econòmiques i fonts pròpies":227648,
+        "Total":614499,
+        "Consum domèstic per càpita":92.39
+    },
+    {
+        "Any":2023,
+        "Codi comarca":38,
+        "Comarca":"URGELL, L'",
+        "Població":38013,
+        "Domèstic xarxa":1490954,
+        "Activitats econòmiques i fonts pròpies":1226330,
+        "Total":2717284,
+        "Consum domèstic per càpita":107.46
+    },
+    {
+        "Any":2023,
+        "Codi comarca":39,
+        "Comarca":"VAL D'ARAN, LA",
+        "Població":10500,
+        "Domèstic xarxa":1404799,
+        "Activitats econòmiques i fonts pròpies":1081462,
+        "Total":2486261,
+        "Consum domèstic per càpita":366.55
+    },
+    {
+        "Any":2023,
+        "Codi comarca":40,
+        "Comarca":"VALLÈS OCCIDENTAL, EL",
+        "Població":949785,
+        "Domèstic xarxa":36008129,
+        "Activitats econòmiques i fonts pròpies":20567662,
+        "Total":56575791,
+        "Consum domèstic per càpita":103.87
+    },
+    {
+        "Any":2023,
+        "Codi comarca":41,
+        "Comarca":"VALLÈS ORIENTAL, EL",
+        "Població":422777,
+        "Domèstic xarxa":16346948,
+        "Activitats econòmiques i fonts pròpies":12488154,
+        "Total":28835102,
+        "Consum domèstic per càpita":105.93
+    },
+    {
+        "Any":2022,
+        "Codi comarca":1,
+        "Comarca":"ALT CAMP, L'",
+        "Població":45540,
+        "Domèstic xarxa":1685688,
+        "Activitats econòmiques i fonts pròpies":3040038,
+        "Total":4725726,
+        "Consum domèstic per càpita":101.41
+    },
+    {
+        "Any":2022,
+        "Codi comarca":2,
+        "Comarca":"ALT EMPORDÀ, L'",
+        "Població":144926,
+        "Domèstic xarxa":8583560,
+        "Activitats econòmiques i fonts pròpies":4831755,
+        "Total":13415315,
+        "Consum domèstic per càpita":162.27
+    },
+    {
+        "Any":2022,
+        "Codi comarca":3,
+        "Comarca":"ALT PENEDÈS, L'",
+        "Població":110929,
+        "Domèstic xarxa":4533398,
+        "Activitats econòmiques i fonts pròpies":3262053,
+        "Total":7795451,
+        "Consum domèstic per càpita":111.97
+    },
+    {
+        "Any":2022,
+        "Codi comarca":4,
+        "Comarca":"ALT URGELL, L'",
+        "Població":20482,
+        "Domèstic xarxa":1016456,
+        "Activitats econòmiques i fonts pròpies":1467236,
+        "Total":2483692,
+        "Consum domèstic per càpita":135.96
+    },
+    {
+        "Any":2022,
+        "Codi comarca":5,
+        "Comarca":"ALTA RIBAGORÇA, L'",
+        "Població":3958,
+        "Domèstic xarxa":469071,
+        "Activitats econòmiques i fonts pròpies":271619,
+        "Total":740690,
+        "Consum domèstic per càpita":324.69
+    },
+    {
+        "Any":2022,
+        "Codi comarca":6,
+        "Comarca":"ANOIA, L'",
+        "Població":125065,
+        "Domèstic xarxa":4977903,
+        "Activitats econòmiques i fonts pròpies":5752687,
+        "Total":10730590,
+        "Consum domèstic per càpita":109.05
+    },
+    {
+        "Any":2022,
+        "Codi comarca":7,
+        "Comarca":"BAGES, EL",
+        "Població":180873,
+        "Domèstic xarxa":7245892,
+        "Activitats econòmiques i fonts pròpies":6808136,
+        "Total":14054028,
+        "Consum domèstic per càpita":109.76
+    },
+    {
+        "Any":2022,
+        "Codi comarca":8,
+        "Comarca":"BAIX CAMP, EL",
+        "Població":197525,
+        "Domèstic xarxa":9839320,
+        "Activitats econòmiques i fonts pròpies":5717291,
+        "Total":15556611,
+        "Consum domèstic per càpita":136.47
+    },
+    {
+        "Any":2022,
+        "Codi comarca":9,
+        "Comarca":"BAIX EBRE, EL",
+        "Població":79636,
+        "Domèstic xarxa":3368526,
+        "Activitats econòmiques i fonts pròpies":4459442,
+        "Total":7827968,
+        "Consum domèstic per càpita":115.89
+    },
+    {
+        "Any":2022,
+        "Codi comarca":10,
+        "Comarca":"BAIX EMPORDÀ, EL",
+        "Població":138517,
+        "Domèstic xarxa":11071935,
+        "Activitats econòmiques i fonts pròpies":6503559,
+        "Total":17575494,
+        "Consum domèstic per càpita":218.99
+    },
+    {
+        "Any":2022,
+        "Codi comarca":11,
+        "Comarca":"BAIX LLOBREGAT, EL",
+        "Població":833540,
+        "Domèstic xarxa":32609245,
+        "Activitats econòmiques i fonts pròpies":25025849,
+        "Total":57635094,
+        "Consum domèstic per càpita":107.18
+    },
+    {
+        "Any":2022,
+        "Codi comarca":12,
+        "Comarca":"BAIX PENEDÈS, EL",
+        "Població":112460,
+        "Domèstic xarxa":6647116,
+        "Activitats econòmiques i fonts pròpies":2234536,
+        "Total":8881652,
+        "Consum domèstic per càpita":161.94
+    },
+    {
+        "Any":2022,
+        "Codi comarca":13,
+        "Comarca":"BARCELONÈS, EL",
+        "Població":2280042,
+        "Domèstic xarxa":85597398,
+        "Activitats econòmiques i fonts pròpies":41264991,
+        "Total":126862389,
+        "Consum domèstic per càpita":102.85
+    },
+    {
+        "Any":2022,
+        "Codi comarca":14,
+        "Comarca":"BERGUEDÀ, EL",
+        "Població":40279,
+        "Domèstic xarxa":1433782,
+        "Activitats econòmiques i fonts pròpies":1140795,
+        "Total":2574577,
+        "Consum domèstic per càpita":97.52
+    },
+    {
+        "Any":2022,
+        "Codi comarca":15,
+        "Comarca":"CERDANYA, LA",
+        "Població":19443,
+        "Domèstic xarxa":1451755,
+        "Activitats econòmiques i fonts pròpies":2110072,
+        "Total":3561827,
+        "Consum domèstic per càpita":204.57
+    },
+    {
+        "Any":2022,
+        "Codi comarca":16,
+        "Comarca":"CONCA DE BARBERÀ, LA",
+        "Població":20176,
+        "Domèstic xarxa":711946,
+        "Activitats econòmiques i fonts pròpies":695755,
+        "Total":1407701,
+        "Consum domèstic per càpita":96.68
+    },
+    {
+        "Any":2022,
+        "Codi comarca":17,
+        "Comarca":"GARRAF, EL",
+        "Població":156794,
+        "Domèstic xarxa":7822472,
+        "Activitats econòmiques i fonts pròpies":2757978,
+        "Total":10580450,
+        "Consum domèstic per càpita":136.69
+    },
+    {
+        "Any":2022,
+        "Codi comarca":18,
+        "Comarca":"GARRIGUES, LES",
+        "Població":19011,
+        "Domèstic xarxa":689034,
+        "Activitats econòmiques i fonts pròpies":946087,
+        "Total":1635121,
+        "Consum domèstic per càpita":99.3
+    },
+    {
+        "Any":2022,
+        "Codi comarca":19,
+        "Comarca":"GARROTXA, LA",
+        "Població":59750,
+        "Domèstic xarxa":2491915,
+        "Activitats econòmiques i fonts pròpies":4213288,
+        "Total":6705203,
+        "Consum domèstic per càpita":114.26
+    },
+    {
+        "Any":2022,
+        "Codi comarca":20,
+        "Comarca":"GIRONÈS, EL",
+        "Població":198582,
+        "Domèstic xarxa":7673150,
+        "Activitats econòmiques i fonts pròpies":7122798,
+        "Total":14795948,
+        "Consum domèstic per càpita":105.86
+    },
+    {
+        "Any":2022,
+        "Codi comarca":21,
+        "Comarca":"MARESME, EL",
+        "Població":462213,
+        "Domèstic xarxa":21166971,
+        "Activitats econòmiques i fonts pròpies":8985054,
+        "Total":30152025,
+        "Consum domèstic per càpita":125.47
+    },
+    {
+        "Any":2022,
+        "Codi comarca":42,
+        "Comarca":"Moianès",
+        "Població":14428,
+        "Domèstic xarxa":624914,
+        "Activitats econòmiques i fonts pròpies":697786,
+        "Total":1322700,
+        "Consum domèstic per càpita":118.66
+    },
+    {
+        "Any":2022,
+        "Codi comarca":22,
+        "Comarca":"MONTSIÀ, EL",
+        "Població":68744,
+        "Domèstic xarxa":2729045,
+        "Activitats econòmiques i fonts pròpies":1989461,
+        "Total":4718506,
+        "Consum domèstic per càpita":108.76
+    },
+    {
+        "Any":2022,
+        "Codi comarca":23,
+        "Comarca":"NOGUERA, LA",
+        "Població":39297,
+        "Domèstic xarxa":1823230,
+        "Activitats econòmiques i fonts pròpies":1727509,
+        "Total":3550739,
+        "Consum domèstic per càpita":127.11
+    },
+    {
+        "Any":2022,
+        "Codi comarca":24,
+        "Comarca":"OSONA",
+        "Població":165229,
+        "Domèstic xarxa":6516741,
+        "Activitats econòmiques i fonts pròpies":8334893,
+        "Total":14851634,
+        "Consum domèstic per càpita":108.06
+    },
+    {
+        "Any":2022,
+        "Codi comarca":25,
+        "Comarca":"PALLARS JUSSÀ, EL",
+        "Població":13199,
+        "Domèstic xarxa":824651,
+        "Activitats econòmiques i fonts pròpies":248909,
+        "Total":1073560,
+        "Consum domèstic per càpita":171.17
+    },
+    {
+        "Any":2022,
+        "Codi comarca":26,
+        "Comarca":"PALLARS SOBIRÀ, EL",
+        "Població":7181,
+        "Domèstic xarxa":557519,
+        "Activitats econòmiques i fonts pròpies":561193,
+        "Total":1118712,
+        "Consum domèstic per càpita":212.71
+    },
+    {
+        "Any":2022,
+        "Codi comarca":27,
+        "Comarca":"PLA D'URGELL, EL",
+        "Població":37045,
+        "Domèstic xarxa":1626134,
+        "Activitats econòmiques i fonts pròpies":4116660,
+        "Total":5742794,
+        "Consum domèstic per càpita":120.26
+    },
+    {
+        "Any":2022,
+        "Codi comarca":28,
+        "Comarca":"PLA DE L'ESTANY, EL",
+        "Població":32941,
+        "Domèstic xarxa":1409299,
+        "Activitats econòmiques i fonts pròpies":1666188,
+        "Total":3075487,
+        "Consum domèstic per càpita":117.21
+    },
+    {
+        "Any":2022,
+        "Codi comarca":29,
+        "Comarca":"PRIORAT, EL",
+        "Població":9238,
+        "Domèstic xarxa":331682,
+        "Activitats econòmiques i fonts pròpies":139442,
+        "Total":471124,
+        "Consum domèstic per càpita":98.37
+    },
+    {
+        "Any":2022,
+        "Codi comarca":30,
+        "Comarca":"RIBERA D'EBRE, LA",
+        "Població":21920,
+        "Domèstic xarxa":915657,
+        "Activitats econòmiques i fonts pròpies":2471582,
+        "Total":3387239,
+        "Consum domèstic per càpita":114.45
+    },
+    {
+        "Any":2022,
+        "Codi comarca":31,
+        "Comarca":"RIPOLLÈS, EL",
+        "Població":25510,
+        "Domèstic xarxa":1093604,
+        "Activitats econòmiques i fonts pròpies":1311974,
+        "Total":2405578,
+        "Consum domèstic per càpita":117.45
+    },
+    {
+        "Any":2022,
+        "Codi comarca":32,
+        "Comarca":"SEGARRA, LA",
+        "Població":23601,
+        "Domèstic xarxa":922385,
+        "Activitats econòmiques i fonts pròpies":2764766,
+        "Total":3687151,
+        "Consum domèstic per càpita":107.08
+    },
+    {
+        "Any":2022,
+        "Codi comarca":33,
+        "Comarca":"SEGRIÀ, EL",
+        "Població":212388,
+        "Domèstic xarxa":9653328,
+        "Activitats econòmiques i fonts pròpies":8669391,
+        "Total":18322719,
+        "Consum domèstic per càpita":124.52
+    },
+    {
+        "Any":2022,
+        "Codi comarca":34,
+        "Comarca":"SELVA, LA",
+        "Població":177542,
+        "Domèstic xarxa":9089937,
+        "Activitats econòmiques i fonts pròpies":9805519,
+        "Total":18895456,
+        "Consum domèstic per càpita":140.27
+    },
+    {
+        "Any":2022,
+        "Codi comarca":35,
+        "Comarca":"SOLSONÈS, EL",
+        "Població":13632,
+        "Domèstic xarxa":569525,
+        "Activitats econòmiques i fonts pròpies":738564,
+        "Total":1308089,
+        "Consum domèstic per càpita":114.46
+    },
+    {
+        "Any":2022,
+        "Codi comarca":36,
+        "Comarca":"TARRAGONÈS, EL",
+        "Població":263428,
+        "Domèstic xarxa":13236385,
+        "Activitats econòmiques i fonts pròpies":42708805,
+        "Total":55945190,
+        "Consum domèstic per càpita":137.66
+    },
+    {
+        "Any":2022,
+        "Codi comarca":37,
+        "Comarca":"TERRA ALTA",
+        "Població":11408,
+        "Domèstic xarxa":390444,
+        "Activitats econòmiques i fonts pròpies":260990,
+        "Total":651434,
+        "Consum domèstic per càpita":93.77
+    },
+    {
+        "Any":2022,
+        "Codi comarca":38,
+        "Comarca":"URGELL, L'",
+        "Població":37447,
+        "Domèstic xarxa":1556541,
+        "Activitats econòmiques i fonts pròpies":1269562,
+        "Total":2826103,
+        "Consum domèstic per càpita":113.88
+    },
+    {
+        "Any":2022,
+        "Codi comarca":39,
+        "Comarca":"VAL D'ARAN, LA",
+        "Població":10268,
+        "Domèstic xarxa":1397874,
+        "Activitats econòmiques i fonts pròpies":903296,
+        "Total":2301170,
+        "Consum domèstic per càpita":372.98
+    },
+    {
+        "Any":2022,
+        "Codi comarca":40,
+        "Comarca":"VALLÈS OCCIDENTAL, EL",
+        "Població":940881,
+        "Domèstic xarxa":37373574,
+        "Activitats econòmiques i fonts pròpies":22631442,
+        "Total":60005016,
+        "Consum domèstic per càpita":108.83
+    },
+    {
+        "Any":2022,
+        "Codi comarca":41,
+        "Comarca":"VALLÈS ORIENTAL, EL",
+        "Població":417543,
+        "Domèstic xarxa":17225409,
+        "Activitats econòmiques i fonts pròpies":13969890,
+        "Total":31195299,
+        "Consum domèstic per càpita":113.03
+    },
+    {
+        "Any":2021,
+        "Codi comarca":1,
+        "Comarca":"ALT CAMP, L'",
+        "Població":45045,
+        "Domèstic xarxa":1714466,
+        "Activitats econòmiques i fonts pròpies":2915294,
+        "Total":4629760,
+        "Consum domèstic per càpita":104.28
+    },
+    {
+        "Any":2021,
+        "Codi comarca":2,
+        "Comarca":"ALT EMPORDÀ, L'",
+        "Població":143762,
+        "Domèstic xarxa":8595769,
+        "Activitats econòmiques i fonts pròpies":4172993,
+        "Total":12768762,
+        "Consum domèstic per càpita":163.81
+    },
+    {
+        "Any":2021,
+        "Codi comarca":3,
+        "Comarca":"ALT PENEDÈS, L'",
+        "Població":110172,
+        "Domèstic xarxa":4603268,
+        "Activitats econòmiques i fonts pròpies":3011623,
+        "Total":7614891,
+        "Consum domèstic per càpita":114.47
+    },
+    {
+        "Any":2021,
+        "Codi comarca":4,
+        "Comarca":"ALT URGELL, L'",
+        "Població":20453,
+        "Domèstic xarxa":1053239,
+        "Activitats econòmiques i fonts pròpies":1416721,
+        "Total":2469960,
+        "Consum domèstic per càpita":141.08
+    },
+    {
+        "Any":2021,
+        "Codi comarca":5,
+        "Comarca":"ALTA RIBAGORÇA, L'",
+        "Població":3945,
+        "Domèstic xarxa":461015,
+        "Activitats econòmiques i fonts pròpies":201657,
+        "Total":662672,
+        "Consum domèstic per càpita":320.17
+    },
+    {
+        "Any":2021,
+        "Codi comarca":6,
+        "Comarca":"ANOIA, L'",
+        "Població":124112,
+        "Domèstic xarxa":5182118,
+        "Activitats econòmiques i fonts pròpies":6005787,
+        "Total":11187905,
+        "Consum domèstic per càpita":114.39
+    },
+    {
+        "Any":2021,
+        "Codi comarca":7,
+        "Comarca":"BAGES, EL",
+        "Població":180962,
+        "Domèstic xarxa":7609029,
+        "Activitats econòmiques i fonts pròpies":6271304,
+        "Total":13880333,
+        "Consum domèstic per càpita":115.2
+    },
+    {
+        "Any":2021,
+        "Codi comarca":8,
+        "Comarca":"BAIX CAMP, EL",
+        "Població":195098,
+        "Domèstic xarxa":9821710,
+        "Activitats econòmiques i fonts pròpies":5573863,
+        "Total":15395573,
+        "Consum domèstic per càpita":137.92
+    },
+    {
+        "Any":2021,
+        "Codi comarca":9,
+        "Comarca":"BAIX EBRE, EL",
+        "Població":78721,
+        "Domèstic xarxa":3414757,
+        "Activitats econòmiques i fonts pròpies":4655762,
+        "Total":8070519,
+        "Consum domèstic per càpita":118.84
+    },
+    {
+        "Any":2021,
+        "Codi comarca":10,
+        "Comarca":"BAIX EMPORDÀ, EL",
+        "Població":137268,
+        "Domèstic xarxa":10749300,
+        "Activitats econòmiques i fonts pròpies":5741767,
+        "Total":16491067,
+        "Consum domèstic per càpita":214.54
+    },
+    {
+        "Any":2021,
+        "Codi comarca":11,
+        "Comarca":"BAIX LLOBREGAT, EL",
+        "Població":833312,
+        "Domèstic xarxa":34192024,
+        "Activitats econòmiques i fonts pròpies":23162533,
+        "Total":57354557,
+        "Consum domèstic per càpita":112.42
+    },
+    {
+        "Any":2021,
+        "Codi comarca":12,
+        "Comarca":"BAIX PENEDÈS, EL",
+        "Població":110439,
+        "Domèstic xarxa":6804378,
+        "Activitats econòmiques i fonts pròpies":1949171,
+        "Total":8753549,
+        "Consum domèstic per càpita":168.8
+    },
+    {
+        "Any":2021,
+        "Codi comarca":13,
+        "Comarca":"BARCELONÈS, EL",
+        "Població":2280967,
+        "Domèstic xarxa":87617832,
+        "Activitats econòmiques i fonts pròpies":34631711,
+        "Total":122249543,
+        "Consum domèstic per càpita":105.24
+    },
+    {
+        "Any":2021,
+        "Codi comarca":14,
+        "Comarca":"BERGUEDÀ, EL",
+        "Població":40004,
+        "Domèstic xarxa":1504130,
+        "Activitats econòmiques i fonts pròpies":1125173,
+        "Total":2629303,
+        "Consum domèstic per càpita":103.01
+    },
+    {
+        "Any":2021,
+        "Codi comarca":15,
+        "Comarca":"CERDANYA, LA",
+        "Població":19230,
+        "Domèstic xarxa":1412914,
+        "Activitats econòmiques i fonts pròpies":2053735,
+        "Total":3466649,
+        "Consum domèstic per càpita":201.3
+    },
+    {
+        "Any":2021,
+        "Codi comarca":16,
+        "Comarca":"CONCA DE BARBERÀ, LA",
+        "Població":20104,
+        "Domèstic xarxa":741923,
+        "Activitats econòmiques i fonts pròpies":647465,
+        "Total":1389388,
+        "Consum domèstic per càpita":101.11
+    },
+    {
+        "Any":2021,
+        "Codi comarca":17,
+        "Comarca":"GARRAF, EL",
+        "Població":154264,
+        "Domèstic xarxa":7899473,
+        "Activitats econòmiques i fonts pròpies":2482153,
+        "Total":10381626,
+        "Consum domèstic per càpita":140.29
+    },
+    {
+        "Any":2021,
+        "Codi comarca":18,
+        "Comarca":"GARRIGUES, LES",
+        "Població":19010,
+        "Domèstic xarxa":724839,
+        "Activitats econòmiques i fonts pròpies":1031376,
+        "Total":1756215,
+        "Consum domèstic per càpita":104.46
+    },
+    {
+        "Any":2021,
+        "Codi comarca":19,
+        "Comarca":"GARROTXA, LA",
+        "Població":59163,
+        "Domèstic xarxa":2500951,
+        "Activitats econòmiques i fonts pròpies":4075751,
+        "Total":6576702,
+        "Consum domèstic per càpita":115.81
+    },
+    {
+        "Any":2021,
+        "Codi comarca":20,
+        "Comarca":"GIRONÈS, EL",
+        "Població":196768,
+        "Domèstic xarxa":7972533,
+        "Activitats econòmiques i fonts pròpies":7013444,
+        "Total":14985977,
+        "Consum domèstic per càpita":111.01
+    },
+    {
+        "Any":2021,
+        "Codi comarca":21,
+        "Comarca":"MARESME, EL",
+        "Població":459625,
+        "Domèstic xarxa":21500298,
+        "Activitats econòmiques i fonts pròpies":8071578,
+        "Total":29571876,
+        "Consum domèstic per càpita":128.16
+    },
+    {
+        "Any":2021,
+        "Codi comarca":42,
+        "Comarca":"Moianès",
+        "Població":14243,
+        "Domèstic xarxa":675920,
+        "Activitats econòmiques i fonts pròpies":669991,
+        "Total":1345911,
+        "Consum domèstic per càpita":130.02
+    },
+    {
+        "Any":2021,
+        "Codi comarca":22,
+        "Comarca":"MONTSIÀ, EL",
+        "Població":68397,
+        "Domèstic xarxa":2836697,
+        "Activitats econòmiques i fonts pròpies":1935397,
+        "Total":4772094,
+        "Consum domèstic per càpita":113.63
+    },
+    {
+        "Any":2021,
+        "Codi comarca":23,
+        "Comarca":"NOGUERA, LA",
+        "Població":39169,
+        "Domèstic xarxa":1829434,
+        "Activitats econòmiques i fonts pròpies":1705103,
+        "Total":3534537,
+        "Consum domèstic per càpita":127.96
+    },
+    {
+        "Any":2021,
+        "Codi comarca":24,
+        "Comarca":"OSONA",
+        "Població":164077,
+        "Domèstic xarxa":6657825,
+        "Activitats econòmiques i fonts pròpies":8233359,
+        "Total":14891184,
+        "Consum domèstic per càpita":111.17
+    },
+    {
+        "Any":2021,
+        "Codi comarca":25,
+        "Comarca":"PALLARS JUSSÀ, EL",
+        "Població":13170,
+        "Domèstic xarxa":807845,
+        "Activitats econòmiques i fonts pròpies":257622,
+        "Total":1065467,
+        "Consum domèstic per càpita":168.05
+    },
+    {
+        "Any":2021,
+        "Codi comarca":26,
+        "Comarca":"PALLARS SOBIRÀ, EL",
+        "Població":7101,
+        "Domèstic xarxa":569639,
+        "Activitats econòmiques i fonts pròpies":565576,
+        "Total":1135215,
+        "Consum domèstic per càpita":219.78
+    },
+    {
+        "Any":2021,
+        "Codi comarca":27,
+        "Comarca":"PLA D'URGELL, EL",
+        "Població":36769,
+        "Domèstic xarxa":1684890,
+        "Activitats econòmiques i fonts pròpies":4169719,
+        "Total":5854609,
+        "Consum domèstic per càpita":125.54
+    },
+    {
+        "Any":2021,
+        "Codi comarca":28,
+        "Comarca":"PLA DE L'ESTANY, EL",
+        "Població":32876,
+        "Domèstic xarxa":1390103,
+        "Activitats econòmiques i fonts pròpies":1442415,
+        "Total":2832518,
+        "Consum domèstic per càpita":115.84
+    },
+    {
+        "Any":2021,
+        "Codi comarca":29,
+        "Comarca":"PRIORAT, EL",
+        "Població":9239,
+        "Domèstic xarxa":347558,
+        "Activitats econòmiques i fonts pròpies":133327,
+        "Total":480885,
+        "Consum domèstic per càpita":103.06
+    },
+    {
+        "Any":2021,
+        "Codi comarca":30,
+        "Comarca":"RIBERA D'EBRE, LA",
+        "Població":21864,
+        "Domèstic xarxa":997496,
+        "Activitats econòmiques i fonts pròpies":2944806,
+        "Total":3942302,
+        "Consum domèstic per càpita":124.99
+    },
+    {
+        "Any":2021,
+        "Codi comarca":31,
+        "Comarca":"RIPOLLÈS, EL",
+        "Població":25449,
+        "Domèstic xarxa":1131161,
+        "Activitats econòmiques i fonts pròpies":1110032,
+        "Total":2241193,
+        "Consum domèstic per càpita":121.78
+    },
+    {
+        "Any":2021,
+        "Codi comarca":32,
+        "Comarca":"SEGARRA, LA",
+        "Població":23412,
+        "Domèstic xarxa":863188,
+        "Activitats econòmiques i fonts pròpies":2685024,
+        "Total":3548212,
+        "Consum domèstic per càpita":101.01
+    },
+    {
+        "Any":2021,
+        "Codi comarca":33,
+        "Comarca":"SEGRIÀ, EL",
+        "Població":211609,
+        "Domèstic xarxa":9911298,
+        "Activitats econòmiques i fonts pròpies":7487500,
+        "Total":17398798,
+        "Consum domèstic per càpita":128.32
+    },
+    {
+        "Any":2021,
+        "Codi comarca":34,
+        "Comarca":"SELVA, LA",
+        "Població":175702,
+        "Domèstic xarxa":9031113,
+        "Activitats econòmiques i fonts pròpies":8730934,
+        "Total":17762047,
+        "Consum domèstic per càpita":140.82
+    },
+    {
+        "Any":2021,
+        "Codi comarca":35,
+        "Comarca":"SOLSONÈS, EL",
+        "Població":13600,
+        "Domèstic xarxa":568287,
+        "Activitats econòmiques i fonts pròpies":704048,
+        "Total":1272335,
+        "Consum domèstic per càpita":114.48
+    },
+    {
+        "Any":2021,
+        "Codi comarca":36,
+        "Comarca":"TARRAGONÈS, EL",
+        "Població":262001,
+        "Domèstic xarxa":13214891,
+        "Activitats econòmiques i fonts pròpies":40877304,
+        "Total":54092195,
+        "Consum domèstic per càpita":138.19
+    },
+    {
+        "Any":2021,
+        "Codi comarca":37,
+        "Comarca":"TERRA ALTA",
+        "Població":11401,
+        "Domèstic xarxa":408164,
+        "Activitats econòmiques i fonts pròpies":203401,
+        "Total":611565,
+        "Consum domèstic per càpita":98.08
+    },
+    {
+        "Any":2021,
+        "Codi comarca":38,
+        "Comarca":"URGELL, L'",
+        "Població":37276,
+        "Domèstic xarxa":1599319,
+        "Activitats econòmiques i fonts pròpies":1253057,
+        "Total":2852376,
+        "Consum domèstic per càpita":117.55
+    },
+    {
+        "Any":2021,
+        "Codi comarca":39,
+        "Comarca":"VAL D'ARAN, LA",
+        "Població":10372,
+        "Domèstic xarxa":1391774,
+        "Activitats econòmiques i fonts pròpies":928523,
+        "Total":2320297,
+        "Consum domèstic per càpita":367.63
+    },
+    {
+        "Any":2021,
+        "Codi comarca":40,
+        "Comarca":"VALLÈS OCCIDENTAL, EL",
+        "Població":937422,
+        "Domèstic xarxa":38835630,
+        "Activitats econòmiques i fonts pròpies":22448842,
+        "Total":61284472,
+        "Consum domèstic per càpita":113.5
+    },
+    {
+        "Any":2021,
+        "Codi comarca":41,
+        "Comarca":"VALLÈS ORIENTAL, EL",
+        "Població":415789,
+        "Domèstic xarxa":17604767,
+        "Activitats econòmiques i fonts pròpies":13078062,
+        "Total":30682829,
+        "Consum domèstic per càpita":116.0
+    },
+    {
+        "Any":2020,
+        "Codi comarca":1,
+        "Comarca":"ALT CAMP, L'",
+        "Població":44695,
+        "Domèstic xarxa":1739657,
+        "Activitats econòmiques i fonts pròpies":2765098,
+        "Total":4504755,
+        "Consum domèstic per càpita":106.64
+    },
+    {
+        "Any":2020,
+        "Codi comarca":2,
+        "Comarca":"ALT EMPORDÀ, L'",
+        "Població":142624,
+        "Domèstic xarxa":8213884,
+        "Activitats econòmiques i fonts pròpies":3763326,
+        "Total":11977210,
+        "Consum domèstic per càpita":157.78
+    },
+    {
+        "Any":2020,
+        "Codi comarca":3,
+        "Comarca":"ALT PENEDÈS, L'",
+        "Població":109606,
+        "Domèstic xarxa":4631724,
+        "Activitats econòmiques i fonts pròpies":2826014,
+        "Total":7457738,
+        "Consum domèstic per càpita":115.78
+    },
+    {
+        "Any":2020,
+        "Codi comarca":4,
+        "Comarca":"ALT URGELL, L'",
+        "Població":20231,
+        "Domèstic xarxa":998866,
+        "Activitats econòmiques i fonts pròpies":1246176,
+        "Total":2245042,
+        "Consum domèstic per càpita":135.27
+    },
+    {
+        "Any":2020,
+        "Codi comarca":5,
+        "Comarca":"ALTA RIBAGORÇA, L'",
+        "Població":3825,
+        "Domèstic xarxa":462235,
+        "Activitats econòmiques i fonts pròpies":328691,
+        "Total":790926,
+        "Consum domèstic per càpita":331.08
+    },
+    {
+        "Any":2020,
+        "Codi comarca":6,
+        "Comarca":"ANOIA, L'",
+        "Població":123024,
+        "Domèstic xarxa":5237834,
+        "Activitats econòmiques i fonts pròpies":5737053,
+        "Total":10974887,
+        "Consum domèstic per càpita":116.65
+    },
+    {
+        "Any":2020,
+        "Codi comarca":7,
+        "Comarca":"BAGES, EL",
+        "Població":180575,
+        "Domèstic xarxa":7693992,
+        "Activitats econòmiques i fonts pròpies":5930717,
+        "Total":13624709,
+        "Consum domèstic per càpita":116.74
+    },
+    {
+        "Any":2020,
+        "Codi comarca":8,
+        "Comarca":"BAIX CAMP, EL",
+        "Població":194127,
+        "Domèstic xarxa":9818470,
+        "Activitats econòmiques i fonts pròpies":5103559,
+        "Total":14922029,
+        "Consum domèstic per càpita":138.57
+    },
+    {
+        "Any":2020,
+        "Codi comarca":9,
+        "Comarca":"BAIX EBRE, EL",
+        "Població":78011,
+        "Domèstic xarxa":3503009,
+        "Activitats econòmiques i fonts pròpies":4246346,
+        "Total":7749355,
+        "Consum domèstic per càpita":123.02
+    },
+    {
+        "Any":2020,
+        "Codi comarca":10,
+        "Comarca":"BAIX EMPORDÀ, EL",
+        "Població":135805,
+        "Domèstic xarxa":10258046,
+        "Activitats econòmiques i fonts pròpies":5056592,
+        "Total":15314638,
+        "Consum domèstic per càpita":206.95
+    },
+    {
+        "Any":2020,
+        "Codi comarca":11,
+        "Comarca":"BAIX LLOBREGAT, EL",
+        "Població":834653,
+        "Domèstic xarxa":34819985,
+        "Activitats econòmiques i fonts pròpies":22181562,
+        "Total":57001547,
+        "Consum domèstic per càpita":114.3
+    },
+    {
+        "Any":2020,
+        "Codi comarca":12,
+        "Comarca":"BAIX PENEDÈS, EL",
+        "Població":107803,
+        "Domèstic xarxa":6546748,
+        "Activitats econòmiques i fonts pròpies":1836060,
+        "Total":8382808,
+        "Consum domèstic per càpita":166.38
+    },
+    {
+        "Any":2020,
+        "Codi comarca":13,
+        "Comarca":"BARCELONÈS, EL",
+        "Població":2314620,
+        "Domèstic xarxa":93135769,
+        "Activitats econòmiques i fonts pròpies":33065103,
+        "Total":126200872,
+        "Consum domèstic per càpita":110.24
+    },
+    {
+        "Any":2020,
+        "Codi comarca":14,
+        "Comarca":"BERGUEDÀ, EL",
+        "Població":39980,
+        "Domèstic xarxa":1492692,
+        "Activitats econòmiques i fonts pròpies":1101383,
+        "Total":2594075,
+        "Consum domèstic per càpita":102.29
+    },
+    {
+        "Any":2020,
+        "Codi comarca":15,
+        "Comarca":"CERDANYA, LA",
+        "Població":18525,
+        "Domèstic xarxa":1460081,
+        "Activitats econòmiques i fonts pròpies":1715563,
+        "Total":3175644,
+        "Consum domèstic per càpita":215.94
+    },
+    {
+        "Any":2020,
+        "Codi comarca":16,
+        "Comarca":"CONCA DE BARBERÀ, LA",
+        "Població":19947,
+        "Domèstic xarxa":794102,
+        "Activitats econòmiques i fonts pròpies":544995,
+        "Total":1339097,
+        "Consum domèstic per càpita":109.07
+    },
+    {
+        "Any":2020,
+        "Codi comarca":17,
+        "Comarca":"GARRAF, EL",
+        "Població":152801,
+        "Domèstic xarxa":7890729,
+        "Activitats econòmiques i fonts pròpies":2265947,
+        "Total":10156676,
+        "Consum domèstic per càpita":141.48
+    },
+    {
+        "Any":2020,
+        "Codi comarca":18,
+        "Comarca":"GARRIGUES, LES",
+        "Població":18873,
+        "Domèstic xarxa":762027,
+        "Activitats econòmiques i fonts pròpies":807156,
+        "Total":1569183,
+        "Consum domèstic per càpita":110.62
+    },
+    {
+        "Any":2020,
+        "Codi comarca":19,
+        "Comarca":"GARROTXA, LA",
+        "Població":58620,
+        "Domèstic xarxa":2575160,
+        "Activitats econòmiques i fonts pròpies":3741090,
+        "Total":6316250,
+        "Consum domèstic per càpita":120.36
+    },
+    {
+        "Any":2020,
+        "Codi comarca":20,
+        "Comarca":"GIRONÈS, EL",
+        "Població":197104,
+        "Domèstic xarxa":7923915,
+        "Activitats econòmiques i fonts pròpies":6691534,
+        "Total":14615449,
+        "Consum domèstic per càpita":110.14
+    },
+    {
+        "Any":2020,
+        "Codi comarca":21,
+        "Comarca":"MARESME, EL",
+        "Població":458626,
+        "Domèstic xarxa":22190829,
+        "Activitats econòmiques i fonts pròpies":7576607,
+        "Total":29767436,
+        "Consum domèstic per càpita":132.56
+    },
+    {
+        "Any":2020,
+        "Codi comarca":42,
+        "Comarca":"Moianès",
+        "Població":13919,
+        "Domèstic xarxa":658508,
+        "Activitats econòmiques i fonts pròpies":553520,
+        "Total":1212028,
+        "Consum domèstic per càpita":129.62
+    },
+    {
+        "Any":2020,
+        "Codi comarca":22,
+        "Comarca":"MONTSIÀ, EL",
+        "Població":68263,
+        "Domèstic xarxa":2863081,
+        "Activitats econòmiques i fonts pròpies":1865926,
+        "Total":4729007,
+        "Consum domèstic per càpita":114.91
+    },
+    {
+        "Any":2020,
+        "Codi comarca":23,
+        "Comarca":"NOGUERA, LA",
+        "Població":39132,
+        "Domèstic xarxa":1812182,
+        "Activitats econòmiques i fonts pròpies":1682269,
+        "Total":3494451,
+        "Consum domèstic per càpita":126.88
+    },
+    {
+        "Any":2020,
+        "Codi comarca":24,
+        "Comarca":"OSONA",
+        "Població":163702,
+        "Domèstic xarxa":6757954,
+        "Activitats econòmiques i fonts pròpies":7920903,
+        "Total":14678857,
+        "Consum domèstic per càpita":113.1
+    },
+    {
+        "Any":2020,
+        "Codi comarca":25,
+        "Comarca":"PALLARS JUSSÀ, EL",
+        "Població":13227,
+        "Domèstic xarxa":800873,
+        "Activitats econòmiques i fonts pròpies":253477,
+        "Total":1054350,
+        "Consum domèstic per càpita":165.89
+    },
+    {
+        "Any":2020,
+        "Codi comarca":26,
+        "Comarca":"PALLARS SOBIRÀ, EL",
+        "Població":6930,
+        "Domèstic xarxa":561646,
+        "Activitats econòmiques i fonts pròpies":556285,
+        "Total":1117931,
+        "Consum domèstic per càpita":222.04
+    },
+    {
+        "Any":2020,
+        "Codi comarca":27,
+        "Comarca":"PLA D'URGELL, EL",
+        "Població":36737,
+        "Domèstic xarxa":1659413,
+        "Activitats econòmiques i fonts pròpies":4335065,
+        "Total":5994478,
+        "Consum domèstic per càpita":123.75
+    },
+    {
+        "Any":2020,
+        "Codi comarca":28,
+        "Comarca":"PLA DE L'ESTANY, EL",
+        "Població":32637,
+        "Domèstic xarxa":1424715,
+        "Activitats econòmiques i fonts pròpies":1448611,
+        "Total":2873326,
+        "Consum domèstic per càpita":119.6
+    },
+    {
+        "Any":2020,
+        "Codi comarca":29,
+        "Comarca":"PRIORAT, EL",
+        "Població":9160,
+        "Domèstic xarxa":346877,
+        "Activitats econòmiques i fonts pròpies":117637,
+        "Total":464514,
+        "Consum domèstic per càpita":103.75
+    },
+    {
+        "Any":2020,
+        "Codi comarca":30,
+        "Comarca":"RIBERA D'EBRE, LA",
+        "Població":21870,
+        "Domèstic xarxa":1036795,
+        "Activitats econòmiques i fonts pròpies":2989309,
+        "Total":4026104,
+        "Consum domèstic per càpita":129.88
+    },
+    {
+        "Any":2020,
+        "Codi comarca":31,
+        "Comarca":"RIPOLLÈS, EL",
+        "Població":25253,
+        "Domèstic xarxa":1134721,
+        "Activitats econòmiques i fonts pròpies":1254046,
+        "Total":2388767,
+        "Consum domèstic per càpita":123.11
+    },
+    {
+        "Any":2020,
+        "Codi comarca":32,
+        "Comarca":"SEGARRA, LA",
+        "Població":23318,
+        "Domèstic xarxa":898650,
+        "Activitats econòmiques i fonts pròpies":2678326,
+        "Total":3576976,
+        "Consum domèstic per càpita":105.59
+    },
+    {
+        "Any":2020,
+        "Codi comarca":33,
+        "Comarca":"SEGRIÀ, EL",
+        "Població":211840,
+        "Domèstic xarxa":10019032,
+        "Activitats econòmiques i fonts pròpies":6632310,
+        "Total":16651342,
+        "Consum domèstic per càpita":129.58
+    },
+    {
+        "Any":2020,
+        "Codi comarca":34,
+        "Comarca":"SELVA, LA",
+        "Població":174638,
+        "Domèstic xarxa":8931510,
+        "Activitats econòmiques i fonts pròpies":8250191,
+        "Total":17181701,
+        "Consum domèstic per càpita":140.12
+    },
+    {
+        "Any":2020,
+        "Codi comarca":35,
+        "Comarca":"SOLSONÈS, EL",
+        "Població":13513,
+        "Domèstic xarxa":569634,
+        "Activitats econòmiques i fonts pròpies":652031,
+        "Total":1221665,
+        "Consum domèstic per càpita":115.49
+    },
+    {
+        "Any":2020,
+        "Codi comarca":36,
+        "Comarca":"TARRAGONÈS, EL",
+        "Població":261466,
+        "Domèstic xarxa":13389748,
+        "Activitats econòmiques i fonts pròpies":39046280,
+        "Total":52436028,
+        "Consum domèstic per càpita":140.3
+    },
+    {
+        "Any":2020,
+        "Codi comarca":37,
+        "Comarca":"TERRA ALTA",
+        "Població":11430,
+        "Domèstic xarxa":406509,
+        "Activitats econòmiques i fonts pròpies":171624,
+        "Total":578133,
+        "Consum domèstic per càpita":97.44
+    },
+    {
+        "Any":2020,
+        "Codi comarca":38,
+        "Comarca":"URGELL, L'",
+        "Població":37116,
+        "Domèstic xarxa":1580925,
+        "Activitats econòmiques i fonts pròpies":1083843,
+        "Total":2664768,
+        "Consum domèstic per càpita":116.7
+    },
+    {
+        "Any":2020,
+        "Codi comarca":39,
+        "Comarca":"VAL D'ARAN, LA",
+        "Població":10175,
+        "Domèstic xarxa":1404434,
+        "Activitats econòmiques i fonts pròpies":1047640,
+        "Total":2452074,
+        "Consum domèstic per càpita":378.16
+    },
+    {
+        "Any":2020,
+        "Codi comarca":40,
+        "Comarca":"VALLÈS OCCIDENTAL, EL",
+        "Població":937508,
+        "Domèstic xarxa":39046670,
+        "Activitats econòmiques i fonts pròpies":20716508,
+        "Total":59763178,
+        "Consum domèstic per càpita":114.11
+    },
+    {
+        "Any":2020,
+        "Codi comarca":41,
+        "Comarca":"VALLÈS ORIENTAL, EL",
+        "Població":414570,
+        "Domèstic xarxa":17721156,
+        "Activitats econòmiques i fonts pròpies":12327372,
+        "Total":30048528,
+        "Consum domèstic per càpita":117.11
+    },
+    {
+        "Any":2019,
+        "Codi comarca":1,
+        "Comarca":"ALT CAMP, L'",
+        "Població":44296,
+        "Domèstic xarxa":1655537,
+        "Activitats econòmiques i fonts pròpies":3028257,
+        "Total":4683794,
+        "Consum domèstic per càpita":102.4
+    },
+    {
+        "Any":2019,
+        "Codi comarca":2,
+        "Comarca":"ALT EMPORDÀ, L'",
+        "Població":141339,
+        "Domèstic xarxa":8391792,
+        "Activitats econòmiques i fonts pròpies":4771602,
+        "Total":13163394,
+        "Consum domèstic per càpita":162.67
+    },
+    {
+        "Any":2019,
+        "Codi comarca":3,
+        "Comarca":"ALT PENEDÈS, L'",
+        "Població":108411,
+        "Domèstic xarxa":4296388,
+        "Activitats econòmiques i fonts pròpies":2914930,
+        "Total":7211318,
+        "Consum domèstic per càpita":108.58
+    },
+    {
+        "Any":2019,
+        "Codi comarca":4,
+        "Comarca":"ALT URGELL, L'",
+        "Població":20177,
+        "Domèstic xarxa":972254,
+        "Activitats econòmiques i fonts pròpies":1452242,
+        "Total":2424496,
+        "Consum domèstic per càpita":132.02
+    },
+    {
+        "Any":2019,
+        "Codi comarca":5,
+        "Comarca":"ALTA RIBAGORÇA, L'",
+        "Població":3802,
+        "Domèstic xarxa":489029,
+        "Activitats econòmiques i fonts pròpies":202942,
+        "Total":691971,
+        "Consum domèstic per càpita":352.39
+    },
+    {
+        "Any":2019,
+        "Codi comarca":6,
+        "Comarca":"ANOIA, L'",
+        "Població":120738,
+        "Domèstic xarxa":4996187,
+        "Activitats econòmiques i fonts pròpies":6271896,
+        "Total":11268083,
+        "Consum domèstic per càpita":113.37
+    },
+    {
+        "Any":2019,
+        "Codi comarca":7,
+        "Comarca":"BAGES, EL",
+        "Població":178885,
+        "Domèstic xarxa":7213340,
+        "Activitats econòmiques i fonts pròpies":7105346,
+        "Total":14318686,
+        "Consum domèstic per càpita":110.48
+    },
+    {
+        "Any":2019,
+        "Codi comarca":8,
+        "Comarca":"BAIX CAMP, EL",
+        "Població":190973,
+        "Domèstic xarxa":9581608,
+        "Activitats econòmiques i fonts pròpies":6032268,
+        "Total":15613876,
+        "Consum domèstic per càpita":137.46
+    },
+    {
+        "Any":2019,
+        "Codi comarca":9,
+        "Comarca":"BAIX EBRE, EL",
+        "Població":77596,
+        "Domèstic xarxa":3421105,
+        "Activitats econòmiques i fonts pròpies":4488740,
+        "Total":7909845,
+        "Consum domèstic per càpita":120.79
+    },
+    {
+        "Any":2019,
+        "Codi comarca":10,
+        "Comarca":"BAIX EMPORDÀ, EL",
+        "Població":134359,
+        "Domèstic xarxa":10562167,
+        "Activitats econòmiques i fonts pròpies":6305271,
+        "Total":16867438,
+        "Consum domèstic per càpita":215.37
+    },
+    {
+        "Any":2019,
+        "Codi comarca":11,
+        "Comarca":"BAIX LLOBREGAT, EL",
+        "Població":825963,
+        "Domèstic xarxa":32332690,
+        "Activitats econòmiques i fonts pròpies":25263950,
+        "Total":57596640,
+        "Consum domèstic per càpita":107.25
+    },
+    {
+        "Any":2019,
+        "Codi comarca":12,
+        "Comarca":"BAIX PENEDÈS, EL",
+        "Població":104991,
+        "Domèstic xarxa":6395692,
+        "Activitats econòmiques i fonts pròpies":2290546,
+        "Total":8686238,
+        "Consum domèstic per càpita":166.89
+    },
+    {
+        "Any":2019,
+        "Codi comarca":13,
+        "Comarca":"BARCELONÈS, EL",
+        "Població":2278437,
+        "Domèstic xarxa":86987695,
+        "Activitats econòmiques i fonts pròpies":41704636,
+        "Total":128692331,
+        "Consum domèstic per càpita":104.6
+    },
+    {
+        "Any":2019,
+        "Codi comarca":14,
+        "Comarca":"BERGUEDÀ, EL",
+        "Població":39446,
+        "Domèstic xarxa":1389347,
+        "Activitats econòmiques i fonts pròpies":904665,
+        "Total":2294012,
+        "Consum domèstic per càpita":96.5
+    },
+    {
+        "Any":2019,
+        "Codi comarca":15,
+        "Comarca":"CERDANYA, LA",
+        "Població":18192,
+        "Domèstic xarxa":1432411,
+        "Activitats econòmiques i fonts pròpies":2100446,
+        "Total":3532857,
+        "Consum domèstic per càpita":215.72
+    },
+    {
+        "Any":2019,
+        "Codi comarca":16,
+        "Comarca":"CONCA DE BARBERÀ, LA",
+        "Població":20042,
+        "Domèstic xarxa":739076,
+        "Activitats econòmiques i fonts pròpies":627320,
+        "Total":1366396,
+        "Consum domèstic per càpita":101.03
+    },
+    {
+        "Any":2019,
+        "Codi comarca":17,
+        "Comarca":"GARRAF, EL",
+        "Població":150887,
+        "Domèstic xarxa":7468438,
+        "Activitats econòmiques i fonts pròpies":2772171,
+        "Total":10240609,
+        "Consum domèstic per càpita":135.61
+    },
+    {
+        "Any":2019,
+        "Codi comarca":18,
+        "Comarca":"GARRIGUES, LES",
+        "Població":18833,
+        "Domèstic xarxa":717759,
+        "Activitats econòmiques i fonts pròpies":774444,
+        "Total":1492203,
+        "Consum domèstic per càpita":104.42
+    },
+    {
+        "Any":2019,
+        "Codi comarca":19,
+        "Comarca":"GARROTXA, LA",
+        "Població":57590,
+        "Domèstic xarxa":2370404,
+        "Activitats econòmiques i fonts pròpies":4045001,
+        "Total":6415405,
+        "Consum domèstic per càpita":112.77
+    },
+    {
+        "Any":2019,
+        "Codi comarca":20,
+        "Comarca":"GIRONÈS, EL",
+        "Població":193908,
+        "Domèstic xarxa":7377732,
+        "Activitats econòmiques i fonts pròpies":10334108,
+        "Total":17711840,
+        "Consum domèstic per càpita":104.24
+    },
+    {
+        "Any":2019,
+        "Codi comarca":21,
+        "Comarca":"MARESME, EL",
+        "Població":452690,
+        "Domèstic xarxa":20732267,
+        "Activitats econòmiques i fonts pròpies":9563185,
+        "Total":30295452,
+        "Consum domèstic per càpita":125.47
+    },
+    {
+        "Any":2019,
+        "Codi comarca":42,
+        "Comarca":"Moianès",
+        "Població":13603,
+        "Domèstic xarxa":622573,
+        "Activitats econòmiques i fonts pròpies":582437,
+        "Total":1205010,
+        "Consum domèstic per càpita":125.39
+    },
+    {
+        "Any":2019,
+        "Codi comarca":22,
+        "Comarca":"MONTSIÀ, EL",
+        "Població":67436,
+        "Domèstic xarxa":2764996,
+        "Activitats econòmiques i fonts pròpies":2005323,
+        "Total":4770319,
+        "Consum domèstic per càpita":112.33
+    },
+    {
+        "Any":2019,
+        "Codi comarca":23,
+        "Comarca":"NOGUERA, LA",
+        "Població":38770,
+        "Domèstic xarxa":1713459,
+        "Activitats econòmiques i fonts pròpies":1702308,
+        "Total":3415767,
+        "Consum domèstic per càpita":121.08
+    },
+    {
+        "Any":2019,
+        "Codi comarca":24,
+        "Comarca":"OSONA",
+        "Població":160821,
+        "Domèstic xarxa":6259962,
+        "Activitats econòmiques i fonts pròpies":8657380,
+        "Total":14917342,
+        "Consum domèstic per càpita":106.64
+    },
+    {
+        "Any":2019,
+        "Codi comarca":25,
+        "Comarca":"PALLARS JUSSÀ, EL",
+        "Població":13080,
+        "Domèstic xarxa":799413,
+        "Activitats econòmiques i fonts pròpies":311119,
+        "Total":1110532,
+        "Consum domèstic per càpita":167.44
+    },
+    {
+        "Any":2019,
+        "Codi comarca":26,
+        "Comarca":"PALLARS SOBIRÀ, EL",
+        "Població":6932,
+        "Domèstic xarxa":564191,
+        "Activitats econòmiques i fonts pròpies":584129,
+        "Total":1148320,
+        "Consum domèstic per càpita":222.98
+    },
+    {
+        "Any":2019,
+        "Codi comarca":27,
+        "Comarca":"PLA D'URGELL, EL",
+        "Població":36693,
+        "Domèstic xarxa":1629247,
+        "Activitats econòmiques i fonts pròpies":4523152,
+        "Total":6152399,
+        "Consum domèstic per càpita":121.65
+    },
+    {
+        "Any":2019,
+        "Codi comarca":28,
+        "Comarca":"PLA DE L'ESTANY, EL",
+        "Població":32293,
+        "Domèstic xarxa":1374736,
+        "Activitats econòmiques i fonts pròpies":1430923,
+        "Total":2805659,
+        "Consum domèstic per càpita":116.63
+    },
+    {
+        "Any":2019,
+        "Codi comarca":29,
+        "Comarca":"PRIORAT, EL",
+        "Població":9245,
+        "Domèstic xarxa":337421,
+        "Activitats econòmiques i fonts pròpies":132262,
+        "Total":469683,
+        "Consum domèstic per càpita":99.99
+    },
+    {
+        "Any":2019,
+        "Codi comarca":30,
+        "Comarca":"RIBERA D'EBRE, LA",
+        "Població":21865,
+        "Domèstic xarxa":947642,
+        "Activitats econòmiques i fonts pròpies":3457939,
+        "Total":4405581,
+        "Consum domèstic per càpita":118.74
+    },
+    {
+        "Any":2019,
+        "Codi comarca":31,
+        "Comarca":"RIPOLLÈS, EL",
+        "Població":25087,
+        "Domèstic xarxa":1077632,
+        "Activitats econòmiques i fonts pròpies":1458292,
+        "Total":2535924,
+        "Consum domèstic per càpita":117.69
+    },
+    {
+        "Any":2019,
+        "Codi comarca":32,
+        "Comarca":"SEGARRA, LA",
+        "Població":23052,
+        "Domèstic xarxa":829654,
+        "Activitats econòmiques i fonts pròpies":2295241,
+        "Total":3124895,
+        "Consum domèstic per càpita":98.6
+    },
+    {
+        "Any":2019,
+        "Codi comarca":33,
+        "Comarca":"SEGRIÀ, EL",
+        "Població":209818,
+        "Domèstic xarxa":9379184,
+        "Activitats econòmiques i fonts pròpies":7903289,
+        "Total":17282473,
+        "Consum domèstic per càpita":122.47
+    },
+    {
+        "Any":2019,
+        "Codi comarca":34,
+        "Comarca":"SELVA, LA",
+        "Població":171617,
+        "Domèstic xarxa":8860789,
+        "Activitats econòmiques i fonts pròpies":10192204,
+        "Total":19052993,
+        "Consum domèstic per càpita":141.46
+    },
+    {
+        "Any":2019,
+        "Codi comarca":35,
+        "Comarca":"SOLSONÈS, EL",
+        "Població":13469,
+        "Domèstic xarxa":570274,
+        "Activitats econòmiques i fonts pròpies":571207,
+        "Total":1141481,
+        "Consum domèstic per càpita":116.0
+    },
+    {
+        "Any":2019,
+        "Codi comarca":36,
+        "Comarca":"TARRAGONÈS, EL",
+        "Població":256730,
+        "Domèstic xarxa":12983069,
+        "Activitats econòmiques i fonts pròpies":44208846,
+        "Total":57191915,
+        "Consum domèstic per càpita":138.55
+    },
+    {
+        "Any":2019,
+        "Codi comarca":37,
+        "Comarca":"TERRA ALTA",
+        "Població":11490,
+        "Domèstic xarxa":404546,
+        "Activitats econòmiques i fonts pròpies":264548,
+        "Total":669094,
+        "Consum domèstic per càpita":96.46
+    },
+    {
+        "Any":2019,
+        "Codi comarca":38,
+        "Comarca":"URGELL, L'",
+        "Població":36693,
+        "Domèstic xarxa":1453491,
+        "Activitats econòmiques i fonts pròpies":1169112,
+        "Total":2622603,
+        "Consum domèstic per càpita":108.53
+    },
+    {
+        "Any":2019,
+        "Codi comarca":39,
+        "Comarca":"VAL D'ARAN, LA",
+        "Població":10093,
+        "Domèstic xarxa":1392780,
+        "Activitats econòmiques i fonts pròpies":1177299,
+        "Total":2570079,
+        "Consum domèstic per càpita":378.07
+    },
+    {
+        "Any":2019,
+        "Codi comarca":40,
+        "Comarca":"VALLÈS OCCIDENTAL, EL",
+        "Població":925237,
+        "Domèstic xarxa":36467861,
+        "Activitats econòmiques i fonts pròpies":24083867,
+        "Total":60551728,
+        "Consum domèstic per càpita":107.99
+    },
+    {
+        "Any":2019,
+        "Codi comarca":41,
+        "Comarca":"VALLÈS ORIENTAL, EL",
+        "Població":409638,
+        "Domèstic xarxa":16648383,
+        "Activitats econòmiques i fonts pròpies":13516403,
+        "Total":30164786,
+        "Consum domèstic per càpita":111.35
+    },
+    {
+        "Any":2018,
+        "Codi comarca":1,
+        "Comarca":"ALT CAMP, L'",
+        "Població":44065,
+        "Domèstic xarxa":1641853,
+        "Activitats econòmiques i fonts pròpies":2890538,
+        "Total":4532391,
+        "Consum domèstic per càpita":102.08
+    },
+    {
+        "Any":2018,
+        "Codi comarca":2,
+        "Comarca":"ALT EMPORDÀ, L'",
+        "Població":140569,
+        "Domèstic xarxa":8160164,
+        "Activitats econòmiques i fonts pròpies":4663173,
+        "Total":12823337,
+        "Consum domèstic per càpita":159.04
+    },
+    {
+        "Any":2018,
+        "Codi comarca":3,
+        "Comarca":"ALT PENEDÈS, L'",
+        "Població":108122,
+        "Domèstic xarxa":4177903,
+        "Activitats econòmiques i fonts pròpies":3068538,
+        "Total":7246441,
+        "Consum domèstic per càpita":105.86
+    },
+    {
+        "Any":2018,
+        "Codi comarca":4,
+        "Comarca":"ALT URGELL, L'",
+        "Població":20224,
+        "Domèstic xarxa":922281,
+        "Activitats econòmiques i fonts pròpies":1389153,
+        "Total":2311434,
+        "Consum domèstic per càpita":124.94
+    },
+    {
+        "Any":2018,
+        "Codi comarca":5,
+        "Comarca":"ALTA RIBAGORÇA, L'",
+        "Població":3774,
+        "Domèstic xarxa":493426,
+        "Activitats econòmiques i fonts pròpies":154114,
+        "Total":647540,
+        "Consum domèstic per càpita":358.2
+    },
+    {
+        "Any":2018,
+        "Codi comarca":6,
+        "Comarca":"ANOIA, L'",
+        "Població":119089,
+        "Domèstic xarxa":4731908,
+        "Activitats econòmiques i fonts pròpies":6240631,
+        "Total":10972539,
+        "Consum domèstic per càpita":108.86
+    },
+    {
+        "Any":2018,
+        "Codi comarca":7,
+        "Comarca":"BAGES, EL",
+        "Població":176485,
+        "Domèstic xarxa":6995011,
+        "Activitats econòmiques i fonts pròpies":7221037,
+        "Total":14216048,
+        "Consum domèstic per càpita":108.59
+    },
+    {
+        "Any":2018,
+        "Codi comarca":8,
+        "Comarca":"BAIX CAMP, EL",
+        "Població":188841,
+        "Domèstic xarxa":9616130,
+        "Activitats econòmiques i fonts pròpies":6202185,
+        "Total":15818315,
+        "Consum domèstic per càpita":139.51
+    },
+    {
+        "Any":2018,
+        "Codi comarca":9,
+        "Comarca":"BAIX EBRE, EL",
+        "Població":77868,
+        "Domèstic xarxa":3364471,
+        "Activitats econòmiques i fonts pròpies":4368212,
+        "Total":7732683,
+        "Consum domèstic per càpita":118.38
+    },
+    {
+        "Any":2018,
+        "Codi comarca":10,
+        "Comarca":"BAIX EMPORDÀ, EL",
+        "Població":133461,
+        "Domèstic xarxa":10086083,
+        "Activitats econòmiques i fonts pròpies":5859640,
+        "Total":15945723,
+        "Consum domèstic per càpita":207.05
+    },
+    {
+        "Any":2018,
+        "Codi comarca":11,
+        "Comarca":"BAIX LLOBREGAT, EL",
+        "Població":819168,
+        "Domèstic xarxa":31921843,
+        "Activitats econòmiques i fonts pròpies":25106252,
+        "Total":57028095,
+        "Consum domèstic per càpita":106.76
+    },
+    {
+        "Any":2018,
+        "Codi comarca":12,
+        "Comarca":"BAIX PENEDÈS, EL",
+        "Població":102409,
+        "Domèstic xarxa":6029014,
+        "Activitats econòmiques i fonts pròpies":2232000,
+        "Total":8261014,
+        "Consum domèstic per càpita":161.29
+    },
+    {
+        "Any":2018,
+        "Codi comarca":13,
+        "Comarca":"BARCELONÈS, EL",
+        "Població":2254642,
+        "Domèstic xarxa":86957071,
+        "Activitats econòmiques i fonts pròpies":42937375,
+        "Total":129894446,
+        "Consum domèstic per càpita":105.67
+    },
+    {
+        "Any":2018,
+        "Codi comarca":14,
+        "Comarca":"BERGUEDÀ, EL",
+        "Població":39104,
+        "Domèstic xarxa":1345471,
+        "Activitats econòmiques i fonts pròpies":806894,
+        "Total":2152365,
+        "Consum domèstic per càpita":94.27
+    },
+    {
+        "Any":2018,
+        "Codi comarca":15,
+        "Comarca":"CERDANYA, LA",
+        "Població":17882,
+        "Domèstic xarxa":1378190,
+        "Activitats econòmiques i fonts pròpies":1698063,
+        "Total":3076253,
+        "Consum domèstic per càpita":211.15
+    },
+    {
+        "Any":2018,
+        "Codi comarca":16,
+        "Comarca":"CONCA DE BARBERÀ, LA",
+        "Població":20103,
+        "Domèstic xarxa":740253,
+        "Activitats econòmiques i fonts pròpies":573841,
+        "Total":1314094,
+        "Consum domèstic per càpita":100.88
+    },
+    {
+        "Any":2018,
+        "Codi comarca":17,
+        "Comarca":"GARRAF, EL",
+        "Població":149103,
+        "Domèstic xarxa":7418408,
+        "Activitats econòmiques i fonts pròpies":2814563,
+        "Total":10232971,
+        "Consum domèstic per càpita":136.31
+    },
+    {
+        "Any":2018,
+        "Codi comarca":18,
+        "Comarca":"GARRIGUES, LES",
+        "Població":18771,
+        "Domèstic xarxa":711204,
+        "Activitats econòmiques i fonts pròpies":935711,
+        "Total":1646915,
+        "Consum domèstic per càpita":103.8
+    },
+    {
+        "Any":2018,
+        "Codi comarca":19,
+        "Comarca":"GARROTXA, LA",
+        "Població":56613,
+        "Domèstic xarxa":2260986,
+        "Activitats econòmiques i fonts pròpies":4005932,
+        "Total":6266918,
+        "Consum domèstic per càpita":109.42
+    },
+    {
+        "Any":2018,
+        "Codi comarca":20,
+        "Comarca":"GIRONÈS, EL",
+        "Població":190786,
+        "Domèstic xarxa":7184902,
+        "Activitats econòmiques i fonts pròpies":10036228,
+        "Total":17221130,
+        "Consum domèstic per càpita":103.18
+    },
+    {
+        "Any":2018,
+        "Codi comarca":21,
+        "Comarca":"MARESME, EL",
+        "Població":447824,
+        "Domèstic xarxa":20343948,
+        "Activitats econòmiques i fonts pròpies":9385652,
+        "Total":29729600,
+        "Consum domèstic per càpita":124.46
+    },
+    {
+        "Any":2018,
+        "Codi comarca":42,
+        "Comarca":"Moianès",
+        "Població":13432,
+        "Domèstic xarxa":581316,
+        "Activitats econòmiques i fonts pròpies":525638,
+        "Total":1106954,
+        "Consum domèstic per càpita":118.57
+    },
+    {
+        "Any":2018,
+        "Codi comarca":22,
+        "Comarca":"MONTSIÀ, EL",
+        "Població":67083,
+        "Domèstic xarxa":2718691,
+        "Activitats econòmiques i fonts pròpies":1953754,
+        "Total":4672445,
+        "Consum domèstic per càpita":111.03
+    },
+    {
+        "Any":2018,
+        "Codi comarca":23,
+        "Comarca":"NOGUERA, LA",
+        "Població":38708,
+        "Domèstic xarxa":1667529,
+        "Activitats econòmiques i fonts pròpies":1730996,
+        "Total":3398525,
+        "Consum domèstic per càpita":118.03
+    },
+    {
+        "Any":2018,
+        "Codi comarca":24,
+        "Comarca":"OSONA",
+        "Població":158334,
+        "Domèstic xarxa":6006017,
+        "Activitats econòmiques i fonts pròpies":8455751,
+        "Total":14461768,
+        "Consum domèstic per càpita":103.92
+    },
+    {
+        "Any":2018,
+        "Codi comarca":25,
+        "Comarca":"PALLARS JUSSÀ, EL",
+        "Població":13091,
+        "Domèstic xarxa":788575,
+        "Activitats econòmiques i fonts pròpies":311938,
+        "Total":1100513,
+        "Consum domèstic per càpita":165.04
+    },
+    {
+        "Any":2018,
+        "Codi comarca":26,
+        "Comarca":"PALLARS SOBIRÀ, EL",
+        "Població":6934,
+        "Domèstic xarxa":546098,
+        "Activitats econòmiques i fonts pròpies":628431,
+        "Total":1174529,
+        "Consum domèstic per càpita":215.77
+    },
+    {
+        "Any":2018,
+        "Codi comarca":27,
+        "Comarca":"PLA D'URGELL, EL",
+        "Població":36740,
+        "Domèstic xarxa":1607559,
+        "Activitats econòmiques i fonts pròpies":4529496,
+        "Total":6137055,
+        "Consum domèstic per càpita":119.88
+    },
+    {
+        "Any":2018,
+        "Codi comarca":28,
+        "Comarca":"PLA DE L'ESTANY, EL",
+        "Població":32006,
+        "Domèstic xarxa":1307741,
+        "Activitats econòmiques i fonts pròpies":1498435,
+        "Total":2806176,
+        "Consum domèstic per càpita":111.94
+    },
+    {
+        "Any":2018,
+        "Codi comarca":29,
+        "Comarca":"PRIORAT, EL",
+        "Població":9296,
+        "Domèstic xarxa":335821,
+        "Activitats econòmiques i fonts pròpies":138386,
+        "Total":474207,
+        "Consum domèstic per càpita":98.97
+    },
+    {
+        "Any":2018,
+        "Codi comarca":30,
+        "Comarca":"RIBERA D'EBRE, LA",
+        "Població":21964,
+        "Domèstic xarxa":950873,
+        "Activitats econòmiques i fonts pròpies":3419903,
+        "Total":4370776,
+        "Consum domèstic per càpita":118.61
+    },
+    {
+        "Any":2018,
+        "Codi comarca":31,
+        "Comarca":"RIPOLLÈS, EL",
+        "Població":25000,
+        "Domèstic xarxa":1043999,
+        "Activitats econòmiques i fonts pròpies":1190031,
+        "Total":2234030,
+        "Consum domèstic per càpita":114.41
+    },
+    {
+        "Any":2018,
+        "Codi comarca":32,
+        "Comarca":"SEGARRA, LA",
+        "Població":22822,
+        "Domèstic xarxa":817089,
+        "Activitats econòmiques i fonts pròpies":2598214,
+        "Total":3415303,
+        "Consum domèstic per càpita":98.09
+    },
+    {
+        "Any":2018,
+        "Codi comarca":33,
+        "Comarca":"SEGRIÀ, EL",
+        "Població":208638,
+        "Domèstic xarxa":9200258,
+        "Activitats econòmiques i fonts pròpies":7704087,
+        "Total":16904345,
+        "Consum domèstic per càpita":120.81
+    },
+    {
+        "Any":2018,
+        "Codi comarca":34,
+        "Comarca":"SELVA, LA",
+        "Població":169029,
+        "Domèstic xarxa":8757016,
+        "Activitats econòmiques i fonts pròpies":10256780,
+        "Total":19013796,
+        "Consum domèstic per càpita":141.94
+    },
+    {
+        "Any":2018,
+        "Codi comarca":35,
+        "Comarca":"SOLSONÈS, EL",
+        "Població":13392,
+        "Domèstic xarxa":564374,
+        "Activitats econòmiques i fonts pròpies":609870,
+        "Total":1174244,
+        "Consum domèstic per càpita":115.46
+    },
+    {
+        "Any":2018,
+        "Codi comarca":36,
+        "Comarca":"TARRAGONÈS, EL",
+        "Població":252790,
+        "Domèstic xarxa":12630262,
+        "Activitats econòmiques i fonts pròpies":41807472,
+        "Total":54437734,
+        "Consum domèstic per càpita":136.89
+    },
+    {
+        "Any":2018,
+        "Codi comarca":37,
+        "Comarca":"TERRA ALTA",
+        "Població":11483,
+        "Domèstic xarxa":407182,
+        "Activitats econòmiques i fonts pròpies":284672,
+        "Total":691854,
+        "Consum domèstic per càpita":97.15
+    },
+    {
+        "Any":2018,
+        "Codi comarca":38,
+        "Comarca":"URGELL, L'",
+        "Població":36243,
+        "Domèstic xarxa":1453506,
+        "Activitats econòmiques i fonts pròpies":1075228,
+        "Total":2528734,
+        "Consum domèstic per càpita":109.88
+    },
+    {
+        "Any":2018,
+        "Codi comarca":39,
+        "Comarca":"VAL D'ARAN, LA",
+        "Població":9983,
+        "Domèstic xarxa":1237160,
+        "Activitats econòmiques i fonts pròpies":996737,
+        "Total":2233897,
+        "Consum domèstic per càpita":339.53
+    },
+    {
+        "Any":2018,
+        "Codi comarca":40,
+        "Comarca":"VALLÈS OCCIDENTAL, EL",
+        "Població":917905,
+        "Domèstic xarxa":35583820,
+        "Activitats econòmiques i fonts pròpies":24124484,
+        "Total":59708304,
+        "Consum domèstic per càpita":106.21
+    },
+    {
+        "Any":2018,
+        "Codi comarca":41,
+        "Comarca":"VALLÈS ORIENTAL, EL",
+        "Població":406289,
+        "Domèstic xarxa":16129792,
+        "Activitats econòmiques i fonts pròpies":13253159,
+        "Total":29382951,
+        "Consum domèstic per càpita":108.77
+    },
+    {
+        "Any":2017,
+        "Codi comarca":1,
+        "Comarca":"ALT CAMP, L'",
+        "Població":43995,
+        "Domèstic xarxa":1663061,
+        "Activitats econòmiques i fonts pròpies":2853335,
+        "Total":4516396,
+        "Consum domèstic per càpita":103.56
+    },
+    {
+        "Any":2017,
+        "Codi comarca":2,
+        "Comarca":"ALT EMPORDÀ, L'",
+        "Població":139705,
+        "Domèstic xarxa":8217598,
+        "Activitats econòmiques i fonts pròpies":4815683,
+        "Total":13033281,
+        "Consum domèstic per càpita":161.15
+    },
+    {
+        "Any":2017,
+        "Codi comarca":3,
+        "Comarca":"ALT PENEDÈS, L'",
+        "Població":106930,
+        "Domèstic xarxa":4270342,
+        "Activitats econòmiques i fonts pròpies":3022309,
+        "Total":7292651,
+        "Consum domèstic per càpita":109.41
+    },
+    {
+        "Any":2017,
+        "Codi comarca":4,
+        "Comarca":"ALT URGELL, L'",
+        "Població":20296,
+        "Domèstic xarxa":940210,
+        "Activitats econòmiques i fonts pròpies":1377727,
+        "Total":2317937,
+        "Consum domèstic per càpita":126.92
+    },
+    {
+        "Any":2017,
+        "Codi comarca":5,
+        "Comarca":"ALTA RIBAGORÇA, L'",
+        "Població":3827,
+        "Domèstic xarxa":439839,
+        "Activitats econòmiques i fonts pròpies":200811,
+        "Total":640650,
+        "Consum domèstic per càpita":314.88
+    },
+    {
+        "Any":2017,
+        "Codi comarca":6,
+        "Comarca":"ANOIA, L'",
+        "Població":118277,
+        "Domèstic xarxa":4799172,
+        "Activitats econòmiques i fonts pròpies":6097025,
+        "Total":10896197,
+        "Consum domèstic per càpita":111.17
+    },
+    {
+        "Any":2017,
+        "Codi comarca":7,
+        "Comarca":"BAGES, EL",
+        "Població":175095,
+        "Domèstic xarxa":7211060,
+        "Activitats econòmiques i fonts pròpies":7639437,
+        "Total":14850497,
+        "Consum domèstic per càpita":112.83
+    },
+    {
+        "Any":2017,
+        "Codi comarca":8,
+        "Comarca":"BAIX CAMP, EL",
+        "Població":187471,
+        "Domèstic xarxa":9496864,
+        "Activitats econòmiques i fonts pròpies":5714293,
+        "Total":15211157,
+        "Consum domèstic per càpita":138.79
+    },
+    {
+        "Any":2017,
+        "Codi comarca":9,
+        "Comarca":"BAIX EBRE, EL",
+        "Població":78180,
+        "Domèstic xarxa":3428803,
+        "Activitats econòmiques i fonts pròpies":4152279,
+        "Total":7581082,
+        "Consum domèstic per càpita":120.16
+    },
+    {
+        "Any":2017,
+        "Codi comarca":10,
+        "Comarca":"BAIX EMPORDÀ, EL",
+        "Població":132906,
+        "Domèstic xarxa":10304393,
+        "Activitats econòmiques i fonts pròpies":6175542,
+        "Total":16479935,
+        "Consum domèstic per càpita":212.41
+    },
+    {
+        "Any":2017,
+        "Codi comarca":11,
+        "Comarca":"BAIX LLOBREGAT, EL",
+        "Població":813996,
+        "Domèstic xarxa":31980629,
+        "Activitats econòmiques i fonts pròpies":25453011,
+        "Total":57433640,
+        "Consum domèstic per càpita":107.64
+    },
+    {
+        "Any":2017,
+        "Codi comarca":12,
+        "Comarca":"BAIX PENEDÈS, EL",
+        "Població":100850,
+        "Domèstic xarxa":6221100,
+        "Activitats econòmiques i fonts pròpies":2405508,
+        "Total":8626608,
+        "Consum domèstic per càpita":169.0
+    },
+    {
+        "Any":2017,
+        "Codi comarca":13,
+        "Comarca":"BARCELONÈS, EL",
+        "Població":2248227,
+        "Domèstic xarxa":85811270,
+        "Activitats econòmiques i fonts pròpies":42763730,
+        "Total":128575000,
+        "Consum domèstic per càpita":104.57
+    },
+    {
+        "Any":2017,
+        "Codi comarca":14,
+        "Comarca":"BERGUEDÀ, EL",
+        "Població":39013,
+        "Domèstic xarxa":1364458,
+        "Activitats econòmiques i fonts pròpies":844502,
+        "Total":2208960,
+        "Consum domèstic per càpita":95.82
+    },
+    {
+        "Any":2017,
+        "Codi comarca":15,
+        "Comarca":"CERDANYA, LA",
+        "Població":17623,
+        "Domèstic xarxa":1378044,
+        "Activitats econòmiques i fonts pròpies":1919712,
+        "Total":3297756,
+        "Consum domèstic per càpita":214.23
+    },
+    {
+        "Any":2017,
+        "Codi comarca":16,
+        "Comarca":"CONCA DE BARBERÀ, LA",
+        "Població":20036,
+        "Domèstic xarxa":800698,
+        "Activitats econòmiques i fonts pròpies":550386,
+        "Total":1351084,
+        "Consum domèstic per càpita":109.49
+    },
+    {
+        "Any":2017,
+        "Codi comarca":17,
+        "Comarca":"GARRAF, EL",
+        "Població":147504,
+        "Domèstic xarxa":7394256,
+        "Activitats econòmiques i fonts pròpies":2939970,
+        "Total":10334226,
+        "Consum domèstic per càpita":137.34
+    },
+    {
+        "Any":2017,
+        "Codi comarca":18,
+        "Comarca":"GARRIGUES, LES",
+        "Població":18975,
+        "Domèstic xarxa":741124,
+        "Activitats econòmiques i fonts pròpies":964360,
+        "Total":1705484,
+        "Consum domèstic per càpita":107.01
+    },
+    {
+        "Any":2017,
+        "Codi comarca":19,
+        "Comarca":"GARROTXA, LA",
+        "Població":56184,
+        "Domèstic xarxa":2316986,
+        "Activitats econòmiques i fonts pròpies":4126878,
+        "Total":6443864,
+        "Consum domèstic per càpita":112.98
+    },
+    {
+        "Any":2017,
+        "Codi comarca":20,
+        "Comarca":"GIRONÈS, EL",
+        "Població":187235,
+        "Domèstic xarxa":7312141,
+        "Activitats econòmiques i fonts pròpies":9872260,
+        "Total":17184401,
+        "Consum domèstic per càpita":107.0
+    },
+    {
+        "Any":2017,
+        "Codi comarca":21,
+        "Comarca":"MARESME, EL",
+        "Població":444046,
+        "Domèstic xarxa":20595871,
+        "Activitats econòmiques i fonts pròpies":9482112,
+        "Total":30077983,
+        "Consum domèstic per càpita":127.07
+    },
+    {
+        "Any":2017,
+        "Codi comarca":42,
+        "Comarca":"Moianès",
+        "Població":13279,
+        "Domèstic xarxa":601257,
+        "Activitats econòmiques i fonts pròpies":535995,
+        "Total":1137252,
+        "Consum domèstic per càpita":124.05
+    },
+    {
+        "Any":2017,
+        "Codi comarca":22,
+        "Comarca":"MONTSIÀ, EL",
+        "Població":67491,
+        "Domèstic xarxa":2724625,
+        "Activitats econòmiques i fonts pròpies":1922009,
+        "Total":4646634,
+        "Consum domèstic per càpita":110.6
+    },
+    {
+        "Any":2017,
+        "Codi comarca":23,
+        "Comarca":"NOGUERA, LA",
+        "Població":38726,
+        "Domèstic xarxa":1648293,
+        "Activitats econòmiques i fonts pròpies":1951151,
+        "Total":3599444,
+        "Consum domèstic per càpita":116.61
+    },
+    {
+        "Any":2017,
+        "Codi comarca":24,
+        "Comarca":"OSONA",
+        "Població":156572,
+        "Domèstic xarxa":6118967,
+        "Activitats econòmiques i fonts pròpies":8327675,
+        "Total":14446642,
+        "Consum domèstic per càpita":107.07
+    },
+    {
+        "Any":2017,
+        "Codi comarca":25,
+        "Comarca":"PALLARS JUSSÀ, EL",
+        "Població":13280,
+        "Domèstic xarxa":737376,
+        "Activitats econòmiques i fonts pròpies":237160,
+        "Total":974536,
+        "Consum domèstic per càpita":152.12
+    },
+    {
+        "Any":2017,
+        "Codi comarca":26,
+        "Comarca":"PALLARS SOBIRÀ, EL",
+        "Població":6947,
+        "Domèstic xarxa":540169,
+        "Activitats econòmiques i fonts pròpies":520924,
+        "Total":1061093,
+        "Consum domèstic per càpita":213.03
+    },
+    {
+        "Any":2017,
+        "Codi comarca":27,
+        "Comarca":"PLA D'URGELL, EL",
+        "Població":36614,
+        "Domèstic xarxa":1583555,
+        "Activitats econòmiques i fonts pròpies":4448822,
+        "Total":6032377,
+        "Consum domèstic per càpita":118.49
+    },
+    {
+        "Any":2017,
+        "Codi comarca":28,
+        "Comarca":"PLA DE L'ESTANY, EL",
+        "Població":31738,
+        "Domèstic xarxa":1330224,
+        "Activitats econòmiques i fonts pròpies":1269907,
+        "Total":2600131,
+        "Consum domèstic per càpita":114.83
+    },
+    {
+        "Any":2017,
+        "Codi comarca":29,
+        "Comarca":"PRIORAT, EL",
+        "Població":9345,
+        "Domèstic xarxa":342090,
+        "Activitats econòmiques i fonts pròpies":137936,
+        "Total":480026,
+        "Consum domèstic per càpita":100.29
+    },
+    {
+        "Any":2017,
+        "Codi comarca":30,
+        "Comarca":"RIBERA D'EBRE, LA",
+        "Població":22203,
+        "Domèstic xarxa":956734,
+        "Activitats econòmiques i fonts pròpies":8112390,
+        "Total":9069124,
+        "Consum domèstic per càpita":118.06
+    },
+    {
+        "Any":2017,
+        "Codi comarca":31,
+        "Comarca":"RIPOLLÈS, EL",
+        "Població":24999,
+        "Domèstic xarxa":1079589,
+        "Activitats econòmiques i fonts pròpies":1157776,
+        "Total":2237365,
+        "Consum domèstic per càpita":118.32
+    },
+    {
+        "Any":2017,
+        "Codi comarca":32,
+        "Comarca":"SEGARRA, LA",
+        "Població":22736,
+        "Domèstic xarxa":847728,
+        "Activitats econòmiques i fonts pròpies":1996641,
+        "Total":2844369,
+        "Consum domèstic per càpita":103.04
+    },
+    {
+        "Any":2017,
+        "Codi comarca":33,
+        "Comarca":"SEGRIÀ, EL",
+        "Població":208059,
+        "Domèstic xarxa":9204048,
+        "Activitats econòmiques i fonts pròpies":7428518,
+        "Total":16632566,
+        "Consum domèstic per càpita":121.2
+    },
+    {
+        "Any":2017,
+        "Codi comarca":34,
+        "Comarca":"SELVA, LA",
+        "Població":167837,
+        "Domèstic xarxa":8370741,
+        "Activitats econòmiques i fonts pròpies":10809024,
+        "Total":19179765,
+        "Consum domèstic per càpita":136.64
+    },
+    {
+        "Any":2017,
+        "Codi comarca":35,
+        "Comarca":"SOLSONÈS, EL",
+        "Població":13360,
+        "Domèstic xarxa":580710,
+        "Activitats econòmiques i fonts pròpies":626048,
+        "Total":1206758,
+        "Consum domèstic per càpita":119.09
+    },
+    {
+        "Any":2017,
+        "Codi comarca":36,
+        "Comarca":"TARRAGONÈS, EL",
+        "Població":250488,
+        "Domèstic xarxa":12825227,
+        "Activitats econòmiques i fonts pròpies":44488069,
+        "Total":57313296,
+        "Consum domèstic per càpita":140.28
+    },
+    {
+        "Any":2017,
+        "Codi comarca":37,
+        "Comarca":"TERRA ALTA",
+        "Població":11634,
+        "Domèstic xarxa":406167,
+        "Activitats econòmiques i fonts pròpies":279399,
+        "Total":685566,
+        "Consum domèstic per càpita":95.65
+    },
+    {
+        "Any":2017,
+        "Codi comarca":38,
+        "Comarca":"URGELL, L'",
+        "Població":36028,
+        "Domèstic xarxa":1452148,
+        "Activitats econòmiques i fonts pròpies":975943,
+        "Total":2428091,
+        "Consum domèstic per càpita":110.43
+    },
+    {
+        "Any":2017,
+        "Codi comarca":39,
+        "Comarca":"VAL D'ARAN, LA",
+        "Població":9985,
+        "Domèstic xarxa":1240230,
+        "Activitats econòmiques i fonts pròpies":942817,
+        "Total":2183047,
+        "Consum domèstic per càpita":340.3
+    },
+    {
+        "Any":2017,
+        "Codi comarca":40,
+        "Comarca":"VALLÈS OCCIDENTAL, EL",
+        "Població":910031,
+        "Domèstic xarxa":35865686,
+        "Activitats econòmiques i fonts pròpies":23969357,
+        "Total":59835043,
+        "Consum domèstic per càpita":107.98
+    },
+    {
+        "Any":2017,
+        "Codi comarca":41,
+        "Comarca":"VALLÈS ORIENTAL, EL",
+        "Població":403259,
+        "Domèstic xarxa":16431926,
+        "Activitats econòmiques i fonts pròpies":13643366,
+        "Total":30075292,
+        "Consum domèstic per càpita":111.64
+    },
+    {
+        "Any":2016,
+        "Codi comarca":1,
+        "Comarca":"ALT CAMP, L'",
+        "Població":44107,
+        "Domèstic xarxa":1661185,
+        "Activitats econòmiques i fonts pròpies":2665065,
+        "Total":4326250,
+        "Consum domèstic per càpita":103.19
+    },
+    {
+        "Any":2016,
+        "Codi comarca":2,
+        "Comarca":"ALT EMPORDÀ, L'",
+        "Població":140118,
+        "Domèstic xarxa":8271485,
+        "Activitats econòmiques i fonts pròpies":4652959,
+        "Total":12924444,
+        "Consum domèstic per càpita":161.73
+    },
+    {
+        "Any":2016,
+        "Codi comarca":3,
+        "Comarca":"ALT PENEDÈS, L'",
+        "Població":106275,
+        "Domèstic xarxa":4226715,
+        "Activitats econòmiques i fonts pròpies":3023044,
+        "Total":7249759,
+        "Consum domèstic per càpita":108.96
+    },
+    {
+        "Any":2016,
+        "Codi comarca":4,
+        "Comarca":"ALT URGELL, L'",
+        "Població":20548,
+        "Domèstic xarxa":947300,
+        "Activitats econòmiques i fonts pròpies":1212271,
+        "Total":2159571,
+        "Consum domèstic per càpita":126.31
+    },
+    {
+        "Any":2016,
+        "Codi comarca":5,
+        "Comarca":"ALTA RIBAGORÇA, L'",
+        "Població":3867,
+        "Domèstic xarxa":395244,
+        "Activitats econòmiques i fonts pròpies":176845,
+        "Total":572089,
+        "Consum domèstic per càpita":280.03
+    },
+    {
+        "Any":2016,
+        "Codi comarca":6,
+        "Comarca":"ANOIA, L'",
+        "Població":117504,
+        "Domèstic xarxa":4728482,
+        "Activitats econòmiques i fonts pròpies":5784059,
+        "Total":10512541,
+        "Consum domèstic per càpita":110.25
+    },
+    {
+        "Any":2016,
+        "Codi comarca":7,
+        "Comarca":"BAGES, EL",
+        "Població":174381,
+        "Domèstic xarxa":7259431,
+        "Activitats econòmiques i fonts pròpies":8046674,
+        "Total":15306105,
+        "Consum domèstic per càpita":114.05
+    },
+    {
+        "Any":2016,
+        "Codi comarca":8,
+        "Comarca":"BAIX CAMP, EL",
+        "Població":188358,
+        "Domèstic xarxa":9329320,
+        "Activitats econòmiques i fonts pròpies":5875563,
+        "Total":15204884,
+        "Consum domèstic per càpita":135.7
+    },
+    {
+        "Any":2016,
+        "Codi comarca":9,
+        "Comarca":"BAIX EBRE, EL",
+        "Població":78977,
+        "Domèstic xarxa":3448868,
+        "Activitats econòmiques i fonts pròpies":4201359,
+        "Total":7650227,
+        "Consum domèstic per càpita":119.64
+    },
+    {
+        "Any":2016,
+        "Codi comarca":10,
+        "Comarca":"BAIX EMPORDÀ, EL",
+        "Població":132598,
+        "Domèstic xarxa":10285847,
+        "Activitats econòmiques i fonts pròpies":5983396,
+        "Total":16269243,
+        "Consum domèstic per càpita":212.53
+    },
+    {
+        "Any":2016,
+        "Codi comarca":11,
+        "Comarca":"BAIX LLOBREGAT, EL",
+        "Població":809883,
+        "Domèstic xarxa":31869678,
+        "Activitats econòmiques i fonts pròpies":25421040,
+        "Total":57290718,
+        "Consum domèstic per càpita":107.81
+    },
+    {
+        "Any":2016,
+        "Codi comarca":12,
+        "Comarca":"BAIX PENEDÈS, EL",
+        "Població":99813,
+        "Domèstic xarxa":6126884,
+        "Activitats econòmiques i fonts pròpies":2364606,
+        "Total":8491490,
+        "Consum domèstic per càpita":168.17
+    },
+    {
+        "Any":2016,
+        "Codi comarca":13,
+        "Comarca":"BARCELONÈS, EL",
+        "Població":2232833,
+        "Domèstic xarxa":84165191,
+        "Activitats econòmiques i fonts pròpies":41964365,
+        "Total":126129556,
+        "Consum domèstic per càpita":103.27
+    },
+    {
+        "Any":2016,
+        "Codi comarca":14,
+        "Comarca":"BERGUEDÀ, EL",
+        "Població":39178,
+        "Domèstic xarxa":1348510,
+        "Activitats econòmiques i fonts pròpies":799439,
+        "Total":2147949,
+        "Consum domèstic per càpita":94.3
+    },
+    {
+        "Any":2016,
+        "Codi comarca":15,
+        "Comarca":"CERDANYA, LA",
+        "Població":17704,
+        "Domèstic xarxa":1338899,
+        "Activitats econòmiques i fonts pròpies":1898452,
+        "Total":3237351,
+        "Consum domèstic per càpita":207.2
+    },
+    {
+        "Any":2016,
+        "Codi comarca":16,
+        "Comarca":"CONCA DE BARBERÀ, LA",
+        "Població":20220,
+        "Domèstic xarxa":741150,
+        "Activitats econòmiques i fonts pròpies":509781,
+        "Total":1250931,
+        "Consum domèstic per càpita":100.42
+    },
+    {
+        "Any":2016,
+        "Codi comarca":17,
+        "Comarca":"GARRAF, EL",
+        "Població":146876,
+        "Domèstic xarxa":7459255,
+        "Activitats econòmiques i fonts pròpies":2985046,
+        "Total":10444301,
+        "Consum domèstic per càpita":139.14
+    },
+    {
+        "Any":2016,
+        "Codi comarca":18,
+        "Comarca":"GARRIGUES, LES",
+        "Població":19090,
+        "Domèstic xarxa":693387,
+        "Activitats econòmiques i fonts pròpies":774696,
+        "Total":1468083,
+        "Consum domèstic per càpita":99.51
+    },
+    {
+        "Any":2016,
+        "Codi comarca":19,
+        "Comarca":"GARROTXA, LA",
+        "Població":55999,
+        "Domèstic xarxa":2227665,
+        "Activitats econòmiques i fonts pròpies":4061032,
+        "Total":6288697,
+        "Consum domèstic per càpita":108.99
+    },
+    {
+        "Any":2016,
+        "Codi comarca":20,
+        "Comarca":"GIRONÈS, EL",
+        "Població":185330,
+        "Domèstic xarxa":7046873,
+        "Activitats econòmiques i fonts pròpies":8966274,
+        "Total":16013147,
+        "Consum domèstic per càpita":104.17
+    },
+    {
+        "Any":2016,
+        "Codi comarca":21,
+        "Comarca":"MARESME, EL",
+        "Població":441505,
+        "Domèstic xarxa":20694291,
+        "Activitats econòmiques i fonts pròpies":9507399,
+        "Total":30201690,
+        "Consum domèstic per càpita":128.42
+    },
+    {
+        "Any":2016,
+        "Codi comarca":42,
+        "Comarca":"Moianès",
+        "Població":13209,
+        "Domèstic xarxa":595949,
+        "Activitats econòmiques i fonts pròpies":501076,
+        "Total":1097025,
+        "Consum domèstic per càpita":123.61
+    },
+    {
+        "Any":2016,
+        "Codi comarca":22,
+        "Comarca":"MONTSIÀ, EL",
+        "Població":67646,
+        "Domèstic xarxa":2746502,
+        "Activitats econòmiques i fonts pròpies":1822371,
+        "Total":4568873,
+        "Consum domèstic per càpita":111.24
+    },
+    {
+        "Any":2016,
+        "Codi comarca":23,
+        "Comarca":"NOGUERA, LA",
+        "Població":38955,
+        "Domèstic xarxa":1651771,
+        "Activitats econòmiques i fonts pròpies":1708644,
+        "Total":3360415,
+        "Consum domèstic per càpita":116.17
+    },
+    {
+        "Any":2016,
+        "Codi comarca":24,
+        "Comarca":"OSONA",
+        "Població":155641,
+        "Domèstic xarxa":5973529,
+        "Activitats econòmiques i fonts pròpies":7987353,
+        "Total":13960882,
+        "Consum domèstic per càpita":105.15
+    },
+    {
+        "Any":2016,
+        "Codi comarca":25,
+        "Comarca":"PALLARS JUSSÀ, EL",
+        "Població":13453,
+        "Domèstic xarxa":721963,
+        "Activitats econòmiques i fonts pròpies":203300,
+        "Total":925263,
+        "Consum domèstic per càpita":147.03
+    },
+    {
+        "Any":2016,
+        "Codi comarca":26,
+        "Comarca":"PALLARS SOBIRÀ, EL",
+        "Població":6986,
+        "Domèstic xarxa":545692,
+        "Activitats econòmiques i fonts pròpies":578816,
+        "Total":1124508,
+        "Consum domèstic per càpita":214.01
+    },
+    {
+        "Any":2016,
+        "Codi comarca":27,
+        "Comarca":"PLA D'URGELL, EL",
+        "Població":36711,
+        "Domèstic xarxa":1593716,
+        "Activitats econòmiques i fonts pròpies":4123642,
+        "Total":5717358,
+        "Consum domèstic per càpita":118.94
+    },
+    {
+        "Any":2016,
+        "Codi comarca":28,
+        "Comarca":"PLA DE L'ESTANY, EL",
+        "Població":31561,
+        "Domèstic xarxa":1291337,
+        "Activitats econòmiques i fonts pròpies":1067420,
+        "Total":2358757,
+        "Consum domèstic per càpita":112.1
+    },
+    {
+        "Any":2016,
+        "Codi comarca":29,
+        "Comarca":"PRIORAT, EL",
+        "Població":9381,
+        "Domèstic xarxa":345305,
+        "Activitats econòmiques i fonts pròpies":131791,
+        "Total":477096,
+        "Consum domèstic per càpita":100.85
+    },
+    {
+        "Any":2016,
+        "Codi comarca":30,
+        "Comarca":"RIBERA D'EBRE, LA",
+        "Població":22471,
+        "Domèstic xarxa":961661,
+        "Activitats econòmiques i fonts pròpies":8371916,
+        "Total":9333577,
+        "Consum domèstic per càpita":117.25
+    },
+    {
+        "Any":2016,
+        "Codi comarca":31,
+        "Comarca":"RIPOLLÈS, EL",
+        "Població":25101,
+        "Domèstic xarxa":1087930,
+        "Activitats econòmiques i fonts pròpies":1125521,
+        "Total":2213451,
+        "Consum domèstic per càpita":118.75
+    },
+    {
+        "Any":2016,
+        "Codi comarca":32,
+        "Comarca":"SEGARRA, LA",
+        "Població":22688,
+        "Domèstic xarxa":793759,
+        "Activitats econòmiques i fonts pròpies":2148974,
+        "Total":2942733,
+        "Consum domèstic per càpita":96.69
+    },
+    {
+        "Any":2016,
+        "Codi comarca":33,
+        "Comarca":"SEGRIÀ, EL",
+        "Població":208881,
+        "Domèstic xarxa":9115000,
+        "Activitats econòmiques i fonts pròpies":7303052,
+        "Total":16418052,
+        "Consum domèstic per càpita":119.55
+    },
+    {
+        "Any":2016,
+        "Codi comarca":34,
+        "Comarca":"SELVA, LA",
+        "Població":167694,
+        "Domèstic xarxa":8222718,
+        "Activitats econòmiques i fonts pròpies":10387245,
+        "Total":18609963,
+        "Consum domèstic per càpita":134.34
+    },
+    {
+        "Any":2016,
+        "Codi comarca":35,
+        "Comarca":"SOLSONÈS, EL",
+        "Població":13313,
+        "Domèstic xarxa":564461,
+        "Activitats econòmiques i fonts pròpies":690933,
+        "Total":1255394,
+        "Consum domèstic per càpita":116.16
+    },
+    {
+        "Any":2016,
+        "Codi comarca":36,
+        "Comarca":"TARRAGONÈS, EL",
+        "Població":249565,
+        "Domèstic xarxa":12789737,
+        "Activitats econòmiques i fonts pròpies":41298125,
+        "Total":54087862,
+        "Consum domèstic per càpita":140.41
+    },
+    {
+        "Any":2016,
+        "Codi comarca":37,
+        "Comarca":"TERRA ALTA",
+        "Població":11761,
+        "Domèstic xarxa":418737,
+        "Activitats econòmiques i fonts pròpies":210675,
+        "Total":629412,
+        "Consum domèstic per càpita":97.54
+    },
+    {
+        "Any":2016,
+        "Codi comarca":38,
+        "Comarca":"URGELL, L'",
+        "Població":36059,
+        "Domèstic xarxa":1449132,
+        "Activitats econòmiques i fonts pròpies":1027832,
+        "Total":2476964,
+        "Consum domèstic per càpita":110.1
+    },
+    {
+        "Any":2016,
+        "Codi comarca":39,
+        "Comarca":"VAL D'ARAN, LA",
+        "Població":9930,
+        "Domèstic xarxa":1204147,
+        "Activitats econòmiques i fonts pròpies":1007729,
+        "Total":2211876,
+        "Consum domèstic per càpita":332.23
+    },
+    {
+        "Any":2016,
+        "Codi comarca":40,
+        "Comarca":"VALLÈS OCCIDENTAL, EL",
+        "Població":904240,
+        "Domèstic xarxa":35774320,
+        "Activitats econòmiques i fonts pròpies":23826057,
+        "Total":59600377,
+        "Consum domèstic per càpita":108.39
+    },
+    {
+        "Any":2016,
+        "Codi comarca":41,
+        "Comarca":"VALLÈS ORIENTAL, EL",
+        "Població":401338,
+        "Domèstic xarxa":16318469,
+        "Activitats econòmiques i fonts pròpies":13033313,
+        "Total":29351782,
+        "Consum domèstic per càpita":111.4
+    },
+    {
+        "Any":2015,
+        "Codi comarca":1,
+        "Comarca":"ALT CAMP, L'",
+        "Població":44306,
+        "Domèstic xarxa":1636063,
+        "Activitats econòmiques i fonts pròpies":2722696,
+        "Total":4358759,
+        "Consum domèstic per càpita":101.17
+    },
+    {
+        "Any":2015,
+        "Codi comarca":2,
+        "Comarca":"ALT EMPORDÀ, L'",
+        "Població":139838,
+        "Domèstic xarxa":8054445,
+        "Activitats econòmiques i fonts pròpies":4419269,
+        "Total":12473714,
+        "Consum domèstic per càpita":157.8
+    },
+    {
+        "Any":2015,
+        "Codi comarca":3,
+        "Comarca":"ALT PENEDÈS, L'",
+        "Població":106168,
+        "Domèstic xarxa":4165869,
+        "Activitats econòmiques i fonts pròpies":3191216,
+        "Total":7357085,
+        "Consum domèstic per càpita":107.5
+    },
+    {
+        "Any":2015,
+        "Codi comarca":4,
+        "Comarca":"ALT URGELL, L'",
+        "Població":20695,
+        "Domèstic xarxa":935197,
+        "Activitats econòmiques i fonts pròpies":1244003,
+        "Total":2179200,
+        "Consum domèstic per càpita":123.81
+    },
+    {
+        "Any":2015,
+        "Codi comarca":5,
+        "Comarca":"ALTA RIBAGORÇA, L'",
+        "Població":3884,
+        "Domèstic xarxa":396360,
+        "Activitats econòmiques i fonts pròpies":168289,
+        "Total":564649,
+        "Consum domèstic per càpita":279.59
+    },
+    {
+        "Any":2015,
+        "Codi comarca":6,
+        "Comarca":"ANOIA, L'",
+        "Població":117444,
+        "Domèstic xarxa":4778574,
+        "Activitats econòmiques i fonts pròpies":5898268,
+        "Total":10676842,
+        "Consum domèstic per càpita":111.47
+    },
+    {
+        "Any":2015,
+        "Codi comarca":7,
+        "Comarca":"BAGES, EL",
+        "Població":174604,
+        "Domèstic xarxa":7188027,
+        "Activitats econòmiques i fonts pròpies":7641018,
+        "Total":14829045,
+        "Consum domèstic per càpita":112.79
+    },
+    {
+        "Any":2015,
+        "Codi comarca":8,
+        "Comarca":"BAIX CAMP, EL",
+        "Població":188026,
+        "Domèstic xarxa":9471296,
+        "Activitats econòmiques i fonts pròpies":5668336,
+        "Total":15139632,
+        "Consum domèstic per càpita":138.01
+    },
+    {
+        "Any":2015,
+        "Codi comarca":9,
+        "Comarca":"BAIX EBRE, EL",
+        "Població":79748,
+        "Domèstic xarxa":3465420,
+        "Activitats econòmiques i fonts pròpies":4101378,
+        "Total":7566798,
+        "Consum domèstic per càpita":119.8
+    },
+    {
+        "Any":2015,
+        "Codi comarca":10,
+        "Comarca":"BAIX EMPORDÀ, EL",
+        "Població":132355,
+        "Domèstic xarxa":10022321,
+        "Activitats econòmiques i fonts pròpies":5662031,
+        "Total":15684352,
+        "Consum domèstic per càpita":207.46
+    },
+    {
+        "Any":2015,
+        "Codi comarca":11,
+        "Comarca":"BAIX LLOBREGAT, EL",
+        "Població":806651,
+        "Domèstic xarxa":31091426,
+        "Activitats econòmiques i fonts pròpies":24893352,
+        "Total":55984778,
+        "Consum domèstic per càpita":105.6
+    },
+    {
+        "Any":2015,
+        "Codi comarca":12,
+        "Comarca":"BAIX PENEDÈS, EL",
+        "Població":99934,
+        "Domèstic xarxa":6061262,
+        "Activitats econòmiques i fonts pròpies":2552027,
+        "Total":8613289,
+        "Consum domèstic per càpita":166.17
+    },
+    {
+        "Any":2015,
+        "Codi comarca":13,
+        "Comarca":"BARCELONÈS, EL",
+        "Població":2225144,
+        "Domèstic xarxa":83056436,
+        "Activitats econòmiques i fonts pròpies":40509465,
+        "Total":123565901,
+        "Consum domèstic per càpita":102.26
+    },
+    {
+        "Any":2015,
+        "Codi comarca":14,
+        "Comarca":"BERGUEDÀ, EL",
+        "Població":39517,
+        "Domèstic xarxa":1423542,
+        "Activitats econòmiques i fonts pròpies":829997,
+        "Total":2253539,
+        "Consum domèstic per càpita":98.69
+    },
+    {
+        "Any":2015,
+        "Codi comarca":15,
+        "Comarca":"CERDANYA, LA",
+        "Població":17870,
+        "Domèstic xarxa":1284622,
+        "Activitats econòmiques i fonts pròpies":1522740,
+        "Total":2807362,
+        "Consum domèstic per càpita":196.95
+    },
+    {
+        "Any":2015,
+        "Codi comarca":16,
+        "Comarca":"CONCA DE BARBERÀ, LA",
+        "Població":20482,
+        "Domèstic xarxa":812844,
+        "Activitats econòmiques i fonts pròpies":501264,
+        "Total":1314108,
+        "Consum domèstic per càpita":108.73
+    },
+    {
+        "Any":2015,
+        "Codi comarca":17,
+        "Comarca":"GARRAF, EL",
+        "Població":145983,
+        "Domèstic xarxa":7151536,
+        "Activitats econòmiques i fonts pròpies":2785672,
+        "Total":9937208,
+        "Consum domèstic per càpita":134.22
+    },
+    {
+        "Any":2015,
+        "Codi comarca":18,
+        "Comarca":"GARRIGUES, LES",
+        "Població":19342,
+        "Domèstic xarxa":662681,
+        "Activitats econòmiques i fonts pròpies":802841,
+        "Total":1465522,
+        "Consum domèstic per càpita":93.87
+    },
+    {
+        "Any":2015,
+        "Codi comarca":19,
+        "Comarca":"GARROTXA, LA",
+        "Població":56063,
+        "Domèstic xarxa":2248680,
+        "Activitats econòmiques i fonts pròpies":4007872,
+        "Total":6256552,
+        "Consum domèstic per càpita":109.89
+    },
+    {
+        "Any":2015,
+        "Codi comarca":20,
+        "Comarca":"GIRONÈS, EL",
+        "Població":184993,
+        "Domèstic xarxa":6907649,
+        "Activitats econòmiques i fonts pròpies":8509526,
+        "Total":15417175,
+        "Consum domèstic per càpita":102.3
+    },
+    {
+        "Any":2015,
+        "Codi comarca":21,
+        "Comarca":"MARESME, EL",
+        "Població":439512,
+        "Domèstic xarxa":20196097,
+        "Activitats econòmiques i fonts pròpies":8870849,
+        "Total":29066946,
+        "Consum domèstic per càpita":125.89
+    },
+    {
+        "Any":2015,
+        "Codi comarca":42,
+        "Comarca":"Moianès",
+        "Població":13098,
+        "Domèstic xarxa":580414,
+        "Activitats econòmiques i fonts pròpies":495071,
+        "Total":1075485,
+        "Consum domèstic per càpita":121.41
+    },
+    {
+        "Any":2015,
+        "Codi comarca":22,
+        "Comarca":"MONTSIÀ, EL",
+        "Població":68524,
+        "Domèstic xarxa":2745545,
+        "Activitats econòmiques i fonts pròpies":1874703,
+        "Total":4620248,
+        "Consum domèstic per càpita":109.77
+    },
+    {
+        "Any":2015,
+        "Codi comarca":23,
+        "Comarca":"NOGUERA, LA",
+        "Població":39109,
+        "Domèstic xarxa":1629840,
+        "Activitats econòmiques i fonts pròpies":1605506,
+        "Total":3235346,
+        "Consum domèstic per càpita":114.18
+    },
+    {
+        "Any":2015,
+        "Codi comarca":24,
+        "Comarca":"OSONA",
+        "Població":154925,
+        "Domèstic xarxa":5814449,
+        "Activitats econòmiques i fonts pròpies":7413217,
+        "Total":13227666,
+        "Consum domèstic per càpita":102.82
+    },
+    {
+        "Any":2015,
+        "Codi comarca":25,
+        "Comarca":"PALLARS JUSSÀ, EL",
+        "Població":13609,
+        "Domèstic xarxa":736663,
+        "Activitats econòmiques i fonts pròpies":195045,
+        "Total":931708,
+        "Consum domèstic per càpita":148.3
+    },
+    {
+        "Any":2015,
+        "Codi comarca":26,
+        "Comarca":"PALLARS SOBIRÀ, EL",
+        "Població":7060,
+        "Domèstic xarxa":536563,
+        "Activitats econòmiques i fonts pròpies":607214,
+        "Total":1143777,
+        "Consum domèstic per càpita":208.22
+    },
+    {
+        "Any":2015,
+        "Codi comarca":27,
+        "Comarca":"PLA D'URGELL, EL",
+        "Població":37053,
+        "Domèstic xarxa":1582515,
+        "Activitats econòmiques i fonts pròpies":4186586,
+        "Total":5769101,
+        "Consum domèstic per càpita":117.01
+    },
+    {
+        "Any":2015,
+        "Codi comarca":28,
+        "Comarca":"PLA DE L'ESTANY, EL",
+        "Població":31536,
+        "Domèstic xarxa":1300667,
+        "Activitats econòmiques i fonts pròpies":1074214,
+        "Total":2374881,
+        "Consum domèstic per càpita":113.0
+    },
+    {
+        "Any":2015,
+        "Codi comarca":29,
+        "Comarca":"PRIORAT, EL",
+        "Població":9547,
+        "Domèstic xarxa":345512,
+        "Activitats econòmiques i fonts pròpies":120384,
+        "Total":465896,
+        "Consum domèstic per càpita":99.15
+    },
+    {
+        "Any":2015,
+        "Codi comarca":30,
+        "Comarca":"RIBERA D'EBRE, LA",
+        "Població":22723,
+        "Domèstic xarxa":918309,
+        "Activitats econòmiques i fonts pròpies":7689654,
+        "Total":8607963,
+        "Consum domèstic per càpita":110.72
+    },
+    {
+        "Any":2015,
+        "Codi comarca":31,
+        "Comarca":"RIPOLLÈS, EL",
+        "Població":25342,
+        "Domèstic xarxa":1052891,
+        "Activitats econòmiques i fonts pròpies":1127530,
+        "Total":2180421,
+        "Consum domèstic per càpita":113.83
+    },
+    {
+        "Any":2015,
+        "Codi comarca":32,
+        "Comarca":"SEGARRA, LA",
+        "Població":22647,
+        "Domèstic xarxa":777366,
+        "Activitats econòmiques i fonts pròpies":2002355,
+        "Total":2779721,
+        "Consum domèstic per càpita":94.94
+    },
+    {
+        "Any":2015,
+        "Codi comarca":33,
+        "Comarca":"SEGRIÀ, EL",
+        "Població":209324,
+        "Domèstic xarxa":9163292,
+        "Activitats econòmiques i fonts pròpies":7217816,
+        "Total":16381108,
+        "Consum domèstic per càpita":119.93
+    },
+    {
+        "Any":2015,
+        "Codi comarca":34,
+        "Comarca":"SELVA, LA",
+        "Població":168555,
+        "Domèstic xarxa":8207896,
+        "Activitats econòmiques i fonts pròpies":10363124,
+        "Total":18571020,
+        "Consum domèstic per càpita":133.41
+    },
+    {
+        "Any":2015,
+        "Codi comarca":35,
+        "Comarca":"SOLSONÈS, EL",
+        "Població":13414,
+        "Domèstic xarxa":563946,
+        "Activitats econòmiques i fonts pròpies":589902,
+        "Total":1153848,
+        "Consum domèstic per càpita":115.18
+    },
+    {
+        "Any":2015,
+        "Codi comarca":36,
+        "Comarca":"TARRAGONÈS, EL",
+        "Població":249939,
+        "Domèstic xarxa":12596402,
+        "Activitats econòmiques i fonts pròpies":40040896,
+        "Total":52637298,
+        "Consum domèstic per càpita":138.08
+    },
+    {
+        "Any":2015,
+        "Codi comarca":37,
+        "Comarca":"TERRA ALTA",
+        "Població":11872,
+        "Domèstic xarxa":401129,
+        "Activitats econòmiques i fonts pròpies":215591,
+        "Total":616720,
+        "Consum domèstic per càpita":92.57
+    },
+    {
+        "Any":2015,
+        "Codi comarca":38,
+        "Comarca":"URGELL, L'",
+        "Població":36308,
+        "Domèstic xarxa":1472649,
+        "Activitats econòmiques i fonts pròpies":1073074,
+        "Total":2545723,
+        "Consum domèstic per càpita":111.12
+    },
+    {
+        "Any":2015,
+        "Codi comarca":39,
+        "Comarca":"VAL D'ARAN, LA",
+        "Població":9926,
+        "Domèstic xarxa":1147560,
+        "Activitats econòmiques i fonts pròpies":644619,
+        "Total":1792179,
+        "Consum domèstic per càpita":316.74
+    },
+    {
+        "Any":2015,
+        "Codi comarca":40,
+        "Comarca":"VALLÈS OCCIDENTAL, EL",
+        "Població":900661,
+        "Domèstic xarxa":35212831,
+        "Activitats econòmiques i fonts pròpies":23363113,
+        "Total":58575944,
+        "Consum domèstic per càpita":107.11
+    },
+    {
+        "Any":2015,
+        "Codi comarca":41,
+        "Comarca":"VALLÈS ORIENTAL, EL",
+        "Població":400375,
+        "Domèstic xarxa":16192241,
+        "Activitats econòmiques i fonts pròpies":13026930,
+        "Total":29219171,
+        "Consum domèstic per càpita":110.8
+    },
+    {
+        "Any":2014,
+        "Codi comarca":1,
+        "Comarca":"ALT CAMP, L'",
+        "Població":44578,
+        "Domèstic xarxa":1625189,
+        "Activitats econòmiques i fonts pròpies":2788655,
+        "Total":4413844,
+        "Consum domèstic per càpita":99.88
+    },
+    {
+        "Any":2014,
+        "Codi comarca":2,
+        "Comarca":"ALT EMPORDÀ, L'",
+        "Població":140214,
+        "Domèstic xarxa":7981472,
+        "Activitats econòmiques i fonts pròpies":4306446,
+        "Total":12287918,
+        "Consum domèstic per càpita":155.95
+    },
+    {
+        "Any":2014,
+        "Codi comarca":3,
+        "Comarca":"ALT PENEDÈS, L'",
+        "Població":106262,
+        "Domèstic xarxa":4164004,
+        "Activitats econòmiques i fonts pròpies":2986095,
+        "Total":7150099,
+        "Consum domèstic per càpita":107.36
+    },
+    {
+        "Any":2014,
+        "Codi comarca":4,
+        "Comarca":"ALT URGELL, L'",
+        "Població":20878,
+        "Domèstic xarxa":921501,
+        "Activitats econòmiques i fonts pròpies":1145369,
+        "Total":2066870,
+        "Consum domèstic per càpita":120.92
+    },
+    {
+        "Any":2014,
+        "Codi comarca":5,
+        "Comarca":"ALTA RIBAGORÇA, L'",
+        "Població":3873,
+        "Domèstic xarxa":396144,
+        "Activitats econòmiques i fonts pròpies":173827,
+        "Total":569971,
+        "Consum domèstic per càpita":280.23
+    },
+    {
+        "Any":2014,
+        "Codi comarca":6,
+        "Comarca":"ANOIA, L'",
+        "Població":117842,
+        "Domèstic xarxa":4605919,
+        "Activitats econòmiques i fonts pròpies":5606479,
+        "Total":10212398,
+        "Consum domèstic per càpita":107.08
+    },
+    {
+        "Any":2014,
+        "Codi comarca":7,
+        "Comarca":"BAGES, EL",
+        "Població":184403,
+        "Domèstic xarxa":7403429,
+        "Activitats econòmiques i fonts pròpies":8171835,
+        "Total":15575264,
+        "Consum domèstic per càpita":109.99
+    },
+    {
+        "Any":2014,
+        "Codi comarca":8,
+        "Comarca":"BAIX CAMP, EL",
+        "Població":190249,
+        "Domèstic xarxa":9528941,
+        "Activitats econòmiques i fonts pròpies":11823864,
+        "Total":21352805,
+        "Consum domèstic per càpita":137.22
+    },
+    {
+        "Any":2014,
+        "Codi comarca":9,
+        "Comarca":"BAIX EBRE, EL",
+        "Població":80637,
+        "Domèstic xarxa":3392294,
+        "Activitats econòmiques i fonts pròpies":4497676,
+        "Total":7889970,
+        "Consum domèstic per càpita":115.26
+    },
+    {
+        "Any":2014,
+        "Codi comarca":10,
+        "Comarca":"BAIX EMPORDÀ, EL",
+        "Població":132886,
+        "Domèstic xarxa":9458248,
+        "Activitats econòmiques i fonts pròpies":4851859,
+        "Total":14310107,
+        "Consum domèstic per càpita":195.0
+    },
+    {
+        "Any":2014,
+        "Codi comarca":11,
+        "Comarca":"BAIX LLOBREGAT, EL",
+        "Població":806249,
+        "Domèstic xarxa":30809259,
+        "Activitats econòmiques i fonts pròpies":24661483,
+        "Total":55470742,
+        "Consum domèstic per càpita":104.69
+    },
+    {
+        "Any":2014,
+        "Codi comarca":12,
+        "Comarca":"BAIX PENEDÈS, EL",
+        "Població":100262,
+        "Domèstic xarxa":5933565,
+        "Activitats econòmiques i fonts pròpies":2506230,
+        "Total":8439795,
+        "Consum domèstic per càpita":162.14
+    },
+    {
+        "Any":2014,
+        "Codi comarca":13,
+        "Comarca":"BARCELONÈS, EL",
+        "Població":2227238,
+        "Domèstic xarxa":82237554,
+        "Activitats econòmiques i fonts pròpies":38891563,
+        "Total":121129117,
+        "Consum domèstic per càpita":101.16
+    },
+    {
+        "Any":2014,
+        "Codi comarca":14,
+        "Comarca":"BERGUEDÀ, EL",
+        "Població":40039,
+        "Domèstic xarxa":1393824,
+        "Activitats econòmiques i fonts pròpies":796415,
+        "Total":2190239,
+        "Consum domèstic per càpita":95.37
+    },
+    {
+        "Any":2014,
+        "Codi comarca":15,
+        "Comarca":"CERDANYA, LA",
+        "Població":18063,
+        "Domèstic xarxa":1215572,
+        "Activitats econòmiques i fonts pròpies":1162875,
+        "Total":2378447,
+        "Consum domèstic per càpita":184.37
+    },
+    {
+        "Any":2014,
+        "Codi comarca":16,
+        "Comarca":"CONCA DE BARBERÀ, LA",
+        "Població":20723,
+        "Domèstic xarxa":798442,
+        "Activitats econòmiques i fonts pròpies":458874,
+        "Total":1257316,
+        "Consum domèstic per càpita":105.56
+    },
+    {
+        "Any":2014,
+        "Codi comarca":17,
+        "Comarca":"GARRAF, EL",
+        "Població":145886,
+        "Domèstic xarxa":7590074,
+        "Activitats econòmiques i fonts pròpies":2895542,
+        "Total":10485616,
+        "Consum domèstic per càpita":142.54
+    },
+    {
+        "Any":2014,
+        "Codi comarca":18,
+        "Comarca":"GARRIGUES, LES",
+        "Població":19762,
+        "Domèstic xarxa":665180,
+        "Activitats econòmiques i fonts pròpies":702801,
+        "Total":1367981,
+        "Consum domèstic per càpita":92.22
+    },
+    {
+        "Any":2014,
+        "Codi comarca":19,
+        "Comarca":"GARROTXA, LA",
+        "Població":56036,
+        "Domèstic xarxa":2066636,
+        "Activitats econòmiques i fonts pròpies":3868508,
+        "Total":5935143,
+        "Consum domèstic per càpita":101.04
+    },
+    {
+        "Any":2014,
+        "Codi comarca":20,
+        "Comarca":"GIRONÈS, EL",
+        "Població":185085,
+        "Domèstic xarxa":6841815,
+        "Activitats econòmiques i fonts pròpies":9014071,
+        "Total":15855886,
+        "Consum domèstic per càpita":101.28
+    },
+    {
+        "Any":2014,
+        "Codi comarca":21,
+        "Comarca":"MARESME, EL",
+        "Població":437919,
+        "Domèstic xarxa":20012999,
+        "Activitats econòmiques i fonts pròpies":9050995,
+        "Total":29063994,
+        "Consum domèstic per càpita":125.21
+    },
+    {
+        "Any":2014,
+        "Codi comarca":22,
+        "Comarca":"MONTSIÀ, EL",
+        "Població":69613,
+        "Domèstic xarxa":2797142,
+        "Activitats econòmiques i fonts pròpies":1790537,
+        "Total":4587679,
+        "Consum domèstic per càpita":110.09
+    },
+    {
+        "Any":2014,
+        "Codi comarca":23,
+        "Comarca":"NOGUERA, LA",
+        "Població":39376,
+        "Domèstic xarxa":1660544,
+        "Activitats econòmiques i fonts pròpies":1476874,
+        "Total":3137418,
+        "Consum domèstic per càpita":115.54
+    },
+    {
+        "Any":2014,
+        "Codi comarca":24,
+        "Comarca":"OSONA",
+        "Població":154897,
+        "Domèstic xarxa":5574220,
+        "Activitats econòmiques i fonts pròpies":6796591,
+        "Total":12370811,
+        "Consum domèstic per càpita":98.59
+    },
+    {
+        "Any":2014,
+        "Codi comarca":25,
+        "Comarca":"PALLARS JUSSÀ, EL",
+        "Població":13530,
+        "Domèstic xarxa":752083,
+        "Activitats econòmiques i fonts pròpies":192028,
+        "Total":944111,
+        "Consum domèstic per càpita":152.29
+    },
+    {
+        "Any":2014,
+        "Codi comarca":26,
+        "Comarca":"PALLARS SOBIRÀ, EL",
+        "Població":7220,
+        "Domèstic xarxa":537167,
+        "Activitats econòmiques i fonts pròpies":585147,
+        "Total":1122314,
+        "Consum domèstic per càpita":203.84
+    },
+    {
+        "Any":2014,
+        "Codi comarca":27,
+        "Comarca":"PLA D'URGELL, EL",
+        "Població":37128,
+        "Domèstic xarxa":1532053,
+        "Activitats econòmiques i fonts pròpies":4175290,
+        "Total":5707343,
+        "Consum domèstic per càpita":113.05
+    },
+    {
+        "Any":2014,
+        "Codi comarca":28,
+        "Comarca":"PLA DE L'ESTANY, EL",
+        "Població":31554,
+        "Domèstic xarxa":1251445,
+        "Activitats econòmiques i fonts pròpies":1014602,
+        "Total":2266047,
+        "Consum domèstic per càpita":108.66
+    },
+    {
+        "Any":2014,
+        "Codi comarca":29,
+        "Comarca":"PRIORAT, EL",
+        "Població":9550,
+        "Domèstic xarxa":349098,
+        "Activitats econòmiques i fonts pròpies":114356,
+        "Total":463454,
+        "Consum domèstic per càpita":100.15
+    },
+    {
+        "Any":2014,
+        "Codi comarca":30,
+        "Comarca":"RIBERA D'EBRE, LA",
+        "Població":22925,
+        "Domèstic xarxa":917038,
+        "Activitats econòmiques i fonts pròpies":6453950,
+        "Total":7370988,
+        "Consum domèstic per càpita":109.59
+    },
+    {
+        "Any":2014,
+        "Codi comarca":31,
+        "Comarca":"RIPOLLÈS, EL",
+        "Població":25700,
+        "Domèstic xarxa":993446,
+        "Activitats econòmiques i fonts pròpies":1180675,
+        "Total":2174121,
+        "Consum domèstic per càpita":105.91
+    },
+    {
+        "Any":2014,
+        "Codi comarca":32,
+        "Comarca":"SEGARRA, LA",
+        "Població":22713,
+        "Domèstic xarxa":734239,
+        "Activitats econòmiques i fonts pròpies":1869849,
+        "Total":2604088,
+        "Consum domèstic per càpita":89.5
+    },
+    {
+        "Any":2014,
+        "Codi comarca":33,
+        "Comarca":"SEGRIÀ, EL",
+        "Població":209768,
+        "Domèstic xarxa":8976024,
+        "Activitats econòmiques i fonts pròpies":7125512,
+        "Total":16101536,
+        "Consum domèstic per càpita":117.23
+    },
+    {
+        "Any":2014,
+        "Codi comarca":34,
+        "Comarca":"SELVA, LA",
+        "Població":170249,
+        "Domèstic xarxa":8011628,
+        "Activitats econòmiques i fonts pròpies":10255255,
+        "Total":18266883,
+        "Consum domèstic per càpita":128.93
+    },
+    {
+        "Any":2014,
+        "Codi comarca":35,
+        "Comarca":"SOLSONÈS, EL",
+        "Població":13497,
+        "Domèstic xarxa":590638,
+        "Activitats econòmiques i fonts pròpies":926171,
+        "Total":1516809,
+        "Consum domèstic per càpita":119.89
+    },
+    {
+        "Any":2014,
+        "Codi comarca":36,
+        "Comarca":"TARRAGONÈS, EL",
+        "Població":250306,
+        "Domèstic xarxa":12751489,
+        "Activitats econòmiques i fonts pròpies":38524616,
+        "Total":51276105,
+        "Consum domèstic per càpita":139.57
+    },
+    {
+        "Any":2014,
+        "Codi comarca":37,
+        "Comarca":"TERRA ALTA",
+        "Població":12119,
+        "Domèstic xarxa":413746,
+        "Activitats econòmiques i fonts pròpies":186439,
+        "Total":600185,
+        "Consum domèstic per càpita":93.54
+    },
+    {
+        "Any":2014,
+        "Codi comarca":38,
+        "Comarca":"URGELL, L'",
+        "Població":36526,
+        "Domèstic xarxa":1396467,
+        "Activitats econòmiques i fonts pròpies":907574,
+        "Total":2304041,
+        "Consum domèstic per càpita":104.75
+    },
+    {
+        "Any":2014,
+        "Codi comarca":39,
+        "Comarca":"VAL D'ARAN, LA",
+        "Població":9993,
+        "Domèstic xarxa":1111431,
+        "Activitats econòmiques i fonts pròpies":576937,
+        "Total":1688368,
+        "Consum domèstic per càpita":304.71
+    },
+    {
+        "Any":2014,
+        "Codi comarca":40,
+        "Comarca":"VALLÈS OCCIDENTAL, EL",
+        "Població":899532,
+        "Domèstic xarxa":34661542,
+        "Activitats econòmiques i fonts pròpies":23275814,
+        "Total":57937356,
+        "Consum domèstic per càpita":105.57
+    },
+    {
+        "Any":2014,
+        "Codi comarca":41,
+        "Comarca":"VALLÈS ORIENTAL, EL",
+        "Població":403623,
+        "Domèstic xarxa":15888994,
+        "Activitats econòmiques i fonts pròpies":13615747,
+        "Total":29504742,
+        "Consum domèstic per càpita":107.85
+    },
+    {
+        "Any":2013,
+        "Codi comarca":1,
+        "Comarca":"ALT CAMP, L'",
+        "Població":44771,
+        "Domèstic xarxa":1697473,
+        "Activitats econòmiques i fonts pròpies":2674706,
+        "Total":4372179,
+        "Consum domèstic per càpita":103.88
+    },
+    {
+        "Any":2013,
+        "Codi comarca":2,
+        "Comarca":"ALT EMPORDÀ, L'",
+        "Població":141351,
+        "Domèstic xarxa":8179176,
+        "Activitats econòmiques i fonts pròpies":4483290,
+        "Total":12662466,
+        "Consum domèstic per càpita":158.53
+    },
+    {
+        "Any":2013,
+        "Codi comarca":3,
+        "Comarca":"ALT PENEDÈS, L'",
+        "Població":106242,
+        "Domèstic xarxa":4202713,
+        "Activitats econòmiques i fonts pròpies":3155991,
+        "Total":7358704,
+        "Consum domèstic per càpita":108.38
+    },
+    {
+        "Any":2013,
+        "Codi comarca":4,
+        "Comarca":"ALT URGELL, L'",
+        "Població":21128,
+        "Domèstic xarxa":929937,
+        "Activitats econòmiques i fonts pròpies":1151884,
+        "Total":2081821,
+        "Consum domèstic per càpita":120.59
+    },
+    {
+        "Any":2013,
+        "Codi comarca":5,
+        "Comarca":"ALTA RIBAGORÇA, L'",
+        "Població":4097,
+        "Domèstic xarxa":391968,
+        "Activitats econòmiques i fonts pròpies":179843,
+        "Total":571811,
+        "Consum domèstic per càpita":262.11
+    },
+    {
+        "Any":2013,
+        "Codi comarca":6,
+        "Comarca":"ANOIA, L'",
+        "Població":118467,
+        "Domèstic xarxa":4730942,
+        "Activitats econòmiques i fonts pròpies":5474176,
+        "Total":10205118,
+        "Consum domèstic per càpita":109.41
+    },
+    {
+        "Any":2013,
+        "Codi comarca":7,
+        "Comarca":"BAGES, EL",
+        "Població":185718,
+        "Domèstic xarxa":7472919,
+        "Activitats econòmiques i fonts pròpies":7751893,
+        "Total":15224812,
+        "Consum domèstic per càpita":110.24
+    },
+    {
+        "Any":2013,
+        "Codi comarca":8,
+        "Comarca":"BAIX CAMP, EL",
+        "Població":193455,
+        "Domèstic xarxa":9677502,
+        "Activitats econòmiques i fonts pròpies":10245698,
+        "Total":19923200,
+        "Consum domèstic per càpita":137.05
+    },
+    {
+        "Any":2013,
+        "Codi comarca":9,
+        "Comarca":"BAIX EBRE, EL",
+        "Població":81514,
+        "Domèstic xarxa":3390997,
+        "Activitats econòmiques i fonts pròpies":3728866,
+        "Total":7119863,
+        "Consum domèstic per càpita":113.97
+    },
+    {
+        "Any":2013,
+        "Codi comarca":10,
+        "Comarca":"BAIX EMPORDÀ, EL",
+        "Població":133787,
+        "Domèstic xarxa":9528996,
+        "Activitats econòmiques i fonts pròpies":5219551,
+        "Total":14748546,
+        "Consum domèstic per càpita":195.14
+    },
+    {
+        "Any":2013,
+        "Codi comarca":11,
+        "Comarca":"BAIX LLOBREGAT, EL",
+        "Població":808644,
+        "Domèstic xarxa":31227063,
+        "Activitats econòmiques i fonts pròpies":24910788,
+        "Total":56137851,
+        "Consum domèstic per càpita":105.8
+    },
+    {
+        "Any":2013,
+        "Codi comarca":12,
+        "Comarca":"BAIX PENEDÈS, EL",
+        "Població":101100,
+        "Domèstic xarxa":6079158,
+        "Activitats econòmiques i fonts pròpies":2590907,
+        "Total":8670065,
+        "Consum domèstic per càpita":164.74
+    },
+    {
+        "Any":2013,
+        "Codi comarca":13,
+        "Comarca":"BARCELONÈS, EL",
+        "Població":2240437,
+        "Domèstic xarxa":83674573,
+        "Activitats econòmiques i fonts pròpies":38945124,
+        "Total":122619697,
+        "Consum domèstic per càpita":102.32
+    },
+    {
+        "Any":2013,
+        "Codi comarca":14,
+        "Comarca":"BERGUEDÀ, EL",
+        "Població":40555,
+        "Domèstic xarxa":1390862,
+        "Activitats econòmiques i fonts pròpies":776472,
+        "Total":2167334,
+        "Consum domèstic per càpita":93.96
+    },
+    {
+        "Any":2013,
+        "Codi comarca":15,
+        "Comarca":"CERDANYA, LA",
+        "Població":18630,
+        "Domèstic xarxa":1336710,
+        "Activitats econòmiques i fonts pròpies":1316639,
+        "Total":2653349,
+        "Consum domèstic per càpita":196.58
+    },
+    {
+        "Any":2013,
+        "Codi comarca":16,
+        "Comarca":"CONCA DE BARBERÀ, LA",
+        "Població":20992,
+        "Domèstic xarxa":836155,
+        "Activitats econòmiques i fonts pròpies":451880,
+        "Total":1288035,
+        "Consum domèstic per càpita":109.13
+    },
+    {
+        "Any":2013,
+        "Codi comarca":17,
+        "Comarca":"GARRAF, EL",
+        "Població":146609,
+        "Domèstic xarxa":7353811,
+        "Activitats econòmiques i fonts pròpies":2546227,
+        "Total":9900038,
+        "Consum domèstic per càpita":137.42
+    },
+    {
+        "Any":2013,
+        "Codi comarca":18,
+        "Comarca":"GARRIGUES, LES",
+        "Població":20058,
+        "Domèstic xarxa":652445,
+        "Activitats econòmiques i fonts pròpies":687635,
+        "Total":1340080,
+        "Consum domèstic per càpita":89.12
+    },
+    {
+        "Any":2013,
+        "Codi comarca":19,
+        "Comarca":"GARROTXA, LA",
+        "Població":56106,
+        "Domèstic xarxa":2069654,
+        "Activitats econòmiques i fonts pròpies":3860391,
+        "Total":5930045,
+        "Consum domèstic per càpita":101.06
+    },
+    {
+        "Any":2013,
+        "Codi comarca":20,
+        "Comarca":"GIRONÈS, EL",
+        "Població":185085,
+        "Domèstic xarxa":6887295,
+        "Activitats econòmiques i fonts pròpies":9276331,
+        "Total":16163626,
+        "Consum domèstic per càpita":101.95
+    },
+    {
+        "Any":2013,
+        "Codi comarca":21,
+        "Comarca":"MARESME, EL",
+        "Població":437431,
+        "Domèstic xarxa":20130855,
+        "Activitats econòmiques i fonts pròpies":9240030,
+        "Total":29370885,
+        "Consum domèstic per càpita":126.08
+    },
+    {
+        "Any":2013,
+        "Codi comarca":22,
+        "Comarca":"MONTSIÀ, EL",
+        "Població":71577,
+        "Domèstic xarxa":2697538,
+        "Activitats econòmiques i fonts pròpies":1707177,
+        "Total":4404715,
+        "Consum domèstic per càpita":103.25
+    },
+    {
+        "Any":2013,
+        "Codi comarca":23,
+        "Comarca":"NOGUERA, LA",
+        "Població":39828,
+        "Domèstic xarxa":1647118,
+        "Activitats econòmiques i fonts pròpies":1170474,
+        "Total":2817591,
+        "Consum domèstic per càpita":113.3
+    },
+    {
+        "Any":2013,
+        "Codi comarca":24,
+        "Comarca":"OSONA",
+        "Població":155069,
+        "Domèstic xarxa":5692392,
+        "Activitats econòmiques i fonts pròpies":6365183,
+        "Total":12057575,
+        "Consum domèstic per càpita":100.57
+    },
+    {
+        "Any":2013,
+        "Codi comarca":25,
+        "Comarca":"PALLARS JUSSÀ, EL",
+        "Població":13607,
+        "Domèstic xarxa":784788,
+        "Activitats econòmiques i fonts pròpies":227831,
+        "Total":1012619,
+        "Consum domèstic per càpita":158.01
+    },
+    {
+        "Any":2013,
+        "Codi comarca":26,
+        "Comarca":"PALLARS SOBIRÀ, EL",
+        "Població":7330,
+        "Domèstic xarxa":517686,
+        "Activitats econòmiques i fonts pròpies":517210,
+        "Total":1034897,
+        "Consum domèstic per càpita":193.49
+    },
+    {
+        "Any":2013,
+        "Codi comarca":27,
+        "Comarca":"PLA D'URGELL, EL",
+        "Població":37249,
+        "Domèstic xarxa":1540980,
+        "Activitats econòmiques i fonts pròpies":4116246,
+        "Total":5657226,
+        "Consum domèstic per càpita":113.34
+    },
+    {
+        "Any":2013,
+        "Codi comarca":28,
+        "Comarca":"PLA DE L'ESTANY, EL",
+        "Població":31325,
+        "Domèstic xarxa":1256360,
+        "Activitats econòmiques i fonts pròpies":1040814,
+        "Total":2297174,
+        "Consum domèstic per càpita":109.88
+    },
+    {
+        "Any":2013,
+        "Codi comarca":29,
+        "Comarca":"PRIORAT, EL",
+        "Població":9756,
+        "Domèstic xarxa":366489,
+        "Activitats econòmiques i fonts pròpies":112611,
+        "Total":479100,
+        "Consum domèstic per càpita":102.92
+    },
+    {
+        "Any":2013,
+        "Codi comarca":30,
+        "Comarca":"RIBERA D'EBRE, LA",
+        "Població":23477,
+        "Domèstic xarxa":926323,
+        "Activitats econòmiques i fonts pròpies":7955341,
+        "Total":8881664,
+        "Consum domèstic per càpita":108.1
+    },
+    {
+        "Any":2013,
+        "Codi comarca":31,
+        "Comarca":"RIPOLLÈS, EL",
+        "Població":25995,
+        "Domèstic xarxa":1119910,
+        "Activitats econòmiques i fonts pròpies":1171390,
+        "Total":2291300,
+        "Consum domèstic per càpita":118.03
+    },
+    {
+        "Any":2013,
+        "Codi comarca":32,
+        "Comarca":"SEGARRA, LA",
+        "Població":22971,
+        "Domèstic xarxa":777167,
+        "Activitats econòmiques i fonts pròpies":1711211,
+        "Total":2488379,
+        "Consum domèstic per càpita":93.44
+    },
+    {
+        "Any":2013,
+        "Codi comarca":33,
+        "Comarca":"SEGRIÀ, EL",
+        "Població":210141,
+        "Domèstic xarxa":9066254,
+        "Activitats econòmiques i fonts pròpies":7418179,
+        "Total":16484433,
+        "Consum domèstic per càpita":118.2
+    },
+    {
+        "Any":2013,
+        "Codi comarca":34,
+        "Comarca":"SELVA, LA",
+        "Població":173128,
+        "Domèstic xarxa":8017307,
+        "Activitats econòmiques i fonts pròpies":9620983,
+        "Total":17638290,
+        "Consum domèstic per càpita":126.87
+    },
+    {
+        "Any":2013,
+        "Codi comarca":35,
+        "Comarca":"SOLSONÈS, EL",
+        "Població":13621,
+        "Domèstic xarxa":601085,
+        "Activitats econòmiques i fonts pròpies":788604,
+        "Total":1389689,
+        "Consum domèstic per càpita":120.9
+    },
+    {
+        "Any":2013,
+        "Codi comarca":36,
+        "Comarca":"TARRAGONÈS, EL",
+        "Població":251226,
+        "Domèstic xarxa":12549882,
+        "Activitats econòmiques i fonts pròpies":38116024,
+        "Total":50665906,
+        "Consum domèstic per càpita":136.86
+    },
+    {
+        "Any":2013,
+        "Codi comarca":37,
+        "Comarca":"TERRA ALTA",
+        "Població":12310,
+        "Domèstic xarxa":431836,
+        "Activitats econòmiques i fonts pròpies":216539,
+        "Total":648375,
+        "Consum domèstic per càpita":96.11
+    },
+    {
+        "Any":2013,
+        "Codi comarca":38,
+        "Comarca":"URGELL, L'",
+        "Població":36863,
+        "Domèstic xarxa":1451771,
+        "Activitats econòmiques i fonts pròpies":949845,
+        "Total":2401616,
+        "Consum domèstic per càpita":107.9
+    },
+    {
+        "Any":2013,
+        "Codi comarca":39,
+        "Comarca":"VAL D'ARAN, LA",
+        "Població":10090,
+        "Domèstic xarxa":1122614,
+        "Activitats econòmiques i fonts pròpies":549732,
+        "Total":1672345,
+        "Consum domèstic per càpita":304.82
+    },
+    {
+        "Any":2013,
+        "Codi comarca":40,
+        "Comarca":"VALLÈS OCCIDENTAL, EL",
+        "Població":898921,
+        "Domèstic xarxa":35124562,
+        "Activitats econòmiques i fonts pròpies":23709406,
+        "Total":58833968,
+        "Consum domèstic per càpita":107.05
+    },
+    {
+        "Any":2013,
+        "Codi comarca":41,
+        "Comarca":"VALLÈS ORIENTAL, EL",
+        "Població":402989,
+        "Domèstic xarxa":16018513,
+        "Activitats econòmiques i fonts pròpies":13212124,
+        "Total":29230637,
+        "Consum domèstic per càpita":108.9
+    },
+    {
+        "Any":2012,
+        "Codi comarca":1,
+        "Comarca":"ALT CAMP, L'",
+        "Població":45299,
+        "Domèstic xarxa":1794009,
+        "Activitats econòmiques i fonts pròpies":2578545,
+        "Total":4372554,
+        "Consum domèstic per càpita":108.5
+    },
+    {
+        "Any":2012,
+        "Codi comarca":2,
+        "Comarca":"ALT EMPORDÀ, L'",
+        "Població":141517,
+        "Domèstic xarxa":8582301,
+        "Activitats econòmiques i fonts pròpies":4540324,
+        "Total":13122625,
+        "Consum domèstic per càpita":166.15
+    },
+    {
+        "Any":2012,
+        "Codi comarca":3,
+        "Comarca":"ALT PENEDÈS, L'",
+        "Població":106252,
+        "Domèstic xarxa":4452419,
+        "Activitats econòmiques i fonts pròpies":3314181,
+        "Total":7766600,
+        "Consum domèstic per càpita":114.81
+    },
+    {
+        "Any":2012,
+        "Codi comarca":4,
+        "Comarca":"ALT URGELL, L'",
+        "Població":21386,
+        "Domèstic xarxa":973901,
+        "Activitats econòmiques i fonts pròpies":1258703,
+        "Total":2232604,
+        "Consum domèstic per càpita":124.76
+    },
+    {
+        "Any":2012,
+        "Codi comarca":5,
+        "Comarca":"ALTA RIBAGORÇA, L'",
+        "Població":4235,
+        "Domèstic xarxa":330192,
+        "Activitats econòmiques i fonts pròpies":259940,
+        "Total":590132,
+        "Consum domèstic per càpita":213.61
+    },
+    {
+        "Any":2012,
+        "Codi comarca":6,
+        "Comarca":"ANOIA, L'",
+        "Població":118817,
+        "Domèstic xarxa":4971310,
+        "Activitats econòmiques i fonts pròpies":6916080,
+        "Total":11887390,
+        "Consum domèstic per càpita":114.63
+    },
+    {
+        "Any":2012,
+        "Codi comarca":7,
+        "Comarca":"BAGES, EL",
+        "Població":186084,
+        "Domèstic xarxa":7932563,
+        "Activitats econòmiques i fonts pròpies":7582740,
+        "Total":15515303,
+        "Consum domèstic per càpita":116.79
+    },
+    {
+        "Any":2012,
+        "Codi comarca":8,
+        "Comarca":"BAIX CAMP, EL",
+        "Població":193535,
+        "Domèstic xarxa":10540527,
+        "Activitats econòmiques i fonts pròpies":4394018,
+        "Total":14934544,
+        "Consum domèstic per càpita":149.21
+    },
+    {
+        "Any":2012,
+        "Codi comarca":9,
+        "Comarca":"BAIX EBRE, EL",
+        "Població":83125,
+        "Domèstic xarxa":3700682,
+        "Activitats econòmiques i fonts pròpies":4563251,
+        "Total":8263933,
+        "Consum domèstic per càpita":121.97
+    },
+    {
+        "Any":2012,
+        "Codi comarca":10,
+        "Comarca":"BAIX EMPORDÀ, EL",
+        "Població":133754,
+        "Domèstic xarxa":10422549,
+        "Activitats econòmiques i fonts pròpies":5390491,
+        "Total":15813040,
+        "Consum domèstic per càpita":213.49
+    },
+    {
+        "Any":2012,
+        "Codi comarca":11,
+        "Comarca":"BAIX LLOBREGAT, EL",
+        "Població":806799,
+        "Domèstic xarxa":32385719,
+        "Activitats econòmiques i fonts pròpies":25091638,
+        "Total":57477357,
+        "Consum domèstic per càpita":109.98
+    },
+    {
+        "Any":2012,
+        "Codi comarca":12,
+        "Comarca":"BAIX PENEDÈS, EL",
+        "Població":101138,
+        "Domèstic xarxa":6551468,
+        "Activitats econòmiques i fonts pròpies":2440290,
+        "Total":8991758,
+        "Consum domèstic per càpita":177.47
+    },
+    {
+        "Any":2012,
+        "Codi comarca":13,
+        "Comarca":"BARCELONÈS, EL",
+        "Població":2254052,
+        "Domèstic xarxa":86155670,
+        "Activitats econòmiques i fonts pròpies":37154412,
+        "Total":123310082,
+        "Consum domèstic per càpita":104.72
+    },
+    {
+        "Any":2012,
+        "Codi comarca":14,
+        "Comarca":"BERGUEDÀ, EL",
+        "Població":41202,
+        "Domèstic xarxa":1459891,
+        "Activitats econòmiques i fonts pròpies":1178045,
+        "Total":2637936,
+        "Consum domèstic per càpita":97.08
+    },
+    {
+        "Any":2012,
+        "Codi comarca":15,
+        "Comarca":"CERDANYA, LA",
+        "Població":19047,
+        "Domèstic xarxa":1412019,
+        "Activitats econòmiques i fonts pròpies":1894932,
+        "Total":3306951,
+        "Consum domèstic per càpita":203.11
+    },
+    {
+        "Any":2012,
+        "Codi comarca":16,
+        "Comarca":"CONCA DE BARBERÀ, LA",
+        "Població":21148,
+        "Domèstic xarxa":863056,
+        "Activitats econòmiques i fonts pròpies":466330,
+        "Total":1329386,
+        "Consum domèstic per càpita":111.81
+    },
+    {
+        "Any":2012,
+        "Codi comarca":17,
+        "Comarca":"GARRAF, EL",
+        "Població":147107,
+        "Domèstic xarxa":7785516,
+        "Activitats econòmiques i fonts pròpies":2645568,
+        "Total":10431084,
+        "Consum domèstic per càpita":145.0
+    },
+    {
+        "Any":2012,
+        "Codi comarca":18,
+        "Comarca":"GARRIGUES, LES",
+        "Població":20212,
+        "Domèstic xarxa":685024,
+        "Activitats econòmiques i fonts pròpies":561195,
+        "Total":1246219,
+        "Consum domèstic per càpita":92.85
+    },
+    {
+        "Any":2012,
+        "Codi comarca":19,
+        "Comarca":"GARROTXA, LA",
+        "Població":55855,
+        "Domèstic xarxa":2343497,
+        "Activitats econòmiques i fonts pròpies":3737840,
+        "Total":6081337,
+        "Consum domèstic per càpita":114.95
+    },
+    {
+        "Any":2012,
+        "Codi comarca":20,
+        "Comarca":"GIRONÈS, EL",
+        "Població":184187,
+        "Domèstic xarxa":6873505,
+        "Activitats econòmiques i fonts pròpies":9548233,
+        "Total":16421738,
+        "Consum domèstic per càpita":102.24
+    },
+    {
+        "Any":2012,
+        "Codi comarca":21,
+        "Comarca":"MARESME, EL",
+        "Població":436487,
+        "Domèstic xarxa":21427948,
+        "Activitats econòmiques i fonts pròpies":9270980,
+        "Total":30698928,
+        "Consum domèstic per càpita":134.5
+    },
+    {
+        "Any":2012,
+        "Codi comarca":22,
+        "Comarca":"MONTSIÀ, EL",
+        "Població":72121,
+        "Domèstic xarxa":2820336,
+        "Activitats econòmiques i fonts pròpies":1906032,
+        "Total":4726368,
+        "Consum domèstic per càpita":107.14
+    },
+    {
+        "Any":2012,
+        "Codi comarca":23,
+        "Comarca":"NOGUERA, LA",
+        "Població":40200,
+        "Domèstic xarxa":1805873,
+        "Activitats econòmiques i fonts pròpies":1552735,
+        "Total":3358608,
+        "Consum domèstic per càpita":123.07
+    },
+    {
+        "Any":2012,
+        "Codi comarca":24,
+        "Comarca":"OSONA",
+        "Població":154588,
+        "Domèstic xarxa":6258682,
+        "Activitats econòmiques i fonts pròpies":6921381,
+        "Total":13180063,
+        "Consum domèstic per càpita":110.92
+    },
+    {
+        "Any":2012,
+        "Codi comarca":25,
+        "Comarca":"PALLARS JUSSÀ, EL",
+        "Població":14113,
+        "Domèstic xarxa":787315,
+        "Activitats econòmiques i fonts pròpies":282936,
+        "Total":1070251,
+        "Consum domèstic per càpita":152.84
+    },
+    {
+        "Any":2012,
+        "Codi comarca":26,
+        "Comarca":"PALLARS SOBIRÀ, EL",
+        "Població":7457,
+        "Domèstic xarxa":529020,
+        "Activitats econòmiques i fonts pròpies":657883,
+        "Total":1186903,
+        "Consum domèstic per càpita":194.36
+    },
+    {
+        "Any":2012,
+        "Codi comarca":27,
+        "Comarca":"PLA D'URGELL, EL",
+        "Població":37267,
+        "Domèstic xarxa":1552508,
+        "Activitats econòmiques i fonts pròpies":3962969,
+        "Total":5515477,
+        "Consum domèstic per càpita":114.13
+    },
+    {
+        "Any":2012,
+        "Codi comarca":28,
+        "Comarca":"PLA DE L'ESTANY, EL",
+        "Població":31463,
+        "Domèstic xarxa":1443741,
+        "Activitats econòmiques i fonts pròpies":1029743,
+        "Total":2473483,
+        "Consum domèstic per càpita":125.72
+    },
+    {
+        "Any":2012,
+        "Codi comarca":29,
+        "Comarca":"PRIORAT, EL",
+        "Població":9971,
+        "Domèstic xarxa":380638,
+        "Activitats econòmiques i fonts pròpies":111138,
+        "Total":491776,
+        "Consum domèstic per càpita":104.59
+    },
+    {
+        "Any":2012,
+        "Codi comarca":30,
+        "Comarca":"RIBERA D'EBRE, LA",
+        "Població":23867,
+        "Domèstic xarxa":958837,
+        "Activitats econòmiques i fonts pròpies":8135751,
+        "Total":9094588,
+        "Consum domèstic per càpita":110.07
+    },
+    {
+        "Any":2012,
+        "Codi comarca":31,
+        "Comarca":"RIPOLLÈS, EL",
+        "Població":26268,
+        "Domèstic xarxa":1180825,
+        "Activitats econòmiques i fonts pròpies":1211295,
+        "Total":2392120,
+        "Consum domèstic per càpita":123.16
+    },
+    {
+        "Any":2012,
+        "Codi comarca":32,
+        "Comarca":"SEGARRA, LA",
+        "Població":23365,
+        "Domèstic xarxa":825951,
+        "Activitats econòmiques i fonts pròpies":1662250,
+        "Total":2488201,
+        "Consum domèstic per càpita":97.69
+    },
+    {
+        "Any":2012,
+        "Codi comarca":33,
+        "Comarca":"SEGRIÀ, EL",
+        "Població":209965,
+        "Domèstic xarxa":9425056,
+        "Activitats econòmiques i fonts pròpies":7292915,
+        "Total":16717971,
+        "Consum domèstic per càpita":122.98
+    },
+    {
+        "Any":2012,
+        "Codi comarca":34,
+        "Comarca":"SELVA, LA",
+        "Població":173518,
+        "Domèstic xarxa":8924994,
+        "Activitats econòmiques i fonts pròpies":10043830,
+        "Total":18968824,
+        "Consum domèstic per càpita":140.92
+    },
+    {
+        "Any":2012,
+        "Codi comarca":35,
+        "Comarca":"SOLSONÈS, EL",
+        "Població":13676,
+        "Domèstic xarxa":640383,
+        "Activitats econòmiques i fonts pròpies":492441,
+        "Total":1132824,
+        "Consum domèstic per càpita":128.29
+    },
+    {
+        "Any":2012,
+        "Codi comarca":36,
+        "Comarca":"TARRAGONÈS, EL",
+        "Població":251282,
+        "Domèstic xarxa":13680558,
+        "Activitats econòmiques i fonts pròpies":41772215,
+        "Total":55452773,
+        "Consum domèstic per càpita":149.16
+    },
+    {
+        "Any":2012,
+        "Codi comarca":37,
+        "Comarca":"TERRA ALTA",
+        "Població":12713,
+        "Domèstic xarxa":441824,
+        "Activitats econòmiques i fonts pròpies":225143,
+        "Total":666967,
+        "Consum domèstic per càpita":95.22
+    },
+    {
+        "Any":2012,
+        "Codi comarca":38,
+        "Comarca":"URGELL, L'",
+        "Població":36975,
+        "Domèstic xarxa":1543234,
+        "Activitats econòmiques i fonts pròpies":1422857,
+        "Total":2966091,
+        "Consum domèstic per càpita":114.35
+    },
+    {
+        "Any":2012,
+        "Codi comarca":39,
+        "Comarca":"VAL D'ARAN, LA",
+        "Població":10056,
+        "Domèstic xarxa":1112630,
+        "Activitats econòmiques i fonts pròpies":731409,
+        "Total":1844038,
+        "Consum domèstic per càpita":303.13
+    },
+    {
+        "Any":2012,
+        "Codi comarca":40,
+        "Comarca":"VALLÈS OCCIDENTAL, EL",
+        "Població":898173,
+        "Domèstic xarxa":36611134,
+        "Activitats econòmiques i fonts pròpies":25651000,
+        "Total":62262134,
+        "Consum domèstic per càpita":111.68
+    },
+    {
+        "Any":2012,
+        "Codi comarca":41,
+        "Comarca":"VALLÈS ORIENTAL, EL",
+        "Població":402632,
+        "Domèstic xarxa":17020094,
+        "Activitats econòmiques i fonts pròpies":14216816,
+        "Total":31236910,
+        "Consum domèstic per càpita":115.81
+    }
+]
