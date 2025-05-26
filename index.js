@@ -8,7 +8,7 @@ import bodyParser from "body-parser";
 //Importamos las rutas
 import indicesbioRoutes from "./routes/indicesbio.js";
 import nutrientesRoutes from "./routes/nutrientes_2.js";
-import elementoFisicoquimicosRoutes from "./routes/elementosFisicoquimicos.js";
+import elementoFisicoquimicosRoutes from "./routes/routes/elementosFisicoquimicos.js";
 import homeRoutes from "./routes/home.js";
 
 
