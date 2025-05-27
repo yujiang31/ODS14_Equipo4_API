@@ -1,73 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Visualización de pH - Elementos Fisicoquímicos</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" href="/styles.css">
+  <title>Mapa de Temperatura</title>
 </head>
 <body>
-    <h1>Medias de pH por Año y Profundidad</h1>
+  <h1>Mapa Interactivo de Temperatura (desde Colab)</h1>
 
-    <!-- Tabla de datos -->
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Año</th>
-                <th>Profundidad (m)</th>
-                <th>Media pH</th>
-            </tr>
-        </thead>
-        <tbody>
-            <% medias.forEach(function(entry) { %>
-                <tr>
-                    <td><%= entry.year %></td>
-                    <td><%= entry.profundidad %></td>
-                    <td><%= entry.media %></td>
-                </tr>
-            <% }); %>
-        </tbody>
-    </table>
-
-    <!-- Contenedor para el gráfico -->
-    <canvas id="phChart"></canvas>
-
-   <script>
-    const mediasData = JSON.stringify(medias) ;
-
-    const labels = [];
-    const dataPoints = [];
-
-    mediasData.forEach(function(entry) {
-        labels.push(`${entry.year} - ${entry.profundidad}m`);
-        dataPoints.push(entry.media);
-    });
-
-    const ctx = document.getElementById('phChart').getContext('2d');
-    new Chart(ctx, {
-        type: 'line',
-        data: {
-            labels: labels,
-            datasets: [{
-                label: 'Media de pH por Año y Profundidad',
-                data: dataPoints,
-                borderColor: 'blue',
-                borderWidth: 2,
-                backgroundColor: 'rgba(0, 0, 255, 0.2)',
-                tension: 0.3
-            }]
-        },
-        options: {
-            responsive: true,
-            scales: {
-                y: {
-                    beginAtZero: false
-                }
-            }
-        }
-    });
-</script>
-
-
+  <!-- Incluir el HTML generado desde Colab -->
+  <iframe src="/visualizaciones/mapa_temperatura.html" width="100%" height="600px" frameborder="0"></iframe>
 </body>
 </html>

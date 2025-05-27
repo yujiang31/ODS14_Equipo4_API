@@ -17,7 +17,6 @@
         "url": "https://github.com/yujiang31/ODS14_Equipo4_API/issues"
     },
     "homepage": "https://github.com/yujiang31/ODS14_Equipo4_API#readme",
-    "description": "",
     "dependencies": {
         "bcrypt": "^6.0.0",
         "cookie-parser": "^1.4.7",
@@ -26,5 +25,6 @@
         "express": "^5.1.0",
         "jsonwebtoken": "^9.0.2",
         "nodemon": "^3.1.10"
-    }
+    },
+    "description": ""
 }

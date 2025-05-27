@@ -63,8 +63,6 @@ router.get("/", (req, res) => {
     const rawData = readData(); // 🔹 Usamos tu `readData` sin modificarlo
     const medias = calculatePhMedias(rawData); // 🔹 Parseamos los datos dentro de `calculatePhMedias`
 
-    console.log("Medias calculadas:", medias); // Para verificar si se generan correctamente
-    console.log("JSON.stringify(medias):", JSON.stringify(medias));
     res.render("elementosFisicoquimicos", { medias });
 });
 
