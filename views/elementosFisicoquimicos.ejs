@@ -1,12 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Mapa de Temperatura</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico de Temperatura</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-  <h1>Mapa Interactivo de Temperatura (desde Colab)</h1>
+    <h1>Variación de Temperatura por Profundidad</h1>
+    <canvas id="temperatureChart"></canvas>
 
-  <!-- Incluir el HTML generado desde Colab -->
-  <iframe src="/visualizaciones/mapa_temperatura.html" width="100%" height="600px" frameborder="0"></iframe>
+    <script>
+        const data = JSON.parse('<%- figJson %>');
+
+        // Filtrar solo los datos de temperatura
+        const temperatureData = data.filter(d => d["Variable"].includes("Temperatura"));
+
+        const labels = temperatureData.map(d => d["Profunditat mostra (m)"]); // Profundidad en eje X
+        const values = temperatureData.map(d => parseFloat(d["Valor"])); // Temperatura en eje Y
+
+        // Crear la gráfica
+        new Chart(document.getElementById("temperatureChart"), {
+            type: "line",
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: "Temperatura (ºC)",
+                    data: values,
+                    borderColor: "rgba(255, 99, 132, 1)",
+                    backgroundColor: "rgba(255, 99, 132, 0.2)",
+                    borderWidth: 2,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: { title: { display: true, text: "Profundidad (m)" } },
+                    y: { title: { display: true, text: "Temperatura (ºC)" } }
+                }
+            }
+        });
+    </script>
 </body>
 </html>

@@ -58,12 +58,10 @@ const calculatePhMedias = (data) => {
     }
 };
 
-// Ruta para renderizar la vista con los datos procesados
 router.get("/", (req, res) => {
-    const rawData = readData(); // 🔹 Usamos tu `readData` sin modificarlo
-    const medias = calculatePhMedias(rawData); // 🔹 Parseamos los datos dentro de `calculatePhMedias`
-
-    res.render("elementosFisicoquimicos", { medias });
+    const rawData = fs.readFileSync("./db/Elementos_Fisioquimicos_Generales.json", "utf8"); 
+    res.render("elementosFisicoquimicos", { figJson: JSON.stringify(rawData) }); // 🔹 Convierte a JSON válido
 });
+
 
 export default router;
