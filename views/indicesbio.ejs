@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Índices Biológicos</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    #map {
+      height: 600px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mapa de Estaciones 2024</h1>
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/proj4@2.8.0/dist/proj4.js"></script>
+
+
+  <script>
+    // Convertimos los datos procesados del backend en una variable JS
+    const estaciones = <%- JSON.stringify(procesado) %>;
+    console.log(estaciones)
+
+    // Centrar mapa en promedio de coordenadas
+    const avgLat = 41.39; // puedes ajustar a un valor real si conviertes UTM
+    const avgLon = 2.15;
+
+    const map = L.map('map').setView([avgLat, avgLon], 9);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Proyección EPSG:25831 a EPSG:4326
+    proj4.defs("EPSG:25831", "+proj=utm +zone=31 +ellps=GRS80 +units=m +no_defs");
+    const fromEPSG25831 = proj4("EPSG:25831", "WGS84");
+
+
+    // Escalar de color
+    function valorToColor(val, min, max) {
+      const norm = (val - min) / (max - min);
+      const r = Math.round(norm * 255);
+      const g = Math.round((1 - norm) * 255);
+      return `rgb(${r}, ${g}, 0)`;
+    }
+
+    const valores = estaciones.map(e => e.Valor);
+    const min = Math.min(...valores);
+    const max = Math.max(...valores);
+
+    estaciones.forEach(est => {
+      const [lon, lat] = fromEPSG25831.forward([est["UTM X"], est["UTM Y"]]);
+      const color = valorToColor(est.Valor, min, max);
+
+      L.circleMarker([lat, lon], {
+        radius: 6,
+        fillColor: color,
+        color: color,
+        weight: 1,
+        fillOpacity: 0.7
+      })
+      .bindPopup(`<b>Estació:</b> ${est["Codi Estació"]}<br><b>Valor:</b> ${est.Valor.toFixed(2)}`)
+      .addTo(map);
+    });
+  </script>
+</body>
+</html>
