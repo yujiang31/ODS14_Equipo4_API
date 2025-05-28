@@ -19,53 +19,45 @@ const readData = () => {
   
 
 // Función para filtrar y calcular promedios para el año 2024
-const calcularEstacionesPromedio = (data) => {
+const calcularClorofila2024 = (data) => {
+    // Parseo de fechas y valores
     const data2024 = data
-        .filter(item => item["Data"] && item["Valor"] && item["Codi Estació"])
-        .map(item => {
-            const parsedDate = new Date(item["Data"].replace(/\//g, "-"));
-            const valorNum = parseFloat(item["Valor"]);
-            return {
-                ...item,
-                Valor: isNaN(valorNum) ? null : valorNum,
-                Data: parsedDate,
-            };
-        })
-        .filter(item => item.Data.getFullYear() === 2024 && item.Valor !== null);
-
+      .filter(item => item["Variable"] === "Clorofil·la a" && item["Valor"] && item["Data"] && item["Codi Estació"])
+      .map(item => ({
+        ...item,
+        Data: new Date(item["Data"].replace(/\//g, "-")),
+        Valor: parseFloat(item["Valor"])
+      }))
+      .filter(item => item.Data.getFullYear() === 2024 && !isNaN(item.Valor));
+  
+    // Agrupar por estación
     const agrupado = {};
     data2024.forEach(item => {
-        const est = item["Codi Estació"];
-        if (!agrupado[est]) {
-            agrupado[est] = {
-                "Codi Estació": est,
-                "UTM X": [],
-                "UTM Y": [],
-                "Valor": [],
-            };
-        }
-        agrupado[est]["UTM X"].push(item["UTM X"]);
-        agrupado[est]["UTM Y"].push(item["UTM Y"]);
-        agrupado[est]["Valor"].push(item["Valor"]);
+      const est = item["Codi Estació"];
+      if (!agrupado[est]) agrupado[est] = { "Codi Estació": est, "UTM X": [], "UTM Y": [], "Valor": [] };
+      agrupado[est]["UTM X"].push(item["UTM X"]);
+      agrupado[est]["UTM Y"].push(item["UTM Y"]);
+      agrupado[est]["Valor"].push(item["Valor"]);
     });
-
-    const promedio = arr => arr.reduce((sum, v) => sum + v, 0) / arr.length;
-
+  
+    // Calcular promedio
+    const promedio = arr => arr.reduce((s,v) => s+v, 0) / arr.length;
     return Object.values(agrupado).map(est => ({
-        "Codi Estació": est["Codi Estació"],
-        "UTM X": promedio(est["UTM X"]),
-        "UTM Y": promedio(est["UTM Y"]),
-        "Valor": promedio(est["Valor"])
+      "Codi Estació": est["Codi Estació"],
+      "UTM X": promedio(est["UTM X"]),
+      "UTM Y": promedio(est["UTM Y"]),
+      "Valor": promedio(est["Valor"])
     }));
-};
+  };
+  
+
 
 // Ruta GET limpia y clara
 router.get("/", (req, res) => {
     const data = readData();
-    console.log("Datos leídos:", data.length || data); 
-    const procesado = calcularEstacionesPromedio(data);
-    console.log("Datos procesados:", procesado.length || procesado);
-    res.render("indicesbio", {procesado});
-});
+    const clorofila2024 = calcularClorofila2024(data);
+    console.log("Clorofila en 2024:", clorofila2024.length);
+    res.render("indicesbio", { clorofila: clorofila2024 });
+  });
 
 export default router;

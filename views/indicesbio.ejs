@@ -1,202 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Índices Biológicos</title>
 
-      <!-- Estilos existentes -->
-      <link rel="stylesheet" href="/css/bootstrap.min.css">
-      <link rel="stylesheet" href="/css/style.css">
-      <link rel="stylesheet" href="/css/responsive.css">
-      <link rel="icon" href="/images/fevicon.png" type="image/gif" />
-      <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css">
-      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Índices Biológicos</title>
 
-      <!-- Leaflet CSS -->
-      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+   <!-- Estilos existentes -->
+   <link rel="stylesheet" href="/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/css/style.css">
+   <link rel="stylesheet" href="/css/responsive.css">
+   <link rel="icon" href="/images/fevicon.png" type="image/gif" />
+   <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css">
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
 
-      <style>
-         #map {
-            height: 600px;
-            margin-top: 40px;
-            margin-bottom: 40px;
-         }
-          /* Altura fija para la columna derecha (imagen + mapa) */
-          .right-col {
-           display: flex;
-           flex-direction: column;
-         }
-         .right-col .img-container,
-         .right-col #map {
-           flex: 1;
-         }
-         /* Cuando el texto sea más largo que la columna derecha,
+   <!-- Leaflet CSS -->
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+   <style>
+      #map {
+         height: 600px;
+         margin-top: 40px;
+         margin-bottom: 40px;
+      }
+
+      /* Altura fija para la columna derecha (imagen + mapa) */
+      .right-col {
+         display: flex;
+         flex-direction: column;
+      }
+
+      .right-col .img-container,
+      .right-col #map {
+         flex: 1;
+      }
+
+      /* Cuando el texto sea más largo que la columna derecha,
             la imagen/mapa pasarán a ocupar toda la fila */
-         @media (min-width: 992px) {
-           .text-col.long {
-             order: 1;
-           }
-           .right-col.long {
-             order: 2;
-             width: 100%;
-           }
+      @media (min-width: 992px) {
+         .text-col.long {
+            order: 1;
          }
-         #map {
-            height: 100%; /* ocupa todo el flex container */
-         }
-         p {
-            margin-bottom: 2rem;
-         }
-      </style>
-   </head>
 
-   <body class="main-layout">
-      <!-- loader  -->
-      <div class="loader_bg">
-         <div class="loader"><img src="/images/loading.gif" alt="loading" /></div>
-      </div>
+         .right-col.long {
+            order: 2;
+            width: 100%;
+         }
+      }
 
-      <!-- header -->
-      <header>
-         <div class="header">
-            <div class="container-fluid">
-               <div class="row">
-                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
-                     <div class="full">
-                        <div class="center-desk">
-                           <div class="logo">
-                              <a href="/"><img src="/images/ods_14_icon.jpg" alt="logo" /></a>
-                           </div>
+      #map {
+         height: 100%;
+         /* ocupa todo el flex container */
+      }
+
+      p {
+         margin-bottom: 2rem;
+      }
+   </style>
+</head>
+
+<body class="main-layout">
+   <!-- loader  -->
+   <div class="loader_bg">
+      <div class="loader"><img src="/images/loading.gif" alt="loading" /></div>
+   </div>
+
+   <!-- header -->
+   <header>
+      <div class="header">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                  <div class="full">
+                     <div class="center-desk">
+                        <div class="logo">
+                           <a href="/"><img src="/images/ods_14_icon.jpg" alt="logo" /></a>
                         </div>
                      </div>
                   </div>
-                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
-                     <div class="header_information">
-                        <nav class="navigation navbar navbar-expand-md navbar-dark">
-                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04">
-                              <span class="navbar-toggler-icon"></span>
-                           </button>
-                           <div class="collapse navbar-collapse" id="navbarsExample04">
-                              <ul class="navbar-nav mr-auto">
-                                 <li class="nav-item"><a class="nav-link" href="/indicesbio">Indices Biologicos</a></li>
-                                 <li class="nav-item"><a class="nav-link" href="/nutrientes_2">Nutrientes</a></li>
-                                 <li class="nav-item"><a class="nav-link" href="/elementosFisioquimicos">elementos Fisicoquimicos</a></li>
-                                 <li class="nav-item"><a class="nav-link" href="/temperatura">Temperatura Media de las Aguas</a></li>
-                              </ul>
-                           </div>
-                        </nav>
-                     </div>
+               </div>
+               <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                  <div class="header_information">
+                     <nav class="navigation navbar navbar-expand-md navbar-dark">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                           data-target="#navbarsExample04">
+                           <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                           <ul class="navbar-nav mr-auto">
+                              <li class="nav-item"><a class="nav-link" href="/indicesbio">Indices Biologicos</a></li>
+                              <li class="nav-item"><a class="nav-link" href="/nutrientes_2">Nutrientes</a></li>
+                              <li class="nav-item"><a class="nav-link" href="/elementosFisioquimicos">elementos
+                                    Fisicoquimicos</a></li>
+                              <li class="nav-item"><a class="nav-link" href="/temperatura">Temperatura Media de las
+                                    Aguas</a></li>
+                           </ul>
+                        </div>
+                     </nav>
                   </div>
                </div>
             </div>
          </div>
-      </header>
-      <!-- end header -->
+      </div>
+   </header>
+   <!-- end header -->
 
-      <div class="container my-5">
-         <!-- Fila 1 -->
-         <div class="row">
-           <div class="col-lg-6">
-             <h2>Sobre los Índices Biológicos</h2>
-             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo sem, porta ac pharetra sit amet, euismod sed enim. Vestibulum posuere eleifend egestas. Ut tortor ex, scelerisque id mauris nec, sagittis facilisis magna. Nullam dolor eros, luctus id odio ut, pretium consectetur metus. Nulla facilisi. Donec et placerat ligula, at ullamcorper turpis. Cras a velit maximus, vestibulum metus ut, gravida nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec metus mi, faucibus eget feugiat in, viverra accumsan nulla. Donec quis sapien at lorem ornare placerat. Etiam ac ligula vulputate tortor facilisis feugiat. Duis eget malesuada justo, eget hendrerit lacus. Nunc eleifend est et cursus pulvinar. Vivamus eget rhoncus dolor, posuere ultrices nulla. Praesent ac velit in augue porta venenatis a sed augue. Etiam vel nisi orci. Praesent accumsan venenatis neque, faucibus pretium enim congue at. Praesent bibendum tempus molestie. Donec eu enim a tellus fermentum tincidunt in vitae augue. Morbi luctus ipsum magna, pharetra gravida sem malesuada at. Etiam posuere quam turpis, a aliquam magna pharetra nec. Aenean eget auctor enim, sed vestibulum nunc. Praesent viverra nibh velit, sit amet blandit est dapibus nec.</p>
-           </div>
-           <div class="col-lg-6">
-             <div class="mb-4">
-               <a href="https://colab.research.google.com/drive/1_vPPWF68_g9iyoxooM6dxENTCFXzaRvD?usp=sharing">
-                  <img src="/images/temperatura_media.png"
-                  alt="Descripción"
-                  class="img-fluid w-100"
-                  style="height:300px; object-fit:cover;">
+   <div class="container my-5">
+      <!-- Fila 1 -->
+      <div class="row">
+         <div class="col-lg-6">
+            <h2>Sobre los Índices Biológicos</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo sem, porta ac pharetra sit amet,
+               euismod sed enim. Vestibulum posuere eleifend egestas. Ut tortor ex, scelerisque id mauris nec, sagittis
+               facilisis magna. Nullam dolor eros, luctus id odio ut, pretium consectetur metus. Nulla facilisi. Donec
+               et placerat ligula, at ullamcorper turpis. Cras a velit maximus, vestibulum metus ut, gravida nisl. Class
+               aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec metus mi, faucibus eget feugiat in,
+               viverra accumsan nulla. Donec quis sapien at lorem ornare placerat. Etiam ac ligula vulputate tortor
+               facilisis feugiat. Duis eget malesuada justo, eget hendrerit lacus. Nunc eleifend est et cursus pulvinar.
+               Vivamus eget rhoncus dolor, posuere ultrices nulla. Praesent ac velit in augue porta venenatis a sed
+               augue. Etiam vel nisi orci. Praesent accumsan venenatis neque, faucibus pretium enim congue at. Praesent
+               bibendum tempus molestie. Donec eu enim a tellus fermentum tincidunt in vitae augue. Morbi luctus ipsum
+               magna, pharetra gravida sem malesuada at. Etiam posuere quam turpis, a aliquam magna pharetra nec. Aenean
+               eget auctor enim, sed vestibulum nunc. Praesent viverra nibh velit, sit amet blandit est dapibus nec.</p>
+         </div>
+         <div class="col-lg-6">
+            <div class="mb-4">
+               <a
+                  href="https://colab.research.google.com/drive/1_vPPWF68_g9iyoxooM6dxENTCFXzaRvD#scrollTo=RI22KyaHuhuh&line=1&uniqifier=1">
+                  <img src="/images/temperatura_media.png" alt="Descripción" class="img-fluid w-100"
+                     style="height:300px; object-fit:cover;">
                </a>
-             </div>
-             <div id="map" style="height:300px;"></div>
-           </div>
-         </div>
-         <!-- Fila 2 -->
-         <div class="row mt-4">
-           <div class="col-12">
-             <p>
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo sem, porta ac pharetra sit amet, euismod sed enim. Vestibulum posuere eleifend egestas. Ut tortor ex, scelerisque id mauris nec, sagittis facilisis magna. Nullam dolor eros, luctus id odio ut, pretium consectetur metus. Nulla facilisi. Donec et placerat ligula, at ullamcorper turpis. Cras a velit maximus, vestibulum metus ut, gravida nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-             </p>
-           </div>
-         </div>
-       </div>
+            </div>
 
-      
+            <div id="map-clorofila" style="height:400px;"></div>
+         </div>
+      </div>
+      <!-- Fila 2 -->
+      <div class="row mt-4">
+         <div class="col-12">
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo sem, porta ac pharetra sit amet,
+               euismod sed enim. Vestibulum posuere eleifend egestas. Ut tortor ex, scelerisque id mauris nec, sagittis
+               facilisis magna. Nullam dolor eros, luctus id odio ut, pretium consectetur metus. Nulla facilisi. Donec
+               et placerat ligula, at ullamcorper turpis. Cras a velit maximus, vestibulum metus ut, gravida nisl. Class
+               aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            </p>
+         </div>
+      </div>
+   </div>
 
-      <!-- footer -->
-      <footer>
-         <div class="footer">
-            <div class="copyright">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-md-12">
-                        <p>Grupo 4, ODS 14 </p>
-                     </div>
+
+
+   <!-- footer -->
+   <footer>
+      <div class="footer">
+         <div class="copyright">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <p>Grupo 4, ODS 14 </p>
                   </div>
                </div>
             </div>
          </div>
-      </footer>
+      </div>
+   </footer>
 
-      <!-- Scripts -->
-      <script src="/js/jquery.min.js"></script>
-      <script src="/js/popper.min.js"></script>
-      <script src="/js/bootstrap.bundle.min.js"></script>
-      <script src="/js/jquery-3.0.0.min.js"></script>
-      <script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="/js/custom.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   <!-- Scripts -->
+   <script src="/js/jquery.min.js"></script>
+   <script src="/js/popper.min.js"></script>
+   <script src="/js/bootstrap.bundle.min.js"></script>
+   <script src="/js/jquery-3.0.0.min.js"></script>
+   <script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="/js/custom.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 
-      <!-- Leaflet + Proj4 -->
-      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-      <script src="https://unpkg.com/proj4@2.8.0/dist/proj4.js"></script>
+   <!-- Leaflet + Proj4 -->
+   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+   <script src="https://unpkg.com/proj4@2.8.0/dist/proj4.js"></script>
 
-      <!-- Mapa Script -->
-      <script>
-         const estaciones = <%- JSON.stringify(procesado) %>;
-         console.log(estaciones);
+   <!-- Mapa Script -->
+   <script>
+     const estacionesClorofila = <%- JSON.stringify(clorofila) %>;
+      const avgLat = 41.39, avgLon = 2.15;
 
-         const avgLat = 41.39;
-         const avgLon = 2.15;
-         const map = L.map('map').setView([avgLat, avgLon], 9);
+      // Inicializar mapa
+      const map = L.map('map-clorofila').setView([avgLat, avgLon], 9);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+         attribution: '&copy; OpenStreetMap contributors'
+      }).addTo(map);
 
-         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; OpenStreetMap contributors'
-         }).addTo(map);
+      // Definición de proyección UTM31T → WGS84
+      proj4.defs("EPSG:25831", "+proj=utm +zone=31 +ellps=GRS80 +units=m +no_defs");
+      const fromUTM = proj4("EPSG:25831", "WGS84");
 
-         proj4.defs("EPSG:25831", "+proj=utm +zone=31 +ellps=GRS80 +units=m +no_defs");
-         const fromEPSG25831 = proj4("EPSG:25831", "WGS84");
+      // Función para asignar color según umbral ecológico
+      function colorClorofila(val) {
+         if (val < 2.0) return 'green';   // Oligotrófico
+         else if (val < 5.0) return 'yellow';  // Mesotrófico
+         else return 'red';     // Eutrófico
+      }
 
-         function valorToColor(val, min, max) {
-            const norm = (val - min) / (max - min);
-            const r = Math.round(norm * 255);
-            const g = Math.round((1 - norm) * 255);
-            return `rgb(${r}, ${g}, 0)`;
-         }
+      // Añadir marcadores
+      estacionesClorofila.forEach(est => {
+         const [lon, lat] = fromUTM.forward([est["UTM X"], est["UTM Y"]]);
+         const color = colorClorofila(est.Valor);
 
-         const valores = estaciones.map(e => e.Valor);
-         const min = Math.min(...valores);
-         const max = Math.max(...valores);
-
-         estaciones.forEach(est => {
-            const [lon, lat] = fromEPSG25831.forward([est["UTM X"], est["UTM Y"]]);
-            const color = valorToColor(est.Valor, min, max);
-
-            L.circleMarker([lat, lon], {
-               radius: 6,
-               fillColor: color,
-               color: color,
-               weight: 1,
-               fillOpacity: 0.7
-            })
-            .bindPopup(`<b>Estació:</b> ${est["Codi Estació"]}<br><b>Valor:</b> ${est.Valor.toFixed(2)}`)
+         L.circleMarker([lat, lon], {
+            radius: 7,
+            fillColor: color,
+            color: color,
+            weight: 1,
+            fillOpacity: 0.8
+         })
+            .bindPopup(
+               `<b>Estació:</b> ${est["Codi Estació"]}` +
+               `<br><b>Clorofil·la a:</b> ${est.Valor.toFixed(2)} mg/m³`
+            )
             .addTo(map);
-         });
-      </script>
-   </body>
+      });
+
+      // Leyenda
+      const legend = L.control({ position: 'bottomright' });
+      legend.onAdd = function () {
+         const div = L.DomUtil.create('div', 'info legend');
+         const grades = [0, 2, 5];
+         const labels = [
+            '<strong>Estado trófico</strong>',
+            'Oligotrófico (<2)',
+            'Mesotrófico (2–5)',
+            'Eutrófico (>5)'
+         ];
+         const colors = ['green', 'yellow', 'red'];
+         div.innerHTML = labels[0] + '<br>';
+         for (let i = 0; i < colors.length; i++) {
+            div.innerHTML +=
+               `<i style="background:${colors[i]};width:18px;height:18px;display:inline-block;margin-right:8px;"></i>` +
+               labels[i + 1] + '<br>';
+         }
+         return div;
+      };
+      legend.addTo(map);
+   </script>
+</body>
+
 </html>
