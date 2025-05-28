@@ -5,7 +5,7 @@ import fs from "fs";
 
 const router = express.Router();
 
-// 🔹 Función para leer el archivo JSON
+//Función para leer el archivo JSON
 
 const readData = () => {
     try {
@@ -18,7 +18,7 @@ const readData = () => {
   };
   
 
-// 🔹 Función para filtrar y calcular promedios para el año 2024
+// Función para filtrar y calcular promedios para el año 2024
 const calcularEstacionesPromedio = (data) => {
     const data2024 = data
         .filter(item => item["Data"] && item["Valor"] && item["Codi Estació"])
@@ -59,7 +59,7 @@ const calcularEstacionesPromedio = (data) => {
     }));
 };
 
-// 🔹 Ruta GET limpia y clara
+// Ruta GET limpia y clara
 router.get("/", (req, res) => {
     const data = readData();
     console.log("Datos leídos:", data.length || data); 
