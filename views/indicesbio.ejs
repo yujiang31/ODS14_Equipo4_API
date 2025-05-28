@@ -24,6 +24,32 @@
             margin-top: 40px;
             margin-bottom: 40px;
          }
+          /* Altura fija para la columna derecha (imagen + mapa) */
+          .right-col {
+           display: flex;
+           flex-direction: column;
+         }
+         .right-col .img-container,
+         .right-col #map {
+           flex: 1;
+         }
+         /* Cuando el texto sea más largo que la columna derecha,
+            la imagen/mapa pasarán a ocupar toda la fila */
+         @media (min-width: 992px) {
+           .text-col.long {
+             order: 1;
+           }
+           .right-col.long {
+             order: 2;
+             width: 100%;
+           }
+         }
+         #map {
+            height: 100%; /* ocupa todo el flex container */
+         }
+         p {
+            margin-bottom: 2rem;
+         }
       </style>
    </head>
 
@@ -70,76 +96,41 @@
       </header>
       <!-- end header -->
 
-      <!-- Mapa -->
-      <div class="container">
-         <h2 class="text-center">Mapa de Estaciones 2024</h2>
-         <div id="map"></div>
-      </div>
-
-      <!-- Contacto (como estaba antes) -->
-      <div id="contact" class="contact">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage">
-                     <h2>Request A Call Back</h2>
-                  </div>
-               </div>
-               <div class="col-md-6 offset-md-3">
-                  <form id="request" class="main_form">
-                     <div class="row">
-                        <div class="col-md-12">
-                           <input class="contactus" placeholder="Full Name" type="text" name="Full Name">
-                        </div>
-                        <div class="col-md-12">
-                           <input class="contactus" placeholder="Phone Number" type="text" name="Phone Number">
-                        </div>
-                        <div class="col-md-12">
-                           <input class="contactus" placeholder="Email" type="email" name="Email">
-                        </div>
-                        <div class="col-md-12">
-                           <textarea class="contactus" placeholder="Message" name="Message"></textarea>
-                        </div>
-                        <div class="col-sm-12">
-                           <button class="send_btn">Send</button>
-                        </div>
-                     </div>
-                  </form>
-               </div>
-            </div>
+      <div class="container my-5">
+         <!-- Fila 1 -->
+         <div class="row">
+           <div class="col-lg-6">
+             <h2>Sobre los Índices Biológicos</h2>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo sem, porta ac pharetra sit amet, euismod sed enim. Vestibulum posuere eleifend egestas. Ut tortor ex, scelerisque id mauris nec, sagittis facilisis magna. Nullam dolor eros, luctus id odio ut, pretium consectetur metus. Nulla facilisi. Donec et placerat ligula, at ullamcorper turpis. Cras a velit maximus, vestibulum metus ut, gravida nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec metus mi, faucibus eget feugiat in, viverra accumsan nulla. Donec quis sapien at lorem ornare placerat. Etiam ac ligula vulputate tortor facilisis feugiat. Duis eget malesuada justo, eget hendrerit lacus. Nunc eleifend est et cursus pulvinar. Vivamus eget rhoncus dolor, posuere ultrices nulla. Praesent ac velit in augue porta venenatis a sed augue. Etiam vel nisi orci. Praesent accumsan venenatis neque, faucibus pretium enim congue at. Praesent bibendum tempus molestie. Donec eu enim a tellus fermentum tincidunt in vitae augue. Morbi luctus ipsum magna, pharetra gravida sem malesuada at. Etiam posuere quam turpis, a aliquam magna pharetra nec. Aenean eget auctor enim, sed vestibulum nunc. Praesent viverra nibh velit, sit amet blandit est dapibus nec.</p>
+           </div>
+           <div class="col-lg-6">
+             <div class="mb-4">
+               <a href="https://colab.research.google.com/drive/1_vPPWF68_g9iyoxooM6dxENTCFXzaRvD?usp=sharing">
+                  <img src="/images/temperatura_media.png"
+                  alt="Descripción"
+                  class="img-fluid w-100"
+                  style="height:300px; object-fit:cover;">
+               </a>
+             </div>
+             <div id="map" style="height:300px;"></div>
+           </div>
          </div>
-      </div>
+         <!-- Fila 2 -->
+         <div class="row mt-4">
+           <div class="col-12">
+             <p>
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo sem, porta ac pharetra sit amet, euismod sed enim. Vestibulum posuere eleifend egestas. Ut tortor ex, scelerisque id mauris nec, sagittis facilisis magna. Nullam dolor eros, luctus id odio ut, pretium consectetur metus. Nulla facilisi. Donec et placerat ligula, at ullamcorper turpis. Cras a velit maximus, vestibulum metus ut, gravida nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+             </p>
+           </div>
+         </div>
+       </div>
+
+      
 
       <!-- footer -->
       <footer>
          <div class="footer">
-            <div class="container">
-               <div class="row border-top">
-                  <div class="col-md-6 padding_bottom1">
-                     <h3>Subscribe Now</h3>
-                     <form class="footer_form">
-                        <input class="enter" placeholder="Enter your email" type="email" name="email">
-                        <button class="submit">Submit</button>
-                     </form>
-                  </div>
-                  <div class="col-md-6">
-                     <div class="row">
-                        <div class="col-md-5 offset-md-1 padding_bottom1">
-                           <h3>Links</h3>
-                           <ul class="cont">
-                              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                           </ul>
-                        </div>
-                        <div class="col-md-5 offset-md-1">
-                           <h3>Contact us</h3>
-                           <ul class="cont">
-                              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
             <div class="copyright">
                <div class="container">
                   <div class="row">
