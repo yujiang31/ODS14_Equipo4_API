@@ -1,47 +1,88 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gráfico de Temperatura</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ODS 14 - Relación de Variables Ambientales</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <style>
+    .background-number {
+      position: absolute;
+      font-size: 150px;
+      font-weight: bold;
+      color: rgba(0, 0, 0, 0.1);
+      right: 10%;
+      top: 20%;
+    }
+    .titlepage h2 {
+      color: #0066cc;
+    }
+    .titlepage p {
+      color: #333;
+    }
+  </style>
 </head>
-<body>
-    <h1>Variación de Temperatura por Profundidad</h1>
-    <canvas id="temperatureChart"></canvas>
 
-    <script>
-        const data = JSON.parse('<%- figJson %>');
+<body class="main-layout">
 
-        // Filtrar solo los datos de temperatura
-        const temperatureData = data.filter(d => d["Variable"].includes("Temperatura"));
+  <!-- Header -->
+  <header>
+    <div class="header">
+      <div class="container-fluid">
+        <div class="logo"><a href="/"><img src="/images/ods_14_icon.jpg" alt="ODS 14"/></a></div>
+      </div>
+    </div>
+  </header>
 
-        const labels = temperatureData.map(d => d["Profunditat mostra (m)"]); // Profundidad en eje X
-        const values = temperatureData.map(d => parseFloat(d["Valor"])); // Temperatura en eje Y
+  <% let variables = [
+    { id: "variable1", nombre: "Temperatura del Agua (CTD y Muestra)", indicador: "14.3.1 - Acidificación de los océanos", objetivo: "Monitorear la acidificación del océano para comprender sus efectos y desarrollar estrategias de mitigación.", descripcion: "La temperatura es clave en la salud marina. Su aumento afecta el equilibrio de los ecosistemas, provocando el blanqueamiento de corales y la alteración de las especies migratorias.", medidas: "Reducir emisiones de CO₂, restaurar ecosistemas costeros, promover energías limpias.", estilo: "about" },
+    { id: "variable2", nombre: "Transparencia y Turbidez (Secchi y CTD)", indicador: "14.1.1 - Contaminación marina", objetivo: "Disminuir los impactos negativos de la contaminación marina sobre la biodiversidad y la calidad del agua.", descripcion: "La transparencia del agua refleja su calidad. Altos niveles de turbidez pueden indicar contaminación por microplásticos, metales pesados y nutrientes excesivos.", medidas: "Fortalecer regulación sobre vertidos, implementar tecnologías de filtrado, reducir residuos plásticos.", estilo: "mobile" },
+    { id: "variable3", nombre: "pH (Campo y Laboratorio)", indicador: "14.3.1 - Acidificación de los océanos", objetivo: "Controlar el pH marino para evitar impactos en la biodiversidad y las cadenas alimenticias oceánicas.", descripcion: "El descenso del pH está relacionado con la absorción de CO₂ por los océanos, afectando organismos calcificantes como corales y moluscos.", medidas: "Promover reducción de emisiones industriales, conservar ecosistemas marinos que absorben CO₂.", estilo: "about" },
+    { id: "variable4", nombre: "Carbono Orgánico en Sedimentos", indicador: "14.1.2 - Contaminación en sedimentos", objetivo: "Limitar la acumulación de materia orgánica en los sedimentos para evitar la degradación de los ecosistemas marinos.", descripcion: "El carbono orgánico refleja los niveles de contaminación y la actividad biológica en el agua. Excesos pueden generar zonas muertas con bajos niveles de oxígeno.", medidas: "Monitoreo continuo de sedimentos, reducir descargas industriales, promover la restauración de hábitats marinos.", estilo: "mobile" },
+    { id: "variable5", nombre: "Fluorescencia Nueva", indicador: "14.4.1 - Productividad marina", objetivo: "Garantizar una producción sostenible de recursos marinos sin afectar el equilibrio ecológico.", descripcion: "La fluorescencia se usa para medir el crecimiento del fitoplancton, fundamental en la cadena alimentaria oceánica. Un aumento excesivo puede ser señal de eutrofización.", medidas: "Controlar la carga de nutrientes en el agua, reducir el uso de fertilizantes agrícolas contaminantes.", estilo: "about" },
+    { id: "variable6", nombre: "Sigma T", indicador: "14.2.1 - Gestión sostenible de los océanos", objetivo: "Asegurar la estabilidad de la circulación oceánica y la distribución de oxígeno y nutrientes esenciales.", descripcion: "Sigma T mide la densidad del agua, afectando la estratificación y la dispersión de nutrientes, clave en el transporte de sustancias esenciales para los ecosistemas marinos.", medidas: "Monitorear patrones de circulación, fortalecer modelos climáticos predictivos.", estilo: "mobile" }
+  ]; %>
 
-        // Crear la gráfica
-        new Chart(document.getElementById("temperatureChart"), {
-            type: "line",
-            data: {
-                labels: labels,
-                datasets: [{
-                    label: "Temperatura (ºC)",
-                    data: values,
-                    borderColor: "rgba(255, 99, 132, 1)",
-                    backgroundColor: "rgba(255, 99, 132, 0.2)",
-                    borderWidth: 2,
-                    fill: true
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                scales: {
-                    x: { title: { display: true, text: "Profundidad (m)" } },
-                    y: { title: { display: true, text: "Temperatura (ºC)" } }
-                }
-            }
-        });
-    </script>
+  <% variables.forEach((variable, index) => { %>
+  <!-- Sección dinámica alternando entre "about" y "mobile" -->
+  <div id="<%= variable.id %>" class="<%= variable.estilo %>">
+    <div class="container">
+      <div class="background-number"><%= index + 1 %></div>
+      <div class="row d_flex">
+        <div class="col-md-7">
+          <div class="titlepage">
+            <h2><%= variable.nombre %></h2>
+            <p><strong>Indicador:</strong> <%= variable.indicador %></p>
+            <p><strong>Objetivo:</strong> <%= variable.objetivo %></p>
+            <p><%= variable.descripcion %></p>
+            <h3>Medidas de Mitigación:</h3>
+            <p><%= variable.medidas %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% }); %>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="copyright">
+          <p>Grupo 4 - Proyecto ODS 14</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

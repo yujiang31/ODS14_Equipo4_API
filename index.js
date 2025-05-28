@@ -17,7 +17,8 @@ import homeRoutes from "./routes/home.js";
 const app = express();
 
 app.use(bodyParser.json());
-app.use(express.static("public"));
+import path from "path";
+app.use(express.static(path.join(process.cwd(), "public")));
 app.set('view engine', 'ejs');
 app.set('views', './views');
 app.use(cookieParser())
