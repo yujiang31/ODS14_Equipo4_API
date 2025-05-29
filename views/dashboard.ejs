@@ -12,6 +12,81 @@
   <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css" />
   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <style>
+.dashboard-container {
+      background-color: #f8f9fa;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.12);
+      padding: 30px;
+      margin: 0 auto 40px;
+      width: 95%;
+      max-width: 1400px;
+    }
+    .chart-row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+      gap: 25px;
+    }
+    .chart-col {
+      flex: 1;
+      min-width: 350px;
+    }
+    .half-height {
+      height: 380px !important;
+    }
+    .full-height {
+      height: 600px !important;
+    }
+    .chart-title {
+      font-size: 19px;
+      font-weight: bold;
+      margin-bottom: 18px;
+      text-align: center;
+      color: #2c3e50;
+      padding: 0 10px;
+    }
+    .chart-container {
+      background-color: white;
+      border-radius: 10px;
+      padding: 22px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.08);
+      height: 100%;
+    }
+    .wide-col {
+      flex: 2.5;
+      min-width: 500px;
+      height: 380px;
+    }
+    .narrow-col {
+      flex: 1;
+      min-width: 350px;
+    }
+    @media (max-width: 1200px) {
+      .dashboard-container {
+        width: 98%;
+        padding: 25px;
+      }
+      .chart-row {
+        gap: 20px;
+      }
+    }
+    @media (max-width: 768px) {
+      .dashboard-container {
+        width: 100%;
+        padding: 20px;
+        border-radius: 8px;
+      }
+      .chart-col, .wide-col, .narrow-col {
+        min-width: 100%;
+      }
+      .half-height, .full-height {
+        height: auto !important;
+        min-height: 300px;
+      }
+    }
+  </style>
 </head>
 <body class="main-layout">
   <!-- Loader -->
@@ -55,28 +130,40 @@
     </div>
   </header>
 
-  <!-- Contenido -->
-  <div class="container mt-5 mb-5">
+
+ <!-- Contenido -->
+  <div class="container-fluid mt-5 mb-5 px-4">
     <h2 class="text-center mb-4">Dashboard: Parámetros de Calidad del Agua</h2>
-
-    <!-- Temperatura -->
-    <div class="mb-5">
-      <h4>Distribución de Temperatura por Comarca</h4>
-      <canvas id="temperaturaChart" height="300"></canvas>
-    </div>
-
-    <!-- pH + Tratamientos -->
-    <div class="mb-5">
-      <h4>pH Promedio por Comarca Costera y Tratamientos</h4>
-      <canvas id="phChart" height="300"></canvas>
-    </div>
-
-    <!-- Residuos -->
-    <div class="mb-5">
-      <h4>Residuos Municipales (Kg / hab / año)</h4>
-      <canvas id="residuosChart" height="300"></canvas>
+    
+    <div class="dashboard-container">
+      <!-- Primera fila: Temperatura (más ancho) y pH -->
+      <div class="chart-row">
+        <div class="chart-col wide-col">
+          <div class="chart-title">Distribución de Temperatura por Comarca</div>
+          <div class="chart-container">
+            <div id="temperaturaChart" class="half-height"></div>
+          </div>
+        </div>
+        <div class="chart-col narrow-col">
+          <div class="chart-title">pH Promedio por Comarca Costera</div>
+          <div class="chart-container">
+            <canvas id="phChart" class="half-height"></canvas>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Segunda fila: Residuos Municipales -->
+      <div class="chart-row">
+        <div class="chart-col">
+          <div class="chart-title">Residuos Municipales (Kg/hab/año)</div>
+          <div class="chart-container">
+            <canvas id="residuosChart" class="full-height"></canvas>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+
 
   <!-- Footer -->
   <footer>
@@ -126,57 +213,56 @@
     const ph = <%- JSON.stringify(ph) %>;
     const residuos = <%- JSON.stringify(residuos) %>;
 
-    // --- Temperatura ---
+    // --- Temperatura con Plotly (Violin Plot) ---
     const tempLabels = [...new Set(temperatura.map(d => d.Comarca))];
-    const tempData = tempLabels.map(label => {
+    
+    const violinData = tempLabels.map(label => {
       const values = temperatura.filter(d => d.Comarca === label).map(d => d.Valor);
       return {
-        label,
-        data: values
+        x: values,  
+        y: Array(values.length).fill(label),
+        name: label,
+        type: 'violin',
+        box: { visible: true },
+        orientation: 'h',
+        with: 0.5,
+        meanline: { visible: true },
+        points: 'false',
+        width: 0.8,
+        spanmode: 'hard'
       };
     });
 
-    const tempDatasets = tempData.map(d => ({
-      label: d.label,
-      data: d.data,
-      backgroundColor: `hsl(${Math.random() * 360}, 70%, 60%)`
-    }));
-
-    new Chart(document.getElementById('temperaturaChart'), {
-      type: 'bar',
-      data: {
-        labels: tempLabels,
-        datasets: [{
-          label: 'Temperatura media',
-          data: tempLabels.map(l => {
-            const datos = temperatura.filter(d => d.Comarca === l).map(d => d.Valor);
-            return (datos.reduce((a, b) => a + b, 0) / datos.length).toFixed(2);
-          }),
-          backgroundColor: 'rgba(255, 99, 132, 0.6)'
-        }]
+    const layout = {
+      margin: { t: 40, b: 80, l: 120, r: 50 },
+      yaxis: { 
+        title: { text: 'Comarca', standoff: 15, font: {size: 14} },
+        automargin: true,
+        gridcolor: '#f0f0f0',
+        tickmode: 'array', 
+        tickvals: tempLabels,
+        ticktext: tempLabels
       },
-      options: {
-        responsive: true,
-        plugins: {
-          title: {
-            display: false
-          },
-          legend: {
-            display: false
-          }
-        },
-        scales: {
-          y: {
-            title: {
-              display: true,
-              text: 'Temperatura (°C)'
-            },
-            beginAtZero: true
-          }
-        }
+      xaxis: { 
+        title: { text: 'Temperatura (°C)', standoff: 10, font: {size: 14} },
+        automargin: true,
+        gridcolor: '#f0f0f0'
+      },
+      violingap: 0.8,
+      violingroupgap: 0.6,
+      width: null,
+      height: 400,
+      autosize: true,
+      plot_bgcolor: 'rgba(0,0,0,0)',
+      paper_bgcolor: 'rgba(0,0,0,0)',
+      font: {
+        family: 'Arial, sans-serif',
+        size: 12,
+        color: '#333'
       }
-    });
+    };
 
+    Plotly.newPlot('temperaturaChart', violinData, layout, {responsive: true});
     // --- pH ---
     const phLabels = ph.map(d => d.Comarca);
     const phData = ph.map(d => d.Valor);
@@ -195,7 +281,9 @@
       options: {
         indexAxis: 'y',
         responsive: true,
+        maintainAspectRatio: false,
         plugins: {
+          legend: { display: false },
           tooltip: {
             callbacks: {
               afterLabel: function(context) {
@@ -208,16 +296,7 @@
           x: {
             min: 6.0,
             max: 9.0,
-            title: {
-              display: true,
-              text: 'pH promedio'
-            }
-          },
-          y: {
-            title: {
-              display: true,
-              text: 'Comarca'
-            }
+            title: { display: true, text: 'pH promedio' }
           }
         }
       }
@@ -240,15 +319,18 @@
       options: {
         indexAxis: 'y',
         responsive: true,
+        maintainAspectRatio: false,
         plugins: {
-          legend: { display: false }
+          legend: { display: false },
+          title: {
+            display: true,
+            text: 'Residuos Municipales por Comarca',
+            font: { size: 16 }
+          }
         },
         scales: {
           x: {
-            title: {
-              display: true,
-              text: 'Kg / habitante / año'
-            }
+            title: { display: true, text: 'Kg / habitante / año' }
           }
         }
       }
