@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
   <title>ODS 14 - Relación de Variables Ambientales</title>
 
@@ -15,8 +16,8 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
 
 
@@ -29,9 +30,11 @@
       right: 10%;
       top: 20%;
     }
+
     .titlepage h2 {
       color: #0066cc;
     }
+
     .titlepage p {
       color: #333;
     }
@@ -41,99 +44,178 @@
 <body class="main-layout">
 
   <!-- Header -->
-  <header>
+   <header>
     <div class="header">
       <div class="container-fluid">
-        <div class="logo"><a href="/"><img src="/images/ods_14_icon.jpg" alt="ODS 14"/></a></div>
+        <div class="row">
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+            <div class="full">
+              <div class="center-desk">
+                <div class="logo">
+                  <a href="/"><img src="/images/ods_14_icon.jpg" alt="#" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+            <div class="header_information">
+              <nav class="navigation navbar navbar-expand-md navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarsExample04">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="/indicesbio">Indices Biologicos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/nutrientes_2">Nutrientes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/elementosFisicoquimicos">Elementos Fisioquimicos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/temperatura">Temperatura Media de las Aguas</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </header>
 
-  <% let variables = [
-    { id: "variable1", nombre: "Temperatura del Agua (CTD y Muestra)", indicador: "14.3.1 - Acidificación de los océanos", objetivo: "Monitorear la acidificación del océano para comprender sus efectos y desarrollar estrategias de mitigación.", descripcion: "La temperatura es clave en la salud marina. Su aumento afecta el equilibrio de los ecosistemas, provocando el blanqueamiento de corales y la alteración de las especies migratorias.", medidas: "Reducir emisiones de CO₂, restaurar ecosistemas costeros, promover energías limpias.", estilo: "about" },
-    { id: "variable2", nombre: "Transparencia y Turbidez (Secchi y CTD)", indicador: "14.1.1 - Contaminación marina", objetivo: "Disminuir los impactos negativos de la contaminación marina sobre la biodiversidad y la calidad del agua.", descripcion: "La transparencia del agua refleja su calidad. Altos niveles de turbidez pueden indicar contaminación por microplásticos, metales pesados y nutrientes excesivos.", medidas: "Fortalecer regulación sobre vertidos, implementar tecnologías de filtrado, reducir residuos plásticos.", estilo: "mobile" },
-    { id: "variable3", nombre: "pH (Campo y Laboratorio)", indicador: "14.3.1 - Acidificación de los océanos", objetivo: "Controlar el pH marino para evitar impactos en la biodiversidad y las cadenas alimenticias oceánicas.", descripcion: "El descenso del pH está relacionado con la absorción de CO₂ por los océanos, afectando organismos calcificantes como corales y moluscos.", medidas: "Promover reducción de emisiones industriales, conservar ecosistemas marinos que absorben CO₂.", estilo: "about" },
-    { id: "variable4", nombre: "Carbono Orgánico en Sedimentos", indicador: "14.1.2 - Contaminación en sedimentos", objetivo: "Limitar la acumulación de materia orgánica en los sedimentos para evitar la degradación de los ecosistemas marinos.", descripcion: "El carbono orgánico refleja los niveles de contaminación y la actividad biológica en el agua. Excesos pueden generar zonas muertas con bajos niveles de oxígeno.", medidas: "Monitoreo continuo de sedimentos, reducir descargas industriales, promover la restauración de hábitats marinos.", estilo: "mobile" },
-    { id: "variable5", nombre: "Fluorescencia Nueva", indicador: "14.4.1 - Productividad marina", objetivo: "Garantizar una producción sostenible de recursos marinos sin afectar el equilibrio ecológico.", descripcion: "La fluorescencia se usa para medir el crecimiento del fitoplancton, fundamental en la cadena alimentaria oceánica. Un aumento excesivo puede ser señal de eutrofización.", medidas: "Controlar la carga de nutrientes en el agua, reducir el uso de fertilizantes agrícolas contaminantes.", estilo: "about" },
-    { id: "variable6", nombre: "Sigma T", indicador: "14.2.1 - Gestión sostenible de los océanos", objetivo: "Asegurar la estabilidad de la circulación oceánica y la distribución de oxígeno y nutrientes esenciales.", descripcion: "Sigma T mide la densidad del agua, afectando la estratificación y la dispersión de nutrientes, clave en el transporte de sustancias esenciales para los ecosistemas marinos.", medidas: "Monitorear patrones de circulación, fortalecer modelos climáticos predictivos.", estilo: "mobile" }
-  ]; %>
+  <% let variables=[ { id: "variable1" , nombre: "Temperatura del Agua (CTD y Muestra)" ,
+    indicador: "14.3.1 - Acidificación de los océanos" ,
+    impacto: "El calentamiento global provoca desoxigenación oceánica y pérdida de biodiversidad." ,
+    acciones: "Restauración de arrecifes, reducción de emisiones de gases de efecto invernadero." ,
+    ejemplo: "La Gran Barrera de Coral ha perdido el 50% de su estructura debido al aumento de temperatura." }, {
+    id: "variable2" , nombre: "Transparencia y Turbidez (Secchi y CTD)" , indicador: "14.1.1 - Contaminación marina" ,
+    impacto: "La reducción de luz afecta la fotosíntesis del fitoplancton, base de la cadena alimentaria marina." ,
+    acciones: "Monitoreo de calidad del agua, reducción de plásticos y regulaciones sobre contaminación." ,
+    ejemplo: "El río Yangtsé en China presenta turbidez extrema debido a la contaminación industrial." }, {
+    id: "variable3" , nombre: "pH (Campo y Laboratorio)" , indicador: "14.3.1 - Acidificación de los océanos" ,
+    impacto: "La acidificación del océano dificulta la formación de esqueletos en corales y moluscos." ,
+    acciones: "Disminuir emisiones de CO₂, proteger ecosistemas clave y desarrollar técnicas de neutralización." ,
+    ejemplo: "El Mar del Norte ha visto una disminución de pH en los últimos 50 años." }, { id: "variable4" ,
+    nombre: "Carbono Orgánico en Sedimentos" , indicador: "14.1.2 - Contaminación en sedimentos" ,
+    impacto: "La acumulación excesiva genera zonas muertas donde desaparece la vida marina." ,
+    acciones: "Reducir descargas industriales, monitoreo de sedimentos y protección de hábitats." ,
+    ejemplo: "El Golfo de México tiene una de las mayores zonas muertas, afectando la pesca y biodiversidad." }, {
+    id: "variable5" , nombre: "Fluorescencia Nueva" , indicador: "14.4.1 - Productividad marina" ,
+    impacto: "La proliferación excesiva de algas puede causar eutrofización y afectar el oxígeno marino." ,
+    acciones: "Regular el uso de fertilizantes, reducir descargas de nutrientes y monitorear eventos tóxicos." ,
+    ejemplo: "Mareas rojas han causado muertes masivas de peces en el Golfo de California." }, { id: "variable6" ,
+    nombre: "Sigma T" , indicador: "14.2.1 - Gestión sostenible de los océanos" ,
+    impacto: "Cambios en la densidad afectan el transporte de oxígeno y la vida en distintas profundidades." ,
+    acciones: "Monitoreo de circulación oceánica y fortalecimiento de modelos climáticos predictivos." ,
+    ejemplo: "El derretimiento de glaciares ha alterado la corriente del Golfo, afectando la temperatura en Europa." }
+    ]; %>
 
-<% variables.forEach((variable, index) => { %>
-  <div id="<%= variable.id %>" class="<%= variable.estilo %>">
-    <div class="container">
-      <div class="row d_flex">
-        <div class="col-md-7">
-          <div class="titlepage">
-            <h2><%= variable.nombre %></h2>
-            <p><strong>Indicador:</strong> <%= variable.indicador %></p>
-            <p><strong>Objetivo:</strong> <%= variable.objetivo %></p>
-            <p><%= variable.descripcion %></p>
-            <h3>Medidas de Mitigación:</h3>
-            <p><%= variable.medidas %></p>
+    <% variables.forEach((variable, index)=> {
+      let claseEstilo = (index % 2 === 0) ? "about" : "mobile"; // Alternamos entre 'about' y 'mobile'
+      %>
+      <div id="<%= variable.id %>" class="<%= claseEstilo %>">
+        <div class="container">
+          <div class="row d_flex">
+            <div class="col-md-7">
+              <div class="titlepage">
+                <h2>
+                  <%= variable.nombre %>
+                </h2>
+                <p><strong>Indicador:</strong>
+                  <%= variable.indicador %>
+                </p>
+                <h3>Impacto Ambiental:</h3>
+                <p>
+                  <%= variable.impacto %>
+                </p>
+                <h3>Acciones Clave:</h3>
+                <p>
+                  <%= variable.acciones %>
+                </p>
+                <h3>Ejemplo Real:</h3>
+                <p>
+                  <%= variable.ejemplo %>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <canvas id="chart-<%= variable.id %>" width="400" height="200"></canvas>
+            </div>
           </div>
-        </div>
-        <div class="col-md-5">
-          <canvas id="chart-<%= variable.id %>" width="400" height="200"></canvas>
+
+          <% if (variable.id==="variable1" ) { %>
+            <div id="about">
+              <h3>Temperatura Media por Año</h3>
+
+              <label for="masaAguaTemperatura">Selecciona la Massa d'Aigua:</label>
+              <select id="masaAguaTemperatura" onchange="actualizarGraficoTemperatura()"></select>
+
+              <div id="canvas-container-temperatura">
+                <canvas id="grafico-temperatura" width="400" height="300"></canvas>
+              </div>
+
+              <!-- 🔹 Información adicional sobre ODS 14 -->
+              <div id="info-ods14-temperatura">
+                <p><strong>🌡 Relación con el ODS 14: Acidificación de los océanos</strong></p>
+                <p>La temperatura es un factor crucial en la salud marina, afectando la acidificación del océano y la
+                  estabilidad de los ecosistemas.</p>
+
+                <p><strong>Impacto en la biodiversidad:</strong> El aumento de la temperatura provoca el blanqueamiento
+                  de corales y altera la migración de especies marinas.</p>
+                <p><strong>Desoxigenación oceánica:</strong> El agua más caliente retiene menos oxígeno, afectando
+                  especies que dependen de condiciones estables.</p>
+                <p><strong>Cambio climático y circulación oceánica:</strong> La temperatura modifica patrones de
+                  corrientes marinas esenciales para el equilibrio de los océanos.</p>
+
+                <p><strong>Acciones recomendadas:</strong></p>
+                <ul>
+                  <li>Reducción de emisiones de CO₂.</li>
+                  <li>Restauración de arrecifes y ecosistemas marinos.</li>
+                  <li>Monitoreo satelital de temperaturas oceánicas.</li>
+                </ul>
+
+                <p>Estos datos ayudan a los investigadores y autoridades a tomar medidas para combatir el cambio
+                  climático y proteger los océanos en línea con el <strong>ODS 14</strong>.</p>
+              </div>
+            </div>
+            <% } %>
+
+              <% if (variable.id==="variable2" ) { %>
+                <div id="mobile">
+                  <h3>Transparència (disc de Secchi) - Media por Año</h3>
+
+                  <label for="masaAguaTransparencia">Selecciona la Massa d'Aigua:</label>
+                  <select id="masaAguaTransparencia" onchange="actualizarGraficoTransparencia()"></select>
+
+                  <div id="canvas-container-transparencia">
+                    <canvas id="grafico-transparencia" width="400" height="300"></canvas>
+                  </div>
+
+                  <!-- 🔹 Información adicional sobre ODS 14 -->
+                  <div id="info-ods14-transparencia">
+                    <p><strong>🌊 Relación con el ODS 14: Vida submarina</strong></p>
+                    <p>La transparencia del agua es un indicador clave para evaluar la calidad del agua y la cantidad de
+                      partículas suspendidas.</p>
+
+                    <p><strong>Protección de ecosistemas marinos:</strong> Una alta transparencia generalmente indica
+                      menos contaminación, lo que favorece la vida de organismos acuáticos.</p>
+                    <p><strong>Reducción de la contaminación marina:</strong> Niveles bajos de transparencia pueden ser
+                      señal de residuos industriales o urbanos, afectando la biodiversidad.</p>
+                    <p><strong>Impacto del cambio climático:</strong> La variabilidad en la transparencia del agua puede
+                      estar vinculada al aumento de temperaturas y cambios en las corrientes marinas.</p>
+                    <p><strong>Promoción de una pesca sostenible:</strong> La calidad del agua afecta a la
+                      disponibilidad de especies marinas, influyendo en la explotación pesquera.</p>
+
+                    <p>Estos datos permiten a investigadores y autoridades tomar decisiones basadas en evidencia para
+                      proteger las masas de agua y avanzar en el cumplimiento del <strong>ODS 14</strong>.</p>
+                  </div>
+                </div>
+                <% } %>
+
         </div>
       </div>
-
-      <!-- 🔹 Sección adicional dentro de "about" para los selectores y gráfico -->
-<% if (variable.id === "variable1") { %>
-  <div id="about">
-    <h3>Temperatura Media por Año</h3>
-    
-    <label for="masaAguaTemperatura">Selecciona la Massa d'Aigua:</label>
-    <select id="masaAguaTemperatura" onchange="actualizarGraficoTemperatura()"></select>
-
-    <div id="canvas-container-temperatura">
-      <canvas id="grafico-temperatura" width="400" height="300"></canvas>
-    </div>
-  </div>
-<% } %>
-
-<% if (variable.id === "variable2") { %>
-  <div id="about">
-    <h3>Transparència (disc de Secchi) - Media por Año</h3>
-
-    <label for="masaAguaTransparencia">Selecciona la Massa d'Aigua:</label>
-    <select id="masaAguaTransparencia" onchange="actualizarGraficoTransparencia()"></select>
-
-    <div id="canvas-container-transparencia">
-      <canvas id="grafico-transparencia" width="400" height="300"></canvas>
-    </div>
-
-    <!-- 🔹 Información adicional sobre ODS 14 -->
-    <div id="info-ods14">
-      <p><strong>🌊 Relación con el ODS 14: Vida submarina<strong></p>
-      <p>La transparencia del agua es un indicador clave para evaluar la calidad del agua y la cantidad de partículas suspendidas.</p>
-      
-        <p><strong>Protección de ecosistemas marinos:</strong> Una alta transparencia generalmente indica menos contaminación, lo que favorece la vida de organismos acuáticos.</p>
-        <p><strong>Reducción de la contaminación marina:</strong> Niveles bajos de transparencia pueden ser señal de residuos industriales o urbanos, afectando la biodiversidad.</p>
-        <p><strong>Impacto del cambio climático:</strong> La variabilidad en la transparencia del agua puede estar vinculada al aumento de temperaturas y cambios en las corrientes marinas.</p>
-        <p><strong>Promoción de una pesca sostenible:</strong> La calidad del agua afecta a la disponibilidad de especies marinas, influyendo en la explotación pesquera.</p>
-      
-      <p>Estos datos permiten a investigadores y autoridades tomar decisiones basadas en evidencia para proteger las masas de agua y avanzar en el cumplimiento del <strong>ODS 14</strong>.</p>
-    </div>
-  </div>
-<% } %>
-    </div>
-  </div>
-
- <% if (variable.id === "variable3") { %>
-  <div id="about">
-    <h3>Mapa de Niveles de pH - Media por Año</h3>
-
-<div id="canvas-container-ph">
-    <canvas id="grafico-ph" width="600" height="400"></canvas>
-</div>
-  </div>
-<% } %>
+      <% }); %>
 
 
-<% }); %>
 
-
-<script src="/js/graficos.js"></script>
+        <script src="/js/graficos.js"></script>
 
 </body>
+
 </html>
