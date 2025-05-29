@@ -1,14 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Dashboard - Calidad del Agua</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard - Calidad del Agua</title>
   <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+  <link rel="icon" href="/images/fevicon.png" type="image/gif" />
+  <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css" />
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body class="main-layout">
-  <div class="container mt-5">
+  <!-- Loader -->
+  <div class="loader_bg">
+    <div class="loader"><img src="/images/loading.gif" alt="#" /></div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+            <div class="full">
+              <div class="center-desk">
+                <div class="logo">
+                  <a href="/"><img src="/images/ods_14_icon.jpg" alt="#" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+            <div class="header_information">
+              <nav class="navigation navbar navbar-expand-md navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarsExample04">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="/indicesbio">Indices Biologicos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/nutrientes_2">Nutrientes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/elementosFisicoquimicos">Elementos Fisioquimicos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/temperatura">Temperatura Media de las Aguas</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenido -->
+  <div class="container mt-5 mb-5">
     <h2 class="text-center mb-4">Dashboard: Parámetros de Calidad del Agua</h2>
 
     <!-- Temperatura -->
@@ -30,138 +78,181 @@
     </div>
   </div>
 
-<script>
-  const temperatura = <%- JSON.stringify(temperatura) %>;
-  const ph = <%- JSON.stringify(ph) %>;
-  const residuos = <%- JSON.stringify(residuos) %>;
+  <!-- Footer -->
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="row border-top">
+          <div class="col-md-6 padding_bottom1">
+            <h3>Subscribe Now</h3>
+            <form class="footer_form">
+              <input class="enter" placeholder="Enter your email" type="email" name="email">
+              <button class="submit">submit</button>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-5 offset-md-1 padding_bottom1">
+                <h3>Links</h3>
+                <ul class="cont">
+                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <p>Grupo 4, ODS 14</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-  // --- Temperatura ---
-  const tempLabels = [...new Set(temperatura.map(d => d.Comarca))];
-  const tempData = tempLabels.map(label => {
-    const values = temperatura.filter(d => d.Comarca === label).map(d => d.Valor);
-    return {
-      label,
-      data: values
-    };
-  });
+  <!-- Scripts -->
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/popper.min.js"></script>
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="/js/custom.js"></script>
 
-  const tempDatasets = tempData.map(d => ({
-    label: d.label,
-    data: d.data,
-    backgroundColor: `hsl(${Math.random() * 360}, 70%, 60%)`
-  }));
+  <script>
+    const temperatura = <%- JSON.stringify(temperatura) %>;
+    const ph = <%- JSON.stringify(ph) %>;
+    const residuos = <%- JSON.stringify(residuos) %>;
 
-  new Chart(document.getElementById('temperaturaChart'), {
-    type: 'bar',
-    data: {
-      labels: tempLabels,
-      datasets: [{
-        label: 'Temperatura media',
-        data: tempLabels.map(l => {
-          const datos = temperatura.filter(d => d.Comarca === l).map(d => d.Valor);
-          return (datos.reduce((a, b) => a + b, 0) / datos.length).toFixed(2);
-        }),
-        backgroundColor: 'rgba(255, 99, 132, 0.6)'
-      }]
-    },
-    options: {
-      responsive: true,
-      plugins: {
-        title: {
-          display: false
-        },
-        legend: {
-          display: false
-        }
+    // --- Temperatura ---
+    const tempLabels = [...new Set(temperatura.map(d => d.Comarca))];
+    const tempData = tempLabels.map(label => {
+      const values = temperatura.filter(d => d.Comarca === label).map(d => d.Valor);
+      return {
+        label,
+        data: values
+      };
+    });
+
+    const tempDatasets = tempData.map(d => ({
+      label: d.label,
+      data: d.data,
+      backgroundColor: `hsl(${Math.random() * 360}, 70%, 60%)`
+    }));
+
+    new Chart(document.getElementById('temperaturaChart'), {
+      type: 'bar',
+      data: {
+        labels: tempLabels,
+        datasets: [{
+          label: 'Temperatura media',
+          data: tempLabels.map(l => {
+            const datos = temperatura.filter(d => d.Comarca === l).map(d => d.Valor);
+            return (datos.reduce((a, b) => a + b, 0) / datos.length).toFixed(2);
+          }),
+          backgroundColor: 'rgba(255, 99, 132, 0.6)'
+        }]
       },
-      scales: {
-        y: {
+      options: {
+        responsive: true,
+        plugins: {
           title: {
-            display: true,
-            text: 'Temperatura (°C)'
+            display: false
           },
-          beginAtZero: true
+          legend: {
+            display: false
+          }
+        },
+        scales: {
+          y: {
+            title: {
+              display: true,
+              text: 'Temperatura (°C)'
+            },
+            beginAtZero: true
+          }
         }
       }
-    }
-  });
+    });
 
-  // --- pH ---
-  const phLabels = ph.map(d => d.Comarca);
-  const phData = ph.map(d => d.Valor);
-  const phTratamientos = ph.map(d => d.Tratamientos || '');
+    // --- pH ---
+    const phLabels = ph.map(d => d.Comarca);
+    const phData = ph.map(d => d.Valor);
+    const phTratamientos = ph.map(d => d.Tratamientos || '');
 
-  new Chart(document.getElementById('phChart'), {
-    type: 'bar',
-    data: {
-      labels: phLabels,
-      datasets: [{
-        label: 'pH promedio',
-        data: phData,
-        backgroundColor: 'rgba(54, 162, 235, 0.6)'
-      }]
-    },
-    options: {
-      indexAxis: 'y',
-      responsive: true,
-      plugins: {
-        tooltip: {
-          callbacks: {
-            afterLabel: function(context) {
-              return 'Tratamientos: ' + phTratamientos[context.dataIndex];
+    new Chart(document.getElementById('phChart'), {
+      type: 'bar',
+      data: {
+        labels: phLabels,
+        datasets: [{
+          label: 'pH promedio',
+          data: phData,
+          backgroundColor: 'rgba(54, 162, 235, 0.6)'
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        plugins: {
+          tooltip: {
+            callbacks: {
+              afterLabel: function(context) {
+                return 'Tratamientos: ' + phTratamientos[context.dataIndex];
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            min: 6.0,
+            max: 9.0,
+            title: {
+              display: true,
+              text: 'pH promedio'
+            }
+          },
+          y: {
+            title: {
+              display: true,
+              text: 'Comarca'
             }
           }
         }
+      }
+    });
+
+    // --- Residuos ---
+    const residuosLabels = residuos.map(d => d.Comarca);
+    const residuosData = residuos.map(d => d['Kg / hab / any']);
+
+    new Chart(document.getElementById('residuosChart'), {
+      type: 'bar',
+      data: {
+        labels: residuosLabels,
+        datasets: [{
+          label: 'Kg / hab / año',
+          data: residuosData,
+          backgroundColor: 'rgba(75, 192, 192, 0.6)'
+        }]
       },
-      scales: {
-        x: {
-          min: 6.0,
-          max: 9.0,
-          title: {
-            display: true,
-            text: 'pH promedio'
-          }
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        plugins: {
+          legend: { display: false }
         },
-        y: {
-          title: {
-            display: true,
-            text: 'Comarca'
+        scales: {
+          x: {
+            title: {
+              display: true,
+              text: 'Kg / habitante / año'
+            }
           }
         }
       }
-    }
-  });
-
-  // --- Residuos ---
-  const residuosLabels = residuos.map(d => d.Comarca);
-  const residuosData = residuos.map(d => d['Kg / hab / any']);
-
-  new Chart(document.getElementById('residuosChart'), {
-    type: 'bar',
-    data: {
-      labels: residuosLabels,
-      datasets: [{
-        label: 'Kg / hab / año',
-        data: residuosData,
-        backgroundColor: 'rgba(75, 192, 192, 0.6)'
-      }]
-    },
-    options: {
-      indexAxis: 'y',
-      responsive: true,
-      plugins: {
-        legend: { display: false }
-      },
-      scales: {
-        x: {
-          title: {
-            display: true,
-            text: 'Kg / habitante / año'
-          }
-        }
-      }
-    }
-  });
-</script>
+    });
+  </script>
 </body>
 </html>
