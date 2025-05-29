@@ -63,6 +63,15 @@
       flex: 1;
       min-width: 350px;
     }
+    .dashboard-description {
+      background-color: #e9f5ff;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px 0;
+      border-left: 5px solid #2c3e50;
+      font-size: 16px;
+      line-height: 1.6;
+    }
     @media (max-width: 1200px) {
       .dashboard-container {
         width: 98%;
@@ -133,7 +142,7 @@
 
  <!-- Contenido -->
   <div class="container-fluid mt-5 mb-5 px-4">
-    <h2 class="text-center mb-4">Dashboard: Parámetros de Calidad del Agua</h2>
+    <h2 class="text-center mb-4">Impacto de la Gestión Terrestre en los Ecosistemas Acuáticos</h2>
     
     <div class="dashboard-container">
       <!-- Primera fila: Temperatura (más ancho) y pH -->
@@ -152,6 +161,8 @@
         </div>
       </div>
       
+
+      
       <!-- Segunda fila: Residuos Municipales -->
       <div class="chart-row">
         <div class="chart-col">
@@ -161,8 +172,21 @@
           </div>
         </div>
       </div>
+
+
+      <br>
+    
+      <!-- Descripción del dashboard -->
+      <div class="dashboard-description">
+        <h3 class="text-center mb-3">Descripción</h3>
+        <p>Este dashboard muestra cómo la gestión de nuestros residuos en tierra y el tratamiento del agua impactan directamente en la química (pH) y las condiciones (temperatura) de nuestros ecosistemas acuáticos. Estos factores, a su vez, son cruciales para la salud de la vida submarina, el objetivo principal del ODS 14. En resumen, menos residuos y mejor tratamiento del agua significan aguas más limpias y un pH adecuado, esenciales para proteger la vida en nuestros ríos y mares.</p>
+      </div>
+
+
     </div>
   </div>
+
+
 
 
   <!-- Footer -->
@@ -177,17 +201,6 @@
               <button class="submit">submit</button>
             </form>
           </div>
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-md-5 offset-md-1 padding_bottom1">
-                <h3>Links</h3>
-                <ul class="cont">
-                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="copyright">
           <div class="container">
             <div class="row">
@@ -265,7 +278,7 @@
     Plotly.newPlot('temperaturaChart', violinData, layout, {responsive: true});
     // --- pH ---
     const phLabels = ph.map(d => d.Comarca);
-    const phData = ph.map(d => d.Valor);
+    const phData = ph.map(d =>  parseFloat(d.Valor.toFixed(3)));
     const phTratamientos = ph.map(d => d.Tratamientos || '');
 
     new Chart(document.getElementById('phChart'), {
@@ -285,11 +298,13 @@
         plugins: {
           legend: { display: false },
           tooltip: {
+
             callbacks: {
               afterLabel: function(context) {
                 return 'Tratamientos: ' + phTratamientos[context.dataIndex];
               }
             }
+            
           }
         },
         scales: {
