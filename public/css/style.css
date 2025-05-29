@@ -23,7 +23,6 @@
 @import url(font-awesome.min.css);
 @import url(meanmenu.css);
 @import url(owl.carousel.min.css);
-@import url(swiper.min.css);
 @import url(slick.css);
 @import url(jquery.fancybox.min.css);
 @import url(jquery-ui.css);
@@ -808,4 +807,28 @@ ul.cont li {
 .our_box figure img {
      width: 100%;
 }
+
+
+   #info-ods14 {
+    color: white;
+    font-size: 18px;
+    line-height: 45; /* Mayor espaciado entre líneas */
+    margin-top: 30px; /* Más separación del gráfico */
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo sutil */
+    max-width: 800px;
+    text-align: justify; /* Texto justificado */
+    
+    /* 🔹 Centrar la sección en la página */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
 

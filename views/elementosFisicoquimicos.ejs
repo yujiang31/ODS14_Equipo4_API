@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
   <title>ODS 14 - Relación de Variables Ambientales</title>
 
@@ -12,6 +12,14 @@
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/responsive.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+
+
   <style>
     .background-number {
       position: absolute;
@@ -50,7 +58,7 @@
     { id: "variable6", nombre: "Sigma T", indicador: "14.2.1 - Gestión sostenible de los océanos", objetivo: "Asegurar la estabilidad de la circulación oceánica y la distribución de oxígeno y nutrientes esenciales.", descripcion: "Sigma T mide la densidad del agua, afectando la estratificación y la dispersión de nutrientes, clave en el transporte de sustancias esenciales para los ecosistemas marinos.", medidas: "Monitorear patrones de circulación, fortalecer modelos climáticos predictivos.", estilo: "mobile" }
   ]; %>
 
-  <% variables.forEach((variable, index) => { %>
+<% variables.forEach((variable, index) => { %>
   <div id="<%= variable.id %>" class="<%= variable.estilo %>">
     <div class="container">
       <div class="row d_flex">
@@ -60,46 +68,72 @@
             <p><strong>Indicador:</strong> <%= variable.indicador %></p>
             <p><strong>Objetivo:</strong> <%= variable.objetivo %></p>
             <p><%= variable.descripcion %></p>
-            <p><strong>Plan de acción:</strong> </p>
+            <h3>Medidas de Mitigación:</h3>
             <p><%= variable.medidas %></p>
           </div>
         </div>
         <div class="col-md-5">
           <canvas id="chart-<%= variable.id %>" width="400" height="200"></canvas>
-
-          <!-- 🔹 Añadir los gráficos aquí, pero solo en "variable1" -->
-          <% if (variable.id === "variable1") { %>
-            <canvas id="grafico-temperatura-reciente" width="400" height="300"></canvas>
-            <canvas id="grafico-temperatura-antiguo" width="400" height="300"></canvas>
-          <% } %>
         </div>
       </div>
+
+      <!-- 🔹 Sección adicional dentro de "about" para los selectores y gráfico -->
+<% if (variable.id === "variable1") { %>
+  <div id="about">
+    <h3>Temperatura Media por Año</h3>
+    
+    <label for="masaAguaTemperatura">Selecciona la Massa d'Aigua:</label>
+    <select id="masaAguaTemperatura" onchange="actualizarGraficoTemperatura()"></select>
+
+    <div id="canvas-container-temperatura">
+      <canvas id="grafico-temperatura" width="400" height="300"></canvas>
     </div>
   </div>
+<% } %>
+
+<% if (variable.id === "variable2") { %>
+  <div id="about">
+    <h3>Transparència (disc de Secchi) - Media por Año</h3>
+
+    <label for="masaAguaTransparencia">Selecciona la Massa d'Aigua:</label>
+    <select id="masaAguaTransparencia" onchange="actualizarGraficoTransparencia()"></select>
+
+    <div id="canvas-container-transparencia">
+      <canvas id="grafico-transparencia" width="400" height="300"></canvas>
+    </div>
+
+    <!-- 🔹 Información adicional sobre ODS 14 -->
+    <div id="info-ods14">
+      <p><strong>🌊 Relación con el ODS 14: Vida submarina<strong></p>
+      <p>La transparencia del agua es un indicador clave para evaluar la calidad del agua y la cantidad de partículas suspendidas.</p>
+      
+        <p><strong>Protección de ecosistemas marinos:</strong> Una alta transparencia generalmente indica menos contaminación, lo que favorece la vida de organismos acuáticos.</p>
+        <p><strong>Reducción de la contaminación marina:</strong> Niveles bajos de transparencia pueden ser señal de residuos industriales o urbanos, afectando la biodiversidad.</p>
+        <p><strong>Impacto del cambio climático:</strong> La variabilidad en la transparencia del agua puede estar vinculada al aumento de temperaturas y cambios en las corrientes marinas.</p>
+        <p><strong>Promoción de una pesca sostenible:</strong> La calidad del agua afecta a la disponibilidad de especies marinas, influyendo en la explotación pesquera.</p>
+      
+      <p>Estos datos permiten a investigadores y autoridades tomar decisiones basadas en evidencia para proteger las masas de agua y avanzar en el cumplimiento del <strong>ODS 14</strong>.</p>
+    </div>
+  </div>
+<% } %>
+    </div>
+  </div>
+
+ <% if (variable.id === "variable3") { %>
+  <div id="about">
+    <h3>Mapa de Niveles de pH - Media por Año</h3>
+
+<div id="canvas-container-ph">
+    <canvas id="grafico-ph" width="600" height="400"></canvas>
+</div>
+  </div>
+<% } %>
+
+
 <% }); %>
 
 
-  <div id="variable-temperatura" class="about">
-    <div class="container">
-      <div class="background-number">+</div>
-      <div class="row d_flex">
-        <div class="col-md-7">
-          <div class="titlepage">
-            <h2>Media Anual de la Temperatura</h2>
-            <p><strong>Indicador:</strong> 14.3.1 - Acidificación de los océanos</p>
-            <p><strong>Objetivo:</strong> Monitorear la variación de temperatura en el agua</p>
-            <p>Este gráfico muestra la media anual de la temperatura del agua registrada en distintos puntos de muestreo.</p>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <canvas id="grafico-temperatura-reciente" width="400" height="300"></canvas>
-          <canvas id="grafico-temperatura-antiguo" width="400" height="300"></canvas>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="/js/graficos.js"></script>
+<script src="/js/graficos.js"></script>
 
 </body>
 </html>
