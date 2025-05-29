@@ -155,51 +155,7 @@ router.get("/datos-transparencia", async (req, res) => {
 
 });
 
-router.get("/datos-ph-mapa", async (req, res) => {
-    try {
-        const rawData = await readData();
-        const parsedData = JSON.parse(rawData);
 
-        if (!parsedData || parsedData.length === 0) {
-            res.json({ error: "No se encontraron datos en el JSON." });
-            return;
-        }
-
-        const phMedioPorMasaAgua = {};
-
-        parsedData.forEach(item => {
-            if (!item["Variable"].includes("pH")) return;
-
-            const masaAgua = item["Massa d'aigua"];
-            const año = item["Data"].substring(0, 4);
-            const valor = parseFloat(item["Valor"].replace(",", "."));
-            const coordenadas = { x: item["UTM X"], y: item["UTM Y"] };
-
-            if (!masaAgua || !año || isNaN(valor) || !coordenadas.x || !coordenadas.y) return;
-
-            if (!phMedioPorMasaAgua[masaAgua]) phMedioPorMasaAgua[masaAgua] = {};
-            if (!phMedioPorMasaAgua[masaAgua][año]) phMedioPorMasaAgua[masaAgua][año] = { valores: [], coordenadas };
-
-            phMedioPorMasaAgua[masaAgua][año].valores.push(valor);
-        });
-
-        Object.keys(phMedioPorMasaAgua).forEach(masaAgua => {
-            Object.keys(phMedioPorMasaAgua[masaAgua]).forEach(año => {
-                const valores = phMedioPorMasaAgua[masaAgua][año].valores;
-                phMedioPorMasaAgua[masaAgua][año] = {
-                    phMedio: (valores.reduce((sum, val) => sum + val, 0) / valores.length).toFixed(2),
-                    coordenadas: phMedioPorMasaAgua[masaAgua][año].coordenadas
-                };
-            });
-        });
-
-        res.json({ phMedioPorMasaAgua });
-
-    } catch (error) {
-        console.error("⚠️ Error procesando los datos:", error);
-        res.status(500).json({ error: "Error en el servidor" });
-    }
-});
 
 
 
