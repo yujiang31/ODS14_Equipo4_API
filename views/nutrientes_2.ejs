@@ -60,6 +60,32 @@
     <canvas id="nutrientesChart" width="400" height="200"></canvas>
   </div>
 
+
+<section class="container mt-4 mb-5">
+  <div class="card p-4 shadow-sm">
+    <h4 class="text-center mb-4">🧪 Contexto de los Nutrientes Analizados</h4>
+    <ul class="list-unstyled">
+      <li class="mb-3">
+        <strong>🔹 Nitratos (NO₃⁻):</strong> Presentan altos niveles en zonas agrícolas como Osona o el Lluçanès, debido al uso intensivo de fertilizantes y purines ganaderos. Contaminan acuíferos y afectan la calidad del agua.
+      </li>
+      <li class="mb-3">
+        <strong>🔹 Fosfatos (PO₄³⁻):</strong> Provienen de aguas residuales urbanas y productos de limpieza. Aunque no se detectan aumentos recientes, pueden causar eutrofización si se acumulan.
+      </li>
+      <li class="mb-3">
+        <strong>🔹 Amonio (NH₄⁺):</strong> Se asocia a materia orgánica en descomposición y sequías. No se identifican niveles saludables para el mar catalán, pero en agua potable oscilan entre 27.7 y 55.5 µmol/L.
+      </li>
+      <li class="mb-3">
+        <strong>🔹 Silicatos (SiO₄⁴⁻):</strong> Esenciales para organismos como las diatomeas. Su origen es natural (erosión y aguas subterráneas). No se detectan cambios preocupantes en el mar.
+      </li>
+      <li class="mb-3">
+        <strong>🔹 Nitritos (NO₂⁻):</strong> Indicadores de contaminación por fertilizantes o vertidos. Según normativa española, los niveles de referencia deben mantenerse por debajo de 0,92 µmol/L en aguas protegidas.
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+
   <!-- Footer -->
   <footer>
     <div class="footer">
@@ -96,6 +122,10 @@
     </div>
   </footer>
 
+
+
+
+
   <!-- Scripts -->
   <script src="/js/jquery.min.js"></script>
   <script src="/js/popper.min.js"></script>
@@ -105,44 +135,95 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
   <script>
-    const rawData = <%- JSON.stringify(datos) %>;
+  const rawData = <%- JSON.stringify(datos) %>;
 
-    // Organizar datos para el gráfico: años como etiquetas y cada categoría como dataset
-    const categorias = [...new Set(rawData.map(d => d.Categoria))];
-    const años = [...new Set(rawData.map(d => d.Any))].sort();
+  // Rango sano por categoría (en µmol/L)
+  const rangosSanos = {
+    'Fosfats': { min: 0.05, max: 0.5 },
+    'Nitrats': { min: 0.5, max: 5.0 },
+    'Silicats': { min: 1.5, max: 10.0 }
+  };
 
-    const datasets = categorias.map(categoria => {
-      return {
-        label: categoria,
-        data: años.map(año => {
-          const item = rawData.find(d => d.Any === año && d.Categoria === categoria);
-          return item ? item.Promedio : null;
-        }),
-        borderWidth: 1,
-        backgroundColor: `hsl(${Math.random() * 360}, 60%, 60%)`
-      };
-    });
+  const categorias = [...new Set(rawData.map(d => d.Categoria))];
+  const años = [...new Set(rawData.map(d => d.Any))].sort();
 
-    const ctx = document.getElementById('nutrientesChart').getContext('2d');
-    new Chart(ctx, {
-      type: 'bar',
-      data: {
-        labels: años,
-        datasets: datasets
+  // Crear datasets de líneas principales (por categoría)
+  const datasets = categorias.map(categoria => {
+    return {
+      label: categoria,
+      data: años.map(año => {
+        const item = rawData.find(d => d.Any === año && d.Categoria === categoria);
+        return item ? item.Promedio : null;
+      }),
+      fill: false,
+      borderColor: `hsl(${Math.random() * 360}, 70%, 50%)`,
+      tension: 0.3
+    };
+  });
+
+  // Añadir líneas horizontales de rango sano
+  categorias.forEach(categoria => {
+    const rango = rangosSanos[categoria];
+    if (rango) {
+      datasets.push({
+        label: `Mín. sano - ${categoria}`,
+        data: new Array(años.length).fill(rango.min),
+        borderColor: 'green',
+        borderDash: [10, 5],
+        pointRadius: 0,
+        fill: false,
+        tension: 0,
+        borderWidth: 1
+      });
+      datasets.push({
+        label: `Máx. sano - ${categoria}`,
+        data: new Array(años.length).fill(rango.max),
+        borderColor: 'red',
+        borderDash: [10, 5],
+        pointRadius: 0,
+        fill: false,
+        tension: 0,
+        borderWidth: 1
+      });
+    }
+  });
+
+  const ctx = document.getElementById('nutrientesChart').getContext('2d');
+  new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: años,
+      datasets: datasets
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top',
+        },
+        title: {
+          display: true,
+          text: 'Promedio de Nutrientes y Rangos Saludables'
+        }
       },
-      options: {
-        responsive: true,
-        scales: {
-          y: {
-            beginAtZero: true,
-            title: { display: true, text: 'Promedio' }
-          },
-          x: {
-            title: { display: true, text: 'Año' }
+      scales: {
+        y: {
+          beginAtZero: true,
+          title: {
+            display: true,
+            text: 'Promedio (µmol/L)'
+          }
+        },
+        x: {
+          title: {
+            display: true,
+            text: 'Año'
           }
         }
       }
-    });
-  </script>
+    }
+  });
+</script>
+
 </body>
 </html>
