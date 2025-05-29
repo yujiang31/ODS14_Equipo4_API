@@ -30,10 +30,6 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
 <body class="main-layout">
-  <!-- loader -->
-  <div class="loader_bg">
-    <div class="loader"><img src="/images/loading.gif" alt="#" /></div>
-  </div>
   <!-- header -->
   <header>
     <div class="header">
@@ -95,7 +91,7 @@
         <img class="second-slide" src="/images/imagebanner1.jpg" alt="Second slide">
         <div class="container">
           <div class="carousel-caption relative">
-            <h1>Vida Submarina</h1>
+            <h1 style="color: white;">Vida Submarina</h1>
           </div>
         </div>
       </div>
@@ -103,7 +99,7 @@
         <img class="third-slide" src="/images/banner2.jpg" alt="Third slide">
         <div class="container">
           <div class="carousel-caption relative">
-            <h1>Vida Submarina</h1>
+            <h1 style="color: white;">Salud del mar</h1>
           </div>
         </div>
       </div>
@@ -111,6 +107,7 @@
         <img class="third-slide" src="/images/eutro2.jpg" alt="Fourth slide">
         <div class="container">
           <div class="carousel-caption relative">
+            <h1 style="color: white;">Eutrofización</h1>
           </div>
         </div>
       </div>
@@ -118,6 +115,7 @@
         <img class="third-slide" src="/images/tratamiento.jpeg" alt="Fifth slide">
         <div class="container">
           <div class="carousel-caption relative">
+            <h1 style="color: white;">Tratamiento de agua</h1>
           </div>
         </div>
       </div>
@@ -131,6 +129,31 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+    <!-- Informacion del sitio -->
+    <div id="mobile" class="mobile">
+      <div class="container">
+        <div class="row d_flex">
+          <div class="col-md-5">
+            <div class="mobile_img">
+              <figure><img src="/images/submarine.png" alt="#" /></figure>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="titlepage">
+              <h2>Sobre el sitio</h2>
+              <span></span>
+              <p>
+              Este es un sitio web que busca divulgar informacion sobre el estado de la vida submirina de la costa de cataluña con la visio del ODS 14 ( Objetivos de Desarrollo Sostenible), se han recopilados varios datasets publicos sobre cataluña para poder poder realizar diferentes analisis sobre el estado actual de la vida submarina de la comunidad autonma, ademnas de investigar tendencias que esta misma puede llegar a tener o factores terciarios que la afectan. 
+              </p>
+              <p>
+                En este momento se ha elegido mostrar solamente los datos que por el momento se considenran mas importantes en la actulidad, pero eso no quita el heyo de que en algun posible futuro se pueda añadir mas informacion al sitio, nuestros dataset que hemos utilizado por el momento se pueden encontrar aqui:
+                </p>
+              <a class="read_more">Dataset <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   <!-- about -->
   <div id="about" class="about">
@@ -140,7 +163,9 @@
           <div class="titlepage">
             <h2>Sobre el ODS 14</h2>
             <span></span>
-            <p>El ODS 14 busca proteger los océanos, mares y recursos marinos, promoviendo su uso sostenible. Su objetivo es reducir la contaminación, frenar la pesca excesiva y conservar la vida marina para garantizar que los ecosistemas oceánicos sigan siendo saludables y beneficiosos para las personas y el planeta.</p>
+            <p>
+              El ODS 14 busca proteger los océanos, mares y recursos marinos, promoviendo su uso sostenible. Su objetivo es reducir la contaminación, frenar la pesca excesiva y conservar la vida marina para garantizar que los ecosistemas oceánicos sigan siendo saludables y beneficiosos para las personas y el planeta.
+            </p>
             <a class="read_more">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
           </div>
         </div>
@@ -176,39 +201,18 @@
 
   <!-- footer -->
   <footer>
-    <div class="footer">
-      <div class="container">
-        <div class="row border-top">
-          <div class="col-md-6 padding_bottom1">
-            <h3>Subscribe Now</h3>
-            <form class="footer_form">
-              <input class="enter" placeholder="Enter your email" type="email" name="email">
-              <button class="submit">submit</button>
-            </form>
-          </div>
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-md-5 offset-md-1 padding_bottom1">
-                <h3>Links</h3>
-                <ul class="cont">
-                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </li>
-                </ul>
-              </div>
+      <div class="footer">
+         <div class="copyright" style="margin-top: 0%;">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <p>Grupo 4, ODS 14 </p>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-        <div class="copyright">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <p>Grupo 4, ODS 14</p>
-              </div>
-            </div>
-          </div>
-        </div>
+         </div>
       </div>
-    </div>
-  </footer>
+   </footer>
 
   <!-- Javascript files -->
   <script src="/js/jquery.min.js"></script>
