@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
   <title>ODS 14 - Relación de Variables Ambientales</title>
 
   <!-- Estilos -->
@@ -49,10 +51,8 @@
   ]; %>
 
   <% variables.forEach((variable, index) => { %>
-  <!-- Sección dinámica alternando entre "about" y "mobile" -->
   <div id="<%= variable.id %>" class="<%= variable.estilo %>">
     <div class="container">
-      <div class="background-number"><%= index + 1 %></div>
       <div class="row d_flex">
         <div class="col-md-7">
           <div class="titlepage">
@@ -60,29 +60,46 @@
             <p><strong>Indicador:</strong> <%= variable.indicador %></p>
             <p><strong>Objetivo:</strong> <%= variable.objetivo %></p>
             <p><%= variable.descripcion %></p>
-            <h3>Medidas de Mitigación:</h3>
+            <p><strong>Plan de acción:</strong> </p>
             <p><%= variable.medidas %></p>
           </div>
+        </div>
+        <div class="col-md-5">
+          <canvas id="chart-<%= variable.id %>" width="400" height="200"></canvas>
+
+          <!-- 🔹 Añadir los gráficos aquí, pero solo en "variable1" -->
+          <% if (variable.id === "variable1") { %>
+            <canvas id="grafico-temperatura-reciente" width="400" height="300"></canvas>
+            <canvas id="grafico-temperatura-antiguo" width="400" height="300"></canvas>
+          <% } %>
         </div>
       </div>
     </div>
   </div>
-  <% }); %>
+<% }); %>
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer">
-      <div class="container">
-        <div class="copyright">
-          <p>Grupo 4 - Proyecto ODS 14</p>
+
+  <div id="variable-temperatura" class="about">
+    <div class="container">
+      <div class="background-number">+</div>
+      <div class="row d_flex">
+        <div class="col-md-7">
+          <div class="titlepage">
+            <h2>Media Anual de la Temperatura</h2>
+            <p><strong>Indicador:</strong> 14.3.1 - Acidificación de los océanos</p>
+            <p><strong>Objetivo:</strong> Monitorear la variación de temperatura en el agua</p>
+            <p>Este gráfico muestra la media anual de la temperatura del agua registrada en distintos puntos de muestreo.</p>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <canvas id="grafico-temperatura-reciente" width="400" height="300"></canvas>
+          <canvas id="grafico-temperatura-antiguo" width="400" height="300"></canvas>
         </div>
       </div>
     </div>
-  </footer>
+  </div>
 
-  <!-- Scripts -->
-  <script src="/js/jquery.min.js"></script>
-  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/graficos.js"></script>
 
 </body>
 </html>

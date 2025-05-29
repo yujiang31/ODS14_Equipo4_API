@@ -4,64 +4,82 @@ import path from "path";
 
 const router = express.Router();
 
-// Función para leer datos del JSON
-const readData = () => {
+// Leer datos de manera asíncrona
+const readData = async () => {
     try {
-        return fs.readFileSync("./db/Elementos_Fisioquimicos_Generales.json", "utf8"); // Mantengo tu versión
+        return await fs.promises.readFile("./db/Elementos_Fisioquimicos_Generales.json", "utf8");
     } catch (error) {
         console.error("Error al leer el archivo JSON:", error);
-        return "[]"; // 🔹 Retorno un JSON vacío válido
+        return "[]"; // Retorna un JSON vacío válido
     }
 };
 
-// Filtrar datos de pH y calcular medias
-const calculatePhMedias = (data) => {
+
+// Ruta principal
+router.get("/", async (req, res) => {
+    const rawData = await readData();
+    res.render("elementosFisicoquimicos", { figJson: rawData });
+});
+
+// Ruta para obtener datos en formato JSON procesado
+router.get("/datos-json", async (req, res) => {
     try {
-        const parsedData = JSON.parse(data); // 🔹 Parseamos el string a objeto JSON
-        
-        const phData = parsedData.filter(item => 
-            item["Variable"] === "pH" &&
-            item["Valor"] &&
-            item["Profunditat mostra (m)"] &&
-            item["Data"]
+        const rawData = await readData();
+        const parsedData = JSON.parse(rawData);
+
+        // 🔹 Filtrar solo los datos de temperatura correctamente
+        const temperaturaData = parsedData.filter(item => 
+            (item["Variable"] === "Temperatura aigua (CTD)" || 
+            item["Variable"] === "Temperatura aigua (mostra)") &&
+            item["Profunditat mostra (m)"]
         );
-        
-        const grouped = {};
-        phData.forEach(item => {
+
+        const temperaturaPorAnoProfundidad = {};
+
+        temperaturaData.forEach(item => {
             const year = item["Data"].substring(0, 4);
-            const profundidad = item["Profunditat mostra (m)"];
-            const valor = parseFloat(item["Valor"].replace(',', '.'));
+            const profundidad = Math.floor(parseFloat(item["Profunditat mostra (m)"])); // 🔹 Convertir profundidad a entero
+            const valor = Math.round(parseFloat(item["Valor"].replace(',', '.'))); // 🔹 Convertir temperatura a entero
 
-            if (!grouped[year]) grouped[year] = {};
-            if (!grouped[year][profundidad]) grouped[year][profundidad] = [];
+            if (!temperaturaPorAnoProfundidad[year]) temperaturaPorAnoProfundidad[year] = {};
+            if (!temperaturaPorAnoProfundidad[year][profundidad]) temperaturaPorAnoProfundidad[year][profundidad] = [];
 
-            grouped[year][profundidad].push(valor);
+            temperaturaPorAnoProfundidad[year][profundidad].push(valor);
         });
 
-        const medias = [];
-        Object.keys(grouped).forEach(year => {
-            Object.keys(grouped[year]).forEach(profundidad => {
-                const valores = grouped[year][profundidad];
-                const media = valores.reduce((a, b) => a + b, 0) / valores.length;
-                medias.push({
-                    year,
-                    profundidad,
-                    media: media.toFixed(3)
-                });
+        const temperaturaMediaPorAnoProfundidad = {};
+        Object.keys(temperaturaPorAnoProfundidad).forEach(year => {
+            temperaturaMediaPorAnoProfundidad[year] = {};
+            Object.keys(temperaturaPorAnoProfundidad[year]).forEach(profundidad => {
+                const valores = temperaturaPorAnoProfundidad[year][profundidad];
+                temperaturaMediaPorAnoProfundidad[year][profundidad] = Math.round(valores.reduce((sum, val) => sum + val, 0) / valores.length);
             });
         });
 
-        return medias;
-    } catch (error) {
-        console.error("Error al procesar los datos:", error);
-        return []; // Retornar un array vacío si hay error
-    }
-};
+        // 🔹 Obtener el año más reciente y el más antiguo
+        const añosOrdenados = Object.keys(temperaturaMediaPorAnoProfundidad).sort((a, b) => b - a);
+        const añoMasReciente = añosOrdenados[0];
+        const añoMasAntiguo = añosOrdenados[añosOrdenados.length - 1];
 
-router.get("/", (req, res) => {
-    const rawData = fs.readFileSync("./db/Elementos_Fisioquimicos_Generales.json", "utf8"); 
-    res.render("elementosFisicoquimicos", { figJson: JSON.stringify(rawData) }); // 🔹 Convierte a JSON válido
+        res.json({
+            añoMasReciente: {
+                año: añoMasReciente,
+                datos: temperaturaMediaPorAnoProfundidad[añoMasReciente]
+            },
+            añoMasAntiguo: {
+                año: añoMasAntiguo,
+                datos: temperaturaMediaPorAnoProfundidad[añoMasAntiguo]
+            }
+        });
+    } catch (error) {
+        console.error("Error al procesar el JSON:", error);
+        res.status(500).json({ error: "Error procesando los datos" });
+    }
 });
+
+
+
+
 
 
 export default router;
