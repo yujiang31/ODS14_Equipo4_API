@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard - Calidad del Agua</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="main-layout">
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Dashboard: Parámetros de Calidad del Agua</h2>
+
+    <!-- Temperatura -->
+    <div class="mb-5">
+      <h4>Distribución de Temperatura por Comarca</h4>
+      <canvas id="temperaturaChart" height="300"></canvas>
+    </div>
+
+    <!-- pH + Tratamientos -->
+    <div class="mb-5">
+      <h4>pH Promedio por Comarca Costera y Tratamientos</h4>
+      <canvas id="phChart" height="300"></canvas>
+    </div>
+
+    <!-- Residuos -->
+    <div class="mb-5">
+      <h4>Residuos Municipales (Kg / hab / año)</h4>
+      <canvas id="residuosChart" height="300"></canvas>
+    </div>
+  </div>
+
+<script>
+  const temperatura = <%- JSON.stringify(temperatura) %>;
+  const ph = <%- JSON.stringify(ph) %>;
+  const residuos = <%- JSON.stringify(residuos) %>;
+
+  // --- Temperatura ---
+  const tempLabels = [...new Set(temperatura.map(d => d.Comarca))];
+  const tempData = tempLabels.map(label => {
+    const values = temperatura.filter(d => d.Comarca === label).map(d => d.Valor);
+    return {
+      label,
+      data: values
+    };
+  });
+
+  const tempDatasets = tempData.map(d => ({
+    label: d.label,
+    data: d.data,
+    backgroundColor: `hsl(${Math.random() * 360}, 70%, 60%)`
+  }));
+
+  new Chart(document.getElementById('temperaturaChart'), {
+    type: 'bar',
+    data: {
+      labels: tempLabels,
+      datasets: [{
+        label: 'Temperatura media',
+        data: tempLabels.map(l => {
+          const datos = temperatura.filter(d => d.Comarca === l).map(d => d.Valor);
+          return (datos.reduce((a, b) => a + b, 0) / datos.length).toFixed(2);
+        }),
+        backgroundColor: 'rgba(255, 99, 132, 0.6)'
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        title: {
+          display: false
+        },
+        legend: {
+          display: false
+        }
+      },
+      scales: {
+        y: {
+          title: {
+            display: true,
+            text: 'Temperatura (°C)'
+          },
+          beginAtZero: true
+        }
+      }
+    }
+  });
+
+  // --- pH ---
+  const phLabels = ph.map(d => d.Comarca);
+  const phData = ph.map(d => d.Valor);
+  const phTratamientos = ph.map(d => d.Tratamientos || '');
+
+  new Chart(document.getElementById('phChart'), {
+    type: 'bar',
+    data: {
+      labels: phLabels,
+      datasets: [{
+        label: 'pH promedio',
+        data: phData,
+        backgroundColor: 'rgba(54, 162, 235, 0.6)'
+      }]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      plugins: {
+        tooltip: {
+          callbacks: {
+            afterLabel: function(context) {
+              return 'Tratamientos: ' + phTratamientos[context.dataIndex];
+            }
+          }
+        }
+      },
+      scales: {
+        x: {
+          min: 6.0,
+          max: 9.0,
+          title: {
+            display: true,
+            text: 'pH promedio'
+          }
+        },
+        y: {
+          title: {
+            display: true,
+            text: 'Comarca'
+          }
+        }
+      }
+    }
+  });
+
+  // --- Residuos ---
+  const residuosLabels = residuos.map(d => d.Comarca);
+  const residuosData = residuos.map(d => d['Kg / hab / any']);
+
+  new Chart(document.getElementById('residuosChart'), {
+    type: 'bar',
+    data: {
+      labels: residuosLabels,
+      datasets: [{
+        label: 'Kg / hab / año',
+        data: residuosData,
+        backgroundColor: 'rgba(75, 192, 192, 0.6)'
+      }]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      plugins: {
+        legend: { display: false }
+      },
+      scales: {
+        x: {
+          title: {
+            display: true,
+            text: 'Kg / habitante / año'
+          }
+        }
+      }
+    }
+  });
+</script>
+</body>
+</html>

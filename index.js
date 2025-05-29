@@ -10,11 +10,12 @@ import indicesbioRoutes from "./routes/indicesbio.js";
 import nutrientesRoutes from "./routes/nutrientes_2.js";
 import elementoFisicoquimicosRoutes from "./routes/elementosFisicoquimicos.js";
 import homeRoutes from "./routes/home.js";
-
-
+import dashboard from "./routes/dashboard.js";
 
 
 const app = express();
+
+
 
 app.use(bodyParser.json());
 import path from "path";
@@ -25,7 +26,7 @@ app.use(cookieParser())
 
 
 
-
+app.use("/dashboard", dashboard)
 app.use("/indicesbio", indicesbioRoutes);
 app.use("/nutrientes_2", nutrientesRoutes);
 app.use("/elementosFisicoquimicos", elementoFisicoquimicosRoutes);
